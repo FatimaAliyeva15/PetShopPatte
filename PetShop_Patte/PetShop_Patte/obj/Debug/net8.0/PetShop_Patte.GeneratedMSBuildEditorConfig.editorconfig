@@ -9,71 +9,91 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PetShop_Patte
 build_property.RootNamespace = PetShop_Patte
-build_property.ProjectDir = C:\Users\Asus\source\repos\PetShop_Patte\PetShop_Patte\
+build_property.ProjectDir = C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShop_Patte\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Asus\source\repos\PetShop_Patte\PetShop_Patte
+build_property.MSBuildProjectDirectory = C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShop_Patte
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Asus/source/repos/PetShop_Patte/PetShop_Patte/Views/About/Index.cshtml]
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/About/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/source/repos/PetShop_Patte/PetShop_Patte/Views/Contact/Index.cshtml]
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/BlogDetails/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ0RldGFpbHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/CartCheckout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydENoZWNrb3V0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/source/repos/PetShop_Patte/PetShop_Patte/Views/History/Index.cshtml]
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/History/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yeVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/source/repos/PetShop_Patte/PetShop_Patte/Views/Home/Index.cshtml]
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/source/repos/PetShop_Patte/PetShop_Patte/Views/HowWeWork/Index.cshtml]
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/HowWeWork/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG93V2VXb3JrXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/source/repos/PetShop_Patte/PetShop_Patte/Views/Login/Index.cshtml]
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/source/repos/PetShop_Patte/PetShop_Patte/Views/OurProducts/Index.cshtml]
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/OurBlog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3VyQmxvZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/OurProducts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3VyUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/source/repos/PetShop_Patte/PetShop_Patte/Views/PhotoGalary/Index.cshtml]
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/PhotoGalary/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvdG9HYWxhcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/source/repos/PetShop_Patte/PetShop_Patte/Views/PricingPack/Index.cshtml]
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/PricingPack/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpY2luZ1BhY2tcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/source/repos/PetShop_Patte/PetShop_Patte/Views/ServiceDetail/Index.cshtml]
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/ProductDetail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdERldGFpbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/ServiceDetail/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZURldGFpbFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/source/repos/PetShop_Patte/PetShop_Patte/Views/Service/Index.cshtml]
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/Service/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/source/repos/PetShop_Patte/PetShop_Patte/Views/TeamDetail/Index.cshtml]
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/ShopCart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcENhcnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/TeamDetail/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbURldGFpbFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/source/repos/PetShop_Patte/PetShop_Patte/Views/_ViewImports.cshtml]
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/source/repos/PetShop_Patte/PetShop_Patte/Views/_ViewStart.cshtml]
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/source/repos/PetShop_Patte/PetShop_Patte/Views/Shared/_Layout.cshtml]
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-s5d0fj3964

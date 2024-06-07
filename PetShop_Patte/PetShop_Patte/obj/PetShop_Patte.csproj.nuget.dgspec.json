@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte.csproj": {}
+    "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte.csproj": {
+    "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte.csproj",
         "projectName": "PetShop_Patte",
-        "projectPath": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte.csproj",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\obj\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",

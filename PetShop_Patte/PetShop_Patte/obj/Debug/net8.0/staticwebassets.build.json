@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BZMhvc6tTZWG8w2Pwk9YcTJH3viEtqd6aHjXoCa38uM=",
+  "Hash": "vAo+XGiq4HH8qPXrAwomhReAU/cbI/MdAI9qXs5vjRk=",
   "Source": "PetShop_Patte",
   "BasePath": "_content/PetShop_Patte",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "PetShop_Patte\\wwwroot",
       "Source": "PetShop_Patte",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PetShop_Patte.styles.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PetShop_Patte.styles.css",
       "SourceId": "PetShop_Patte",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "PetShop_Patte.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PetShop_Patte.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PetShop_Patte.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PetShop_Patte.bundle.scp.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PetShop_Patte.bundle.scp.css",
       "SourceId": "PetShop_Patte",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "PetShop_Patte.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PetShop_Patte.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PetShop_Patte.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\animate.min.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\animate.min.css",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/css/animate.min.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\animate.min.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\bootstrap.min.css",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\bootstrap.min.css.map",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\color.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\color.css",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/css/color.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\color.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\fontawesome.min.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\fontawesome.min.css",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/css/fontawesome.min.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fontawesome.min.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\jquery.fancybox.min.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\jquery.fancybox.min.css",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/css/jquery.fancybox.min.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\jquery.fancybox.min.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\nice-select.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\nice-select.css",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/css/nice-select.css",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\nice-select.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\owl.carousel.min.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\owl.carousel.min.css",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/css/owl.carousel.min.css",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\owl.carousel.min.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\owl.theme.default.min.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\owl.theme.default.min.css",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/css/owl.theme.default.min.css",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\owl.theme.default.min.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\responsive.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\responsive.css",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/css/responsive.css",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\responsive.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\slick.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\slick.css",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/css/slick.css",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\slick.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\slick-theme.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\slick-theme.css",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/css/slick-theme.css",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\slick-theme.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\style.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\css\\style.css",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/css/style.css",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-brands-400.ttf",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-brands-400.ttf",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/fonts/fa-brands-400.ttf",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-brands-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-brands-400.woff2",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-brands-400.woff2",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/fonts/fa-brands-400.woff2",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-brands-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-regular-400.ttf",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-regular-400.ttf",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/fonts/fa-regular-400.ttf",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-regular-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-regular-400.woff2",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-regular-400.woff2",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/fonts/fa-regular-400.woff2",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-regular-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-solid-900.ttf",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-solid-900.ttf",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/fonts/fa-solid-900.ttf",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-solid-900.ttf"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-solid-900.woff2",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-solid-900.woff2",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/fonts/fa-solid-900.woff2",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-solid-900.woff2"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-v4compatibility.ttf",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-v4compatibility.ttf",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/fonts/fa-v4compatibility.ttf",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-v4compatibility.ttf"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-v4compatibility.woff2",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\fonts\\fa-v4compatibility.woff2",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/fonts/fa-v4compatibility.woff2",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-v4compatibility.woff2"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\about-1.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\about-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/about-1.jpg",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\about-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\about-2.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\about-2.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/about-2.jpg",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\about-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\all-100.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\all-100.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/all-100.png",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\all-100.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\animal-feed-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\animal-feed-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/animal-feed-1.png",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\animal-feed-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\animal-feed-2.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\animal-feed-2.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/animal-feed-2.png",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\animal-feed-2.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\animal-feed-3.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\animal-feed-3.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/animal-feed-3.png",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\animal-feed-3.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\animal-feed-4.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\animal-feed-4.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/animal-feed-4.png",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\animal-feed-4.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\awards-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\awards-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/awards-1.png",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\awards-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\awards-2.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\awards-2.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/awards-2.png",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\awards-2.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\awards-3.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\awards-3.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/awards-3.png",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\awards-3.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\awards-4.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\awards-4.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/awards-4.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\awards-4.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\background.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\background.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/background.png",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\background.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\background-3.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\background-3.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/background-3.jpg",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\background-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\banner.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\banner.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/banner.png",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\banner.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\banner-img-1.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\banner-img-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/banner-img-1.jpg",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\banner-img-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\banner-img-2.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\banner-img-2.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/banner-img-2.jpg",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\banner-img-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\big-foot.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\big-foot.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/big-foot.png",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\big-foot.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\big-foot-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\big-foot-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/big-foot-1.png",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\big-foot-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\blog-4.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\blog-4.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/blog-4.jpg",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\blog-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\blog-5.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\blog-5.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/blog-5.jpg",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\blog-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\blog-6.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\blog-6.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/blog-6.jpg",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\blog-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\blog-7.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\blog-7.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/blog-7.jpg",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\blog-7.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\blog-8.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\blog-8.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/blog-8.jpg",
       "AssetKind": "All",
@@ -891,10 +891,48 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\blog-8.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\client.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\blog-video.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/blog-video.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\blog-video.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\boy.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/boy.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\boy.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\client.png",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/client.png",
       "AssetKind": "All",
@@ -910,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\client.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\client-b.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\client-b.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/client-b.jpg",
       "AssetKind": "All",
@@ -929,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\client-b.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\clients-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\clients-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/clients-1.png",
       "AssetKind": "All",
@@ -948,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\clients-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\clients-2.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\clients-2.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/clients-2.png",
       "AssetKind": "All",
@@ -967,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\clients-2.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\clients-3.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\clients-3.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/clients-3.png",
       "AssetKind": "All",
@@ -986,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\clients-3.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\clients-4.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\clients-4.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/clients-4.png",
       "AssetKind": "All",
@@ -1005,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\clients-4.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\clients-5.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\clients-5.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/clients-5.png",
       "AssetKind": "All",
@@ -1024,10 +1062,67 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\clients-5.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\dabal-foot.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\comment-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/comment-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\comment-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\comment-2.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/comment-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\comment-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\comment-3.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/comment-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\comment-3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\dabal-foot.png",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/dabal-foot.png",
       "AssetKind": "All",
@@ -1043,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\dabal-foot.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\dabal-foot-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\dabal-foot-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/dabal-foot-1.png",
       "AssetKind": "All",
@@ -1062,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\dabal-foot-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\dabal-foot-2.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\dabal-foot-2.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/dabal-foot-2.png",
       "AssetKind": "All",
@@ -1081,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\dabal-foot-2.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\dogs-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\dogs-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/dogs-1.png",
       "AssetKind": "All",
@@ -1100,10 +1195,29 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\dogs-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\dog-walker-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\dog-video-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/dog-video-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\dog-video-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\dog-walker-1.png",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/dog-walker-1.png",
       "AssetKind": "All",
@@ -1119,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\dog-walker-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\dog-walker-2.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\dog-walker-2.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/dog-walker-2.png",
       "AssetKind": "All",
@@ -1138,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\dog-walker-2.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\down-arrow.svg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\down-arrow.svg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/down-arrow.svg",
       "AssetKind": "All",
@@ -1157,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\down-arrow.svg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\down-arrow-clr.svg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\down-arrow-clr.svg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/down-arrow-clr.svg",
       "AssetKind": "All",
@@ -1176,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\down-arrow-clr.svg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\faq-1.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\faq-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/faq-1.jpg",
       "AssetKind": "All",
@@ -1195,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\faq-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\faq-2.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\faq-2.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/faq-2.jpg",
       "AssetKind": "All",
@@ -1214,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\faq-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\faq-3.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\faq-3.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/faq-3.jpg",
       "AssetKind": "All",
@@ -1233,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\faq-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\faq-4.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\faq-4.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/faq-4.jpg",
       "AssetKind": "All",
@@ -1252,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\faq-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\faq-5.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\faq-5.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/faq-5.jpg",
       "AssetKind": "All",
@@ -1271,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\faq-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\faq-shaps.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\faq-shaps.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/faq-shaps.png",
       "AssetKind": "All",
@@ -1290,10 +1404,105 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\faq-shaps.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-categorie-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/food-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\food-1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-2.png",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/food-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\food-2.png"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-3.png",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/food-3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\food-3.png"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-4.png",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/food-4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\food-4.png"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-5.png",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/food-5.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\food-5.png"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-categorie-1.png",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/food-categorie-1.png",
       "AssetKind": "All",
@@ -1309,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\food-categorie-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-categorie-2.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-categorie-2.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/food-categorie-2.png",
       "AssetKind": "All",
@@ -1328,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\food-categorie-2.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-categorie-3.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-categorie-3.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/food-categorie-3.png",
       "AssetKind": "All",
@@ -1347,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\food-categorie-3.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-categorie-4.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-categorie-4.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/food-categorie-4.png",
       "AssetKind": "All",
@@ -1366,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\food-categorie-4.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-categorie-5.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-categorie-5.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/food-categorie-5.png",
       "AssetKind": "All",
@@ -1385,10 +1594,67 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\food-categorie-5.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\footer-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-shop-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/food-shop-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\food-shop-1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-shop-2.png",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/food-shop-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\food-shop-2.png"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\food-shop-3.png",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/food-shop-3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\food-shop-3.png"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\footer-1.png",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/footer-1.png",
       "AssetKind": "All",
@@ -1404,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\footer-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\fun-facts-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\fun-facts-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/fun-facts-1.png",
       "AssetKind": "All",
@@ -1423,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\fun-facts-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\fun-facts-2.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\fun-facts-2.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/fun-facts-2.png",
       "AssetKind": "All",
@@ -1442,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\fun-facts-2.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\fun-facts-3.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\fun-facts-3.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/fun-facts-3.png",
       "AssetKind": "All",
@@ -1461,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\fun-facts-3.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\fun-facts-4.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\fun-facts-4.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/fun-facts-4.png",
       "AssetKind": "All",
@@ -1480,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\fun-facts-4.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-1.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/gallery-1.jpg",
       "AssetKind": "All",
@@ -1499,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-2.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-2.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/gallery-2.jpg",
       "AssetKind": "All",
@@ -1518,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-3.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-3.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/gallery-3.jpg",
       "AssetKind": "All",
@@ -1537,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-4.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-4.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/gallery-4.jpg",
       "AssetKind": "All",
@@ -1556,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-5.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-5.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/gallery-5.jpg",
       "AssetKind": "All",
@@ -1575,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-6.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-6.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/gallery-6.jpg",
       "AssetKind": "All",
@@ -1594,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-7.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-7.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/gallery-7.jpg",
       "AssetKind": "All",
@@ -1613,10 +1879,124 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-7.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-1.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-image-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/gallery-image-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-image-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-image-2.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/gallery-image-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-image-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-image-3.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/gallery-image-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-image-3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-image-4.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/gallery-image-4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-image-4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-image-5.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/gallery-image-5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-image-5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-image-6.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/gallery-image-6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-image-6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-1.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/gallery-img-1.jpg",
       "AssetKind": "All",
@@ -1632,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-img-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-2.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-2.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/gallery-img-2.jpg",
       "AssetKind": "All",
@@ -1651,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-img-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-3.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-3.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/gallery-img-3.jpg",
       "AssetKind": "All",
@@ -1670,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-img-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-4.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-4.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/gallery-img-4.jpg",
       "AssetKind": "All",
@@ -1689,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-img-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-5.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-5.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/gallery-img-5.jpg",
       "AssetKind": "All",
@@ -1708,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-img-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-6.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-6.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/gallery-img-6.jpg",
       "AssetKind": "All",
@@ -1727,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-img-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-7.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-7.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/gallery-img-7.jpg",
       "AssetKind": "All",
@@ -1746,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-img-7.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-8.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\gallery-img-8.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/gallery-img-8.jpg",
       "AssetKind": "All",
@@ -1765,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gallery-img-8.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\girl.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\girl.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/girl.jpg",
       "AssetKind": "All",
@@ -1784,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\girl.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\haddi.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\haddi.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/haddi.png",
       "AssetKind": "All",
@@ -1803,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\haddi.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\hadphon.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\hadphon.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/hadphon.png",
       "AssetKind": "All",
@@ -1822,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\hadphon.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\heading-img.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\heading-img.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/heading-img.png",
       "AssetKind": "All",
@@ -1841,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\heading-img.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\healthy-product.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\healthy-product.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/healthy-product.png",
       "AssetKind": "All",
@@ -1860,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\healthy-product.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\hero-shaps.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\hero-shaps.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/hero-shaps.png",
       "AssetKind": "All",
@@ -1879,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\hero-shaps.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\hero-shaps-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\hero-shaps-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/hero-shaps-1.png",
       "AssetKind": "All",
@@ -1898,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\hero-shaps-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\hero-shaps-2.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\hero-shaps-2.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/hero-shaps-2.png",
       "AssetKind": "All",
@@ -1917,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\hero-shaps-2.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\hero-shaps-3.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\hero-shaps-3.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/hero-shaps-3.png",
       "AssetKind": "All",
@@ -1936,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\hero-shaps-3.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\home.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\home.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/home.png",
       "AssetKind": "All",
@@ -1955,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\home.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\home-visit.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\home-visit.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/home-visit.png",
       "AssetKind": "All",
@@ -1974,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\home-visit.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\home-w.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\home-w.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/home-w.png",
       "AssetKind": "All",
@@ -1993,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\home-w.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\how-img-1.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\how-img-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/how-img-1.jpg",
       "AssetKind": "All",
@@ -2012,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\how-img-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\how-img-2.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\how-img-2.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/how-img-2.jpg",
       "AssetKind": "All",
@@ -2031,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\how-img-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\how-img-3.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\how-img-3.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/how-img-3.jpg",
       "AssetKind": "All",
@@ -2050,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\how-img-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\line.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\line.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/line.png",
       "AssetKind": "All",
@@ -2069,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\line.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\list.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\list.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/list.png",
       "AssetKind": "All",
@@ -2088,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\list.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\logo.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\logo.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/logo.png",
       "AssetKind": "All",
@@ -2107,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\logo-icon.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\logo-icon.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/logo-icon.png",
       "AssetKind": "All",
@@ -2126,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\logo-icon.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\logo-w.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\logo-w.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/logo-w.png",
       "AssetKind": "All",
@@ -2145,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\logo-w.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\looking.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\looking.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/looking.png",
       "AssetKind": "All",
@@ -2164,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\looking.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\man.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\man.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/man.jpg",
       "AssetKind": "All",
@@ -2183,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\man.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\mockup.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\mockup.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/mockup.png",
       "AssetKind": "All",
@@ -2202,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\mockup.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\offers-banner-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\offers-banner-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/offers-banner-1.png",
       "AssetKind": "All",
@@ -2221,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\offers-banner-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\offers-banner-2.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\offers-banner-2.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/offers-banner-2.png",
       "AssetKind": "All",
@@ -2240,10 +2620,105 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\offers-banner-2.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\package-1.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\our-blog-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/our-blog-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\our-blog-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\our-blog-2.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/our-blog-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\our-blog-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\our-blog-3.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/our-blog-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\our-blog-3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\our-blog-4.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/our-blog-4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\our-blog-4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\our-blog-5.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/our-blog-5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\our-blog-5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\package-1.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/package-1.jpg",
       "AssetKind": "All",
@@ -2259,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\package-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\package-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\package-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/package-1.png",
       "AssetKind": "All",
@@ -2278,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\package-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\package-2.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\package-2.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/package-2.jpg",
       "AssetKind": "All",
@@ -2297,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\package-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\package-2.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\package-2.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/package-2.png",
       "AssetKind": "All",
@@ -2316,10 +2791,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\package-2.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\package-3.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\package-3.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/package-3.jpg",
       "AssetKind": "All",
@@ -2335,10 +2810,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\package-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\package-3.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\package-3.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/package-3.png",
       "AssetKind": "All",
@@ -2354,10 +2829,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\package-3.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-1.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/pets-1.jpg",
       "AssetKind": "All",
@@ -2373,10 +2848,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\pets-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-2.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-2.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/pets-2.jpg",
       "AssetKind": "All",
@@ -2392,10 +2867,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\pets-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-icon-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-icon-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/pets-icon-1.png",
       "AssetKind": "All",
@@ -2411,10 +2886,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\pets-icon-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-icon-2.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-icon-2.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/pets-icon-2.png",
       "AssetKind": "All",
@@ -2430,10 +2905,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\pets-icon-2.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-icon-3.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-icon-3.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/pets-icon-3.png",
       "AssetKind": "All",
@@ -2449,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\pets-icon-3.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-icon-4.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-icon-4.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/pets-icon-4.png",
       "AssetKind": "All",
@@ -2468,10 +2943,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\pets-icon-4.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-icon-5.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-icon-5.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/pets-icon-5.png",
       "AssetKind": "All",
@@ -2487,10 +2962,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\pets-icon-5.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-icon-6.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-icon-6.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/pets-icon-6.png",
       "AssetKind": "All",
@@ -2506,10 +2981,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\pets-icon-6.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pricing-1.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pricing-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/pricing-1.jpg",
       "AssetKind": "All",
@@ -2525,10 +3000,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\pricing-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pricing-2.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pricing-2.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/pricing-2.jpg",
       "AssetKind": "All",
@@ -2544,10 +3019,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\pricing-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pricing-3.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pricing-3.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/pricing-3.jpg",
       "AssetKind": "All",
@@ -2563,10 +3038,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\pricing-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pricing-4.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pricing-4.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/pricing-4.jpg",
       "AssetKind": "All",
@@ -2582,10 +3057,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\pricing-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pricing-5.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pricing-5.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/pricing-5.jpg",
       "AssetKind": "All",
@@ -2601,10 +3076,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\pricing-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pricing-6.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pricing-6.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/pricing-6.jpg",
       "AssetKind": "All",
@@ -2620,10 +3095,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\pricing-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-1.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/provide-1.jpg",
       "AssetKind": "All",
@@ -2639,10 +3114,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\provide-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-2.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-2.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/provide-2.jpg",
       "AssetKind": "All",
@@ -2658,10 +3133,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\provide-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-3.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-3.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/provide-3.jpg",
       "AssetKind": "All",
@@ -2677,10 +3152,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\provide-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-icon-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-icon-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/provide-icon-1.png",
       "AssetKind": "All",
@@ -2696,10 +3171,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\provide-icon-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-icon-2.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-icon-2.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/provide-icon-2.png",
       "AssetKind": "All",
@@ -2715,10 +3190,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\provide-icon-2.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-icon-3.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-icon-3.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/provide-icon-3.png",
       "AssetKind": "All",
@@ -2734,10 +3209,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\provide-icon-3.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-icon-4.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-icon-4.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/provide-icon-4.png",
       "AssetKind": "All",
@@ -2753,10 +3228,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\provide-icon-4.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-icon-5.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-icon-5.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/provide-icon-5.png",
       "AssetKind": "All",
@@ -2772,10 +3247,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\provide-icon-5.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-icon-6.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\provide-icon-6.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/provide-icon-6.png",
       "AssetKind": "All",
@@ -2791,10 +3266,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\provide-icon-6.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\puppies.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\puppies.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/puppies.png",
       "AssetKind": "All",
@@ -2810,10 +3285,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\puppies.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\quotation.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\quotation.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/quotation.png",
       "AssetKind": "All",
@@ -2829,10 +3304,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\quotation.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\quote.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\quote.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/quote.png",
       "AssetKind": "All",
@@ -2848,10 +3323,67 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\quote.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\remove.svg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\recent-posts-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/recent-posts-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\recent-posts-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\recent-posts-2.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/recent-posts-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\recent-posts-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\recent-posts-3.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/recent-posts-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\recent-posts-3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\remove.svg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/remove.svg",
       "AssetKind": "All",
@@ -2867,10 +3399,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\remove.svg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\remove-1.svg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\remove-1.svg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/remove-1.svg",
       "AssetKind": "All",
@@ -2886,10 +3418,67 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\remove-1.svg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\services-video.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\reviews-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/reviews-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\reviews-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\reviews-2.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/reviews-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\reviews-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\reviews-3.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/reviews-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\reviews-3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\services-video.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/services-video.jpg",
       "AssetKind": "All",
@@ -2905,10 +3494,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\services-video.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\service-video.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\service-video.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/service-video.jpg",
       "AssetKind": "All",
@@ -2924,10 +3513,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\service-video.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\shaps-golo.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\shaps-golo.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/shaps-golo.png",
       "AssetKind": "All",
@@ -2943,10 +3532,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\shaps-golo.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\slide-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\slide-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/slide-1.png",
       "AssetKind": "All",
@@ -2962,10 +3551,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\slide-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\slide-4.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\slide-4.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/slide-4.png",
       "AssetKind": "All",
@@ -2981,10 +3570,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\slide-4.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\slide-image-2.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\slide-image-2.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/slide-image-2.png",
       "AssetKind": "All",
@@ -3000,10 +3589,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\slide-image-2.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\slide-image-3.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\slide-image-3.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/slide-image-3.png",
       "AssetKind": "All",
@@ -3019,10 +3608,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\slide-image-3.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\subscribe.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\subscribe.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/subscribe.jpg",
       "AssetKind": "All",
@@ -3038,10 +3627,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\subscribe.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\subscribe-icon.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\subscribe-icon.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/subscribe-icon.png",
       "AssetKind": "All",
@@ -3057,10 +3646,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\subscribe-icon.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\svg.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\svg.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/svg.png",
       "AssetKind": "All",
@@ -3076,10 +3665,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\svg.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\team-1.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\team-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/team-1.jpg",
       "AssetKind": "All",
@@ -3095,10 +3684,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\team-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\team-2.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\team-2.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/team-2.jpg",
       "AssetKind": "All",
@@ -3114,10 +3703,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\team-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\team-3.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\team-3.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/team-3.jpg",
       "AssetKind": "All",
@@ -3133,10 +3722,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\team-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\team-pages-1.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\team-pages-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/team-pages-1.jpg",
       "AssetKind": "All",
@@ -3152,10 +3741,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\team-pages-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\tick.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\tick.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/tick.png",
       "AssetKind": "All",
@@ -3171,10 +3760,67 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\tick.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\visa.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\top-products-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/top-products-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\top-products-1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\top-products-2.png",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/top-products-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\top-products-2.png"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\top-products-3.png",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "BasePath": "_content/PetShop_Patte",
+      "RelativePath": "assets/img/top-products-3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\top-products-3.png"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\visa.jpg",
+      "SourceId": "PetShop_Patte",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/visa.jpg",
       "AssetKind": "All",
@@ -3190,10 +3836,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\visa.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\welcome-to-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\welcome-to-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/welcome-to-1.png",
       "AssetKind": "All",
@@ -3209,10 +3855,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\welcome-to-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\welcome-to-2.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\welcome-to-2.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/welcome-to-2.png",
       "AssetKind": "All",
@@ -3228,10 +3874,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\welcome-to-2.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\welcome-to-3.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\welcome-to-3.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/welcome-to-3.png",
       "AssetKind": "All",
@@ -3247,10 +3893,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\welcome-to-3.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\welcome-to-4.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\welcome-to-4.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/welcome-to-4.png",
       "AssetKind": "All",
@@ -3266,10 +3912,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\welcome-to-4.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\welcome-to-5.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\welcome-to-5.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/welcome-to-5.png",
       "AssetKind": "All",
@@ -3285,10 +3931,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\welcome-to-5.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\welcome-to-6.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\welcome-to-6.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/welcome-to-6.png",
       "AssetKind": "All",
@@ -3304,10 +3950,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\welcome-to-6.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\we-provide-1.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\we-provide-1.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/we-provide-1.jpg",
       "AssetKind": "All",
@@ -3323,10 +3969,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\we-provide-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\we-provide-2.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\we-provide-2.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/we-provide-2.jpg",
       "AssetKind": "All",
@@ -3342,10 +3988,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\we-provide-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\we-provide-3.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\we-provide-3.jpg",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/we-provide-3.jpg",
       "AssetKind": "All",
@@ -3361,10 +4007,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\we-provide-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\works-1.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\works-1.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/works-1.png",
       "AssetKind": "All",
@@ -3380,10 +4026,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\works-1.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\works-2.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\works-2.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/works-2.png",
       "AssetKind": "All",
@@ -3399,10 +4045,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\works-2.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\works-3.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\works-3.png",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/img/works-3.png",
       "AssetKind": "All",
@@ -3418,10 +4064,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\works-3.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\bootstrap.min.js",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -3437,10 +4083,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\bootstrap.min.js.map",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -3456,10 +4102,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\carousel-in.js",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\carousel-in.js",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/js/carousel-in.js",
       "AssetKind": "All",
@@ -3475,10 +4121,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\carousel-in.js"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\custom.js",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\custom.js",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/js/custom.js",
       "AssetKind": "All",
@@ -3494,10 +4140,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\custom.js"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\jquery.fancybox.min.js",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\jquery.fancybox.min.js",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/js/jquery.fancybox.min.js",
       "AssetKind": "All",
@@ -3513,10 +4159,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\jquery.fancybox.min.js"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\jquery.nice-select.min.js",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\jquery.nice-select.min.js",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/js/jquery.nice-select.min.js",
       "AssetKind": "All",
@@ -3532,10 +4178,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\jquery.nice-select.min.js"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\jquery-3.6.0.min.js",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\jquery-3.6.0.min.js",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/js/jquery-3.6.0.min.js",
       "AssetKind": "All",
@@ -3551,10 +4197,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\jquery-3.6.0.min.js"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\owl.carousel.min.js",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\owl.carousel.min.js",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/js/owl.carousel.min.js",
       "AssetKind": "All",
@@ -3570,10 +4216,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\owl.carousel.min.js"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\preloader.js",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\preloader.js",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/js/preloader.js",
       "AssetKind": "All",
@@ -3589,10 +4235,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\preloader.js"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\slick.min.js",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\slick.min.js",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/js/slick.min.js",
       "AssetKind": "All",
@@ -3608,10 +4254,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\slick.min.js"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\slider_input.js",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\slider_input.js",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/js/slider_input.js",
       "AssetKind": "All",
@@ -3627,10 +4273,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\slider_input.js"
     },
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\wrapper.js",
+      "Identity": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\js\\wrapper.js",
       "SourceId": "PetShop_Patte",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\",
       "BasePath": "_content/PetShop_Patte",
       "RelativePath": "assets/js/wrapper.js",
       "AssetKind": "All",
