@@ -70,7 +70,7 @@
               </div>
             <div class="login">
                 <i class="fa-solid fa-user"></i>
-                <a href="login.html">Login / Register</a>
+                <a asp-action="Index" asp-controller="Login">Login / Register</a>
               </div>
           </div>
         </div>
@@ -82,16 +82,12 @@
       <a href="index.html"><img src="~/assets/img/logo.png" alt="logo"></a>
         <nav class="navbar">
         <ul class="navbar-links">
-                    <li class="navbar-dropdown menu-item-children">
-                      <a href="javascript:void(0)"><i>
-                        <img alt="home" src="~/assets/img/home.png">
-                      </i>home</a>
-                      <div class="dropdown">
-                        <a href="index.html">home 1</a>
-                        <a asp-action="Index" asp-controller="Home">home 2</a>
-                        <a href="index-3.html">home 3</a>
-                      </div>
-                    </li>
+                        <li class="navbar-dropdown">
+                            <a href="javascript:void(0)">
+                                <i><img alt="home" src="assets/img/home.png"></i>
+                                <a asp-action="Index" asp-controller="Home">home 2</a>
+                            </a>
+                        </li>
                     <li class="navbar-dropdown">
                             <a asp-action="Index" asp-controller="About">About</a>
                     </li>
@@ -111,13 +107,14 @@
                                 <a asp-action="Index" asp-controller="History">history</a>
                                 <a asp-action="Index" asp-controller="PricingPack">pricing packages</a>
                                 <a asp-action="Index" asp-controller="PhotoGalary">photo gallery</a>
-                                <a asp-action="Index" asp-controller="Login">login</a>
                       </div>
                     </li>
                     <li class="navbar-dropdown menu-item-children">
                       <a href="javascript:void(0)">Shop</a>
                       <div class="dropdown">
+                                <a asp-action="Index" asp-controller="Pet">Our Pets</a>
                                 <a asp-action="Index" asp-controller="OurProducts">our products</a>
+                                <a asp-action="Index" asp-controller="PetDetail">pet details</a>
                                 <a asp-action="Index" asp-controller="ProductDetail">product details</a>
                                 <a asp-action="Index" asp-controller="ShopCart">shop cart</a>
                                 <a asp-action="Index" asp-controller="CartCheckout">cart checkout</a>

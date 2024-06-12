@@ -89,6 +89,30 @@
       "PackagePath": "staticwebassets\\assets\\fonts\\fa-v4compatibility.woff2"
     },
     {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\PetList-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\PetList-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\PetList-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\PetList-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\PetList-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\PetList-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\PetList-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\PetList-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\PetList-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\PetList-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\PetList-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\PetList-6.jpg"
+    },
+    {
       "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\about-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\about-1.jpg"
     },
@@ -187,6 +211,10 @@
     {
       "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\boy.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\boy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\breeder_details.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\breeder_details.jpg"
     },
     {
       "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\client-b.jpg",
@@ -587,6 +615,10 @@
     {
       "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\package-3.png",
       "PackagePath": "staticwebassets\\assets\\img\\package-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pawprint.png",
+      "PackagePath": "staticwebassets\\assets\\img\\pawprint.png"
     },
     {
       "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\assets\\img\\pets-1.jpg",
