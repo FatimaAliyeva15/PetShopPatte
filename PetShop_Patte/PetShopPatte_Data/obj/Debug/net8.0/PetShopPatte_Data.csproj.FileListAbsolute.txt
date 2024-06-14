@@ -1,0 +1,12 @@
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\bin\Debug\net8.0\PetShopPatte_Data.deps.json
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\bin\Debug\net8.0\PetShopPatte_Data.dll
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\bin\Debug\net8.0\PetShopPatte_Data.pdb
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\net8.0\PetShopPatte_Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\net8.0\PetShopPatte_Data.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\net8.0\PetShopPatte_Data.AssemblyInfo.cs
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\net8.0\PetShopPatte_Data.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\net8.0\PetShopPatte_Data.sourcelink.json
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\net8.0\PetShopPatte_Data.dll
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\net8.0\refint\PetShopPatte_Data.dll
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\net8.0\PetShopPatte_Data.pdb
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\net8.0\ref\PetShopPatte_Data.dll
