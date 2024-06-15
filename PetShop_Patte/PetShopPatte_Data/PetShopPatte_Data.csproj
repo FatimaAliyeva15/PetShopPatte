@@ -19,9 +19,4 @@
     <ProjectReference Include="..\PetShopPatte_Core\PetShopPatte_Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\Abstracts\" />
-    <Folder Include="Repositories\Concretes\" />
-  </ItemGroup>
-
 </Project>

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PetShopPatte_Data.Repositories
 {
-    public interface IRepository<T> where T : BaseEntity, new()
+    public interface IGenericRepository<T> where T : BaseEntity, new()
     {
         void Add(T entity);
         void HardDelete(T entity);

@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 
 namespace PetShopPatte_Data.Repositories
 {
-    public class Repository<T> : IRepository<T> where T : BaseEntity, new()
+    public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity, new()
     {
         private readonly AppDbContext _appDbContext;
 
 
-        public Repository(AppDbContext appDbContext)
+        public GenericRepository(AppDbContext appDbContext)
         {
             _appDbContext = appDbContext;
         }
