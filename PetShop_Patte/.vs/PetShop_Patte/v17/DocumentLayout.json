@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7B428800-4130-4574-9B76-B2D6858461F7}|PetShopPatte_Data\\PetShopPatte_Data.csproj|c:\\users\\asus\\desktop\\petshop_patte\\petshop_patte\\petshoppatte_data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B428800-4130-4574-9B76-B2D6858461F7}|PetShopPatte_Data\\PetShopPatte_Data.csproj|solutionrelative:petshoppatte_data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B428800-4130-4574-9B76-B2D6858461F7}|PetShopPatte_Data\\PetShopPatte_Data.csproj|c:\\users\\asus\\desktop\\petshop_patte\\petshop_patte\\petshoppatte_data\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B428800-4130-4574-9B76-B2D6858461F7}|PetShopPatte_Data\\PetShopPatte_Data.csproj|solutionrelative:petshoppatte_data\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A424CAB-23DA-4918-9303-F02A8921F85C}|PetShop_Patte\\PetShop_Patte.csproj|c:\\users\\asus\\desktop\\petshop_patte\\petshop_patte\\petshop_patte\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A424CAB-23DA-4918-9303-F02A8921F85C}|PetShop_Patte\\PetShop_Patte.csproj|solutionrelative:petshop_patte\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +22,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShopPatte_Data\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "PetShopPatte_Data\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShopPatte_Data\\Repositories\\Repository.cs",
+              "RelativeToolTip": "PetShopPatte_Data\\Repositories\\Repository.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAADoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T14:56:39.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShopPatte_Data\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "PetShopPatte_Data\\Repositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShopPatte_Data\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "PetShopPatte_Data\\Repositories\\IRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T14:47:41.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\Program.cs",
+              "RelativeDocumentMoniker": "PetShop_Patte\\Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\Program.cs",
+              "RelativeToolTip": "PetShop_Patte\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T14:27:26.268Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"

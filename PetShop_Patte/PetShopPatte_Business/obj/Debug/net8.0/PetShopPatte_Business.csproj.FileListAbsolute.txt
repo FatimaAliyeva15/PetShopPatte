@@ -10,3 +10,9 @@ C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Business\obj\Debu
 C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Business\obj\Debug\net8.0\refint\PetShopPatte_Business.dll
 C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Business\obj\Debug\net8.0\PetShopPatte_Business.pdb
 C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Business\obj\Debug\net8.0\ref\PetShopPatte_Business.dll
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Business\bin\Debug\net8.0\PetShopPatte_Core.dll
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Business\bin\Debug\net8.0\PetShopPatte_Data.dll
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Business\bin\Debug\net8.0\PetShopPatte_Data.pdb
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Business\bin\Debug\net8.0\PetShopPatte_Core.pdb
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Business\obj\Debug\net8.0\PetShopPatte_Business.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Business\obj\Debug\net8.0\PetShopP.6EF6AA89.Up2Date

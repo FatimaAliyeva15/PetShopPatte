@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using PetShopPatte_Data.DAL;
+
 namespace PetShop_Patte
 {
     public class Program
@@ -8,6 +11,11 @@ namespace PetShop_Patte
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<AppDbContext>(opt =>
+            {
+                opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+            });
 
             var app = builder.Build();
 

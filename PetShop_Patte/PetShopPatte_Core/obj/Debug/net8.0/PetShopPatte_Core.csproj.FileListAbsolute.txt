@@ -10,3 +10,4 @@ C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Core\obj\Debug\ne
 C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Core\obj\Debug\net8.0\refint\PetShopPatte_Core.dll
 C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Core\obj\Debug\net8.0\PetShopPatte_Core.pdb
 C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Core\obj\Debug\net8.0\ref\PetShopPatte_Core.dll
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Core\obj\Debug\net8.0\PetShopPatte_Core.csproj.AssemblyReference.cache

@@ -10,3 +10,9 @@ C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\ne
 C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\net8.0\refint\PetShopPatte_Data.dll
 C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\net8.0\PetShopPatte_Data.pdb
 C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\net8.0\ref\PetShopPatte_Data.dll
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\bin\Debug\net8.0\PetShopPatte_Data.runtimeconfig.json
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\bin\Debug\net8.0\PetShopPatte_Core.dll
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\bin\Debug\net8.0\PetShopPatte_Core.pdb
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\net8.0\PetShopPatte_Data.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\net8.0\PetShopP.6A509ADD.Up2Date
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShopPatte_Data\obj\Debug\net8.0\PetShopPatte_Data.genruntimeconfig.cache
