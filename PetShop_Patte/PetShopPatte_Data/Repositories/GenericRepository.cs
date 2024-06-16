@@ -37,27 +37,34 @@ namespace PetShopPatte_Data.Repositories
                 _appDbContext.Set<T>().Where(func).FirstOrDefault();
         }
 
-        public async Task<IQueryable<T>> GetAllAsync(Expression<Func<T, bool>>? func = null, Expression<Func<T, object>>? orderBy = null, bool isOrderByDesting = false, params string[]? includes)
+        public ICollection<T> GetAll(Func<T, bool>? func = null)
         {
-            IQueryable<T> data = _appDbContext.Set<T>();
-
-            if(includes is not null)
-            {
-                for(int i = 0; i < includes.Length; i++)
-                {
-                    data = data.Include(includes[i]);
-                }
-            }
-
-            if(orderBy is not null)
-            {
-                data = isOrderByDesting ?
-                    data.OrderByDescending(orderBy) :
-                    data.OrderBy(orderBy);
-            }
-
-            return func == null ? data : data.Where(func);
+            return func == null ?
+               _appDbContext.Set<T>().ToList() :
+               _appDbContext.Set<T>().Where(func).ToList();
         }
+
+        //public async Task<IQueryable<T>> GetAllAsync(Expression<Func<T, bool>>? func = null, Expression<Func<T, object>>? orderBy = null, bool isOrderByDesting = false, params string[]? includes)
+        //{
+        //    IQueryable<T> data = _appDbContext.Set<T>();
+
+        //    if(includes is not null)
+        //    {
+        //        for(int i = 0; i < includes.Length; i++)
+        //        {
+        //            data = data.Include(includes[i]);
+        //        }
+        //    }
+
+        //    if(orderBy is not null)
+        //    {
+        //        data = isOrderByDesting ?
+        //            data.OrderByDescending(orderBy) :
+        //            data.OrderBy(orderBy);
+        //    }
+
+        //    return func == null ? data : data.Where(func);
+        //}
 
         public void HardDelete(T entity)
         {

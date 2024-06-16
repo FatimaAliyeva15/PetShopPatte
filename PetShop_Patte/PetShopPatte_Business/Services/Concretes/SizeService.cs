@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using PetShopPatte_Business.DTOs.SizeDTO;
+using PetShopPatte_Business.Exceptions.SizeExceptions;
 using PetShopPatte_Business.Services.Abstracts;
 using PetShopPatte_Core.Entities;
 using PetShopPatte_Data.Repositories.Abstracts;
@@ -24,32 +25,79 @@ namespace PetShopPatte_Business.Services.Concretes
 
         public void AddSize(SizeCreateDTO sizeCreateDTO)
         {
-            throw new NotImplementedException();
+            Size size = _mapper.Map<Size>(sizeCreateDTO);
+
+            if (size == null)
+                throw new NullSizeException("Size cnnot be null");
+
+            if(!_sizeRepository.GetAll().Any(x => x.SizeName == size.SizeName))
+            {
+                _sizeRepository.Add(size);
+                _sizeRepository.Commit();
+            }
+            else
+            {
+                throw new DuplicateSizeException("SizeName", "Size name cannot be the same");
+            }
         }
 
-        public IQueryable<SizeGetDTO> GetAllSizes()
+        public ICollection<SizeGetDTO> GetAllSizes(Func<Size, bool>? func = null)
         {
-            throw new NotImplementedException();
+            var sizes = _sizeRepository.GetAll(func);
+
+            ICollection<SizeGetDTO> sizeGetDTOs = new List<SizeGetDTO>();
+            foreach (var size in sizes)
+            {
+                SizeGetDTO sizeGetDTO = new SizeGetDTO()
+                {
+                    Id = size.Id,
+                    SizeName = size.SizeName,
+                };
+
+                sizeGetDTOs.Add(sizeGetDTO);
+            }
+            return sizeGetDTOs;
         }
 
         public SizeGetDTO GetSize(Func<Size, bool>? func = null)
         {
-            throw new NotImplementedException();
+            var size = _sizeRepository.Get(func);
+
+            SizeGetDTO sizeGetDTO = _mapper.Map<SizeGetDTO>(size);
+            return sizeGetDTO;
         }
 
         public void HardDeleteSize(int id)
         {
-            throw new NotImplementedException();
+            var existSize = _sizeRepository.Get(x => x.Id == id);
+
+            if (existSize == null)
+                throw new NullSizeException("Size cannot be null");
+
+            _sizeRepository.HardDelete(existSize);
+            _sizeRepository.Commit();
         }
 
         public void SoftDeleteSize(int id)
         {
-            throw new NotImplementedException();
+            var existSize = _sizeRepository.Get(x => x.Id == id);
+
+            if (existSize == null)
+                throw new NullSizeException("Size cannot be null");
+
+            _sizeRepository.SoftDelete(existSize);
+            _sizeRepository.Commit();
         }
 
         public void UpdateSize(SizeUpdateDTO sizeUpdateDTO)
         {
-            throw new NotImplementedException();
+            var existSize = _sizeRepository.Get(x => x.Id == sizeUpdateDTO.Id);
+
+            if (existSize == null)
+                throw new NullSizeException("Size cannot be null");
+
+            existSize.SizeName = sizeUpdateDTO.SizeName;
+            _sizeRepository.Commit();
         }
     }
 }

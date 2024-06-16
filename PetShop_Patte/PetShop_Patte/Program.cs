@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using PetShopPatte_Business.Services.Abstracts;
+using PetShopPatte_Business.Services.Concretes;
 using PetShopPatte_Data.DAL;
+using PetShopPatte_Data.Repositories.Abstracts;
+using PetShopPatte_Data.Repositories.Concretes;
 
 namespace PetShop_Patte
 {
@@ -16,6 +20,9 @@ namespace PetShop_Patte
             {
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
             });
+
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
+            builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
             var app = builder.Build();
 

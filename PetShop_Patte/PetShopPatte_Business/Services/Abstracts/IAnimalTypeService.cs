@@ -15,6 +15,6 @@ namespace PetShopPatte_Business.Services.Abstracts
         void HardDeleteAnimalType(int id);
         void SoftDeleteAnimalType(int id);
         AnimalTypeGetDTO GetAnimalType(Func<AnimalType, bool>? func = null);
-        IQueryable<AnimalTypeGetDTO> GetAllAnimalTypes();
+        ICollection<AnimalTypeGetDTO> GetAllAnimalTypes(Func<AnimalType, bool>? func = null);
     }
 }

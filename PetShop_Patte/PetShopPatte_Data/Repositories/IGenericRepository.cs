@@ -14,10 +14,11 @@ namespace PetShopPatte_Data.Repositories
         void HardDelete(T entity);
         void SoftDelete(T entity);
         T Get(Func<T, bool>? func = null);
-        Task<IQueryable<T>> GetAllAsync(Expression<Func<T, bool>>? func = null,
-            Expression<Func<T, object>>? orderBy = null,
-            bool isOrderByDesting = false,
-            params string[]? includes);
+        ICollection<T> GetAll(Func<T, bool>? func = null);
+        //Task<IQueryable<T>> GetAllAsync(Expression<Func<T, bool>>? func = null,
+        //    Expression<Func<T, object>>? orderBy = null,
+        //    bool isOrderByDesting = false,
+        //    params string[]? includes);
         int Commit();
     }
 }

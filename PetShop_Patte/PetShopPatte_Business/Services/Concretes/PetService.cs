@@ -27,7 +27,7 @@ namespace PetShopPatte_Business.Services.Concretes
             throw new NotImplementedException();
         }
 
-        public IQueryable<PetGetDTO> GetAllPets()
+        public ICollection<PetGetDTO> GetAllPets(Func<Pet, bool>? func = null)
         {
             throw new NotImplementedException();
         }

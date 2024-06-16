@@ -15,6 +15,6 @@ namespace PetShopPatte_Business.Services.Abstracts
         void HardDeleteSubcategory(int id);
         void SoftDeleteSubcategory(int id);
         SubcategoryGetDTO GetSubcategory(Func<Subcategory, bool>? func = null);
-        IQueryable<SubcategoryGetDTO> GetAllSubcategories();
+        ICollection<SubcategoryGetDTO> GetAllSubcategories(Func<Subcategory, bool>? func = null);
     }
 }

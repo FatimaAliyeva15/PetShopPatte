@@ -15,6 +15,6 @@ namespace PetShopPatte_Business.Services.Abstracts
         void HardDeleteColor(int id);
         void SoftDeleteColor(int id);
         ColorGetDTO GetColor(Func<Color, bool>? func = null);
-        IQueryable<ColorGetDTO> GetAllColors();
+        ICollection<ColorGetDTO> GetAllColors(Func<Color, bool>? func = null);
     }
 }

@@ -15,6 +15,6 @@ namespace PetShopPatte_Business.Services.Abstracts
         void HardDeleteSize(int id);
         void SoftDeleteSize(int id);
         SizeGetDTO GetSize(Func<Size, bool>? func = null);
-        IQueryable<SizeGetDTO> GetAllSizes();
+        ICollection<SizeGetDTO> GetAllSizes(Func<Size, bool>? func = null);
     }
 }

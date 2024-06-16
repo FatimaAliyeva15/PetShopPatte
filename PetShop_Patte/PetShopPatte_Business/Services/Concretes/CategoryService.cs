@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using PetShopPatte_Business.DTOs.CategoryDTO;
+using PetShopPatte_Business.Exceptions.CategoryExceptions;
 using PetShopPatte_Business.Services.Abstracts;
 using PetShopPatte_Core.Entities;
 using PetShopPatte_Data.Repositories.Abstracts;
@@ -24,32 +25,81 @@ namespace PetShopPatte_Business.Services.Concretes
 
         public void AddCategory(CategoryCreateDTO categoryCreateDTO)
         {
-            throw new NotImplementedException();
+            Category category = _mapper.Map<Category>(categoryCreateDTO);
+
+            if (category == null) 
+                throw new NullCategoryException("Category cannot be null");
+
+            if (!_categoryRepository.GetAll().Any(x => x.CategoryName == category.CategoryName))
+            {
+                _categoryRepository.Add(category);
+                _categoryRepository.Commit();
+            }
+            else
+            {
+                throw new DuplicateCategoryException("CategoryName", "Category name cannot be the same");
+            }
         }
 
-        public IQueryable<CategoryGetDTO> GetAllCategories()
+        public ICollection<CategoryGetDTO> GetAllCategories(Func<Category, bool>? func = null)
         {
-            throw new NotImplementedException();
+            var categories = _categoryRepository.GetAll(func);
+
+            ICollection<CategoryGetDTO> categoryGetDTOs = new List<CategoryGetDTO>();
+
+            foreach (var category in categories)
+            {
+                CategoryGetDTO categoryGetDTO = new CategoryGetDTO()
+                {
+                    Id = category.Id,
+                    CategoryName = category.CategoryName,
+                };
+
+                categoryGetDTOs.Add(categoryGetDTO);
+            }
+
+            return categoryGetDTOs;
         }
 
         public CategoryGetDTO GetCategory(Func<Category, bool>? func = null)
         {
-            throw new NotImplementedException();
+            var category = _categoryRepository.Get(func);
+
+            CategoryGetDTO categoryGetDTO = _mapper.Map<CategoryGetDTO>(category);
+            return categoryGetDTO;
         }
 
         public void HardDeleteCatagory(int id)
         {
-            throw new NotImplementedException();
+            var existCategory = _categoryRepository.Get(x => x.Id == id);
+
+            if (existCategory == null)
+                throw new NullCategoryException("Category cannot be null");
+
+            _categoryRepository.HardDelete(existCategory);
+            _categoryRepository.Commit();
         }
 
         public void SoftDeleteCatagory(int id)
         {
-            throw new NotImplementedException();
+            var existCategory = _categoryRepository.Get(x => x.Id == id);
+
+            if (existCategory == null)
+                throw new NullCategoryException("Category cannot be null");
+
+            _categoryRepository.SoftDelete(existCategory);
+            _categoryRepository.Commit();
         }
 
         public void UpdateCategory(CategoryUpdateDTO categoryUpdateDTO)
         {
-            throw new NotImplementedException();
+            var existCategory = _categoryRepository.Get(x => x.Id == categoryUpdateDTO.Id);
+
+            if (existCategory == null)
+                throw new NullCategoryException("Category cannot be null");
+
+            existCategory.CategoryName = categoryUpdateDTO.CategoryName;
+            _categoryRepository.Commit();
         }
     }
 }
