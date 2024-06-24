@@ -138,7 +138,7 @@
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="sub-menu-item">
-                                            <a href="category-list.html" class="">
+                                            <a asp-action="Index" asp-controller="Category" class="">
                                                 <div class="text">Category list</div>
                                             </a>
                                         </li>
@@ -147,6 +147,20 @@
                                                 <div class="text">New category</div>
                                             </a>
                                         </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item has-children">
+                                    <a href="javascript:void(0);" class="menu-item-button">
+                                        <div class="icon"><i class="icon-layers"></i></div>
+                                        <div class="text">Subcategory</div>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a asp-action="Index" asp-controller="Subcategory" class="">
+                                                <div class="text">Subcategory list</div>
+                                            </a>
+                                        </li>
+                                        
                                     </ul>
                                 </li>
                                 <li class="menu-item has-children">
@@ -832,7 +846,6 @@
                     </div>
                     <!-- /header-dashboard -->
         @RenderBody()
-
                     <!-- bottom-page -->
                     <div class="bottom-page">
                         <div class="body-text">Copyright © 2024 Remos. Design with</div>
