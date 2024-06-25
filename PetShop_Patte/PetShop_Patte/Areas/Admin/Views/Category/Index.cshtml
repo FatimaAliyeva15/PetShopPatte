@@ -1,5 +1,5 @@
 ﻿@using PetShopPatte_Core.Entities
-@model List<Category>
+@model IEnumerable<Category>
 
 @{
     int count = 0;
@@ -55,7 +55,7 @@
                             </div>
                         </form>
                     </div>
-                    <a class="tf-button style-1 w208" href="new-category.html"><i class="icon-plus"></i>Add new</a>
+                    <a class="tf-button style-1 w208" asp-action="Create" asp-controller="Category"><i class="icon-plus"></i>Add new</a>
                 </div>
                 <div class="wg-table table-all-category">
                     <ul class="table-title flex gap20 mb-14">

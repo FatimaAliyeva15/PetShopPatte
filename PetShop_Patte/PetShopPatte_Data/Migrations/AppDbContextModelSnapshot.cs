@@ -45,6 +45,9 @@ namespace PetShopPatte_Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -52,6 +55,9 @@ namespace PetShopPatte_Data.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -66,16 +72,25 @@ namespace PetShopPatte_Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("CategoryIcon")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("CategoryName")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.Property<int?>("ParentCategoryId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -97,8 +112,14 @@ namespace PetShopPatte_Data.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -114,6 +135,7 @@ namespace PetShopPatte_Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<byte>("Age")
+                        .HasMaxLength(5)
                         .HasColumnType("tinyint");
 
                     b.Property<int?>("AnimalTypeId")
@@ -126,6 +148,9 @@ namespace PetShopPatte_Data.Migrations
 
                     b.Property<int?>("ColorId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Gender")
                         .IsRequired()
@@ -149,6 +174,9 @@ namespace PetShopPatte_Data.Migrations
                     b.Property<int?>("TypeId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
 
                     b.HasIndex("AnimalTypeId");
@@ -171,6 +199,9 @@ namespace PetShopPatte_Data.Migrations
                     b.Property<int?>("AnimalTypeId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("ImgUrl")
                         .HasColumnType("nvarchar(max)");
 
@@ -184,6 +215,9 @@ namespace PetShopPatte_Data.Migrations
 
                     b.Property<int?>("SubcategoryId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -202,10 +236,13 @@ namespace PetShopPatte_Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("ImgUrl")
                         .HasColumnType("nvarchar(max)");
@@ -214,13 +251,18 @@ namespace PetShopPatte_Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<decimal>("Price")
+                        .HasMaxLength(18)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int?>("ProductId")
                         .HasColumnType("int");
 
                     b.Property<int>("StockQuantity")
+                        .HasMaxLength(5)
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -237,13 +279,19 @@ namespace PetShopPatte_Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.Property<string>("SizeName")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -261,6 +309,9 @@ namespace PetShopPatte_Data.Migrations
                     b.Property<int?>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -268,6 +319,9 @@ namespace PetShopPatte_Data.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 

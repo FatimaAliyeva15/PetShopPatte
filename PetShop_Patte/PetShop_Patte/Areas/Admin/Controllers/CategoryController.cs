@@ -18,7 +18,7 @@ namespace PetShop_Patte.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var categories  = await _categoryService.GetAllCategories();
+            IEnumerable<Category> categories  = await _categoryService.GetAllCategories();
             return View(categories);
         }
 
