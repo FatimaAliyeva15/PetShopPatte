@@ -11,9 +11,6 @@ namespace PetShopPatte_Core.Entities
 {
     public class AnimalType: BaseEntity
     {
-        [Required]
-        [MinLength(2)]
-        [MaxLength(100)]
         public string Type { get; set; }
         public List<Pet> Pets { get; set; }
         public List<Product> Products { get; set; }

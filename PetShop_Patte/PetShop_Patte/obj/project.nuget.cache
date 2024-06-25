@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "oTkVH2fWQL/sj2Y9eJw/yqQ6/uY9ZIirUVA3VJfpptTu8yHML2Lf82Yfz8ljl+M8YPc/bnoVytzvM4ZcjTRlPA==",
+  "dgSpecHash": "R7mHUhXb7aPmVzURA73MQIU8uCEsRNZzXgIRyenzNZGHxZ8f0tDiqmLR9CI/4FUEITQK3xKncyBG6MNYie3Ipg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

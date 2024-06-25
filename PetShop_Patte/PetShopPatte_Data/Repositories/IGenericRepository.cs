@@ -10,15 +10,20 @@ namespace PetShopPatte_Data.Repositories
 {
     public interface IGenericRepository<T> where T : BaseEntity, new()
     {
-        void Add(T entity);
-        void HardDelete(T entity);
-        void SoftDelete(T entity);
-        T Get(Func<T, bool>? func = null);
-        ICollection<T> GetAll(Func<T, bool>? func = null);
-        //Task<IQueryable<T>> GetAllAsync(Expression<Func<T, bool>>? func = null,
-        //    Expression<Func<T, object>>? orderBy = null,
-        //    bool isOrderByDesting = false,
-        //    params string[]? includes);
-        int Commit();
+        Task<T> AddAsync(T entity);
+        Task<T> UpdateAsync(T entity);
+        Task<T> HardDelete(int id);
+        Task<T> SoftDelete(int id);
+        Task DeleteDb(int id);
+        Task<T> GetByIdAsync(int id, params string[] entityIncludes);
+        Task<T> CheckEntity(int id, params string[] entityIncludes);
+
+        Task<IQueryable<T>> GetAllAsync(Expression<Func<T, bool>>? func = null,
+            Expression<Func<T, object>>? orderBy = null,
+            bool isOrderByDesting = false,
+            params string[] includes);
+
+        Task<int> Commit();
+        Task<bool> IsExists(int id);
     }
 }

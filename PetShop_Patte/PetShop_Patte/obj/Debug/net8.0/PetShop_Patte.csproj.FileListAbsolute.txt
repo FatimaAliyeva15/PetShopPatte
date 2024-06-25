@@ -288,3 +288,4 @@ C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShop_Patte\bin\Debug\net8.0
 C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShop_Patte\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShop_Patte\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShop_Patte\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShop_Patte\bin\Debug\net8.0\FluentValidation.dll

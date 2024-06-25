@@ -15,6 +15,7 @@ namespace PetShopPatte_Core.Entities
         [MinLength(2)]
         [MaxLength(100)]
         public string CategoryName { get; set; }
+        public string? CategoryIcon { get; set; }
         public int? ParentCategoryId { get; set; }
         public Category ParentCategory { get; set; }
         public List<Subcategory> Subcategories { get; set; }

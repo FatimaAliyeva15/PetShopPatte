@@ -10,9 +10,7 @@ namespace PetShopPatte_Business.DTOs.SizeDTO
     public class SizeGetDTO
     {
         public int Id { get; set; }
-        [Required]
-        [MinLength(3)]
-        [MaxLength(100)]
+        
         public string SizeName { get; set; }
     }
 }

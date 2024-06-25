@@ -23,17 +23,19 @@ namespace PetShopPatte_Business.Services.Concretes
             _mapper = mapper;
         }
 
-        public void AddCategory(CategoryCreateDTO categoryCreateDTO)
+        public async Task AddCategory(CategoryCreateDTO categoryCreateDTO)
         {
             Category category = _mapper.Map<Category>(categoryCreateDTO);
 
-            if (category == null) 
+            if (category == null)
                 throw new NullCategoryException("Category cannot be null");
 
-            if (!_categoryRepository.GetAll().Any(x => x.CategoryName == category.CategoryName))
+            var categories = await _categoryRepository.GetAllAsync();
+
+            if (!categories.Any(x => x.CategoryName == category.CategoryName))
             {
-                _categoryRepository.Add(category);
-                _categoryRepository.Commit();
+                await _categoryRepository.AddAsync(category);
+                await _categoryRepository.Commit();
             }
             else
             {
@@ -41,65 +43,44 @@ namespace PetShopPatte_Business.Services.Concretes
             }
         }
 
-        public ICollection<CategoryGetDTO> GetAllCategories(Func<Category, bool>? func = null)
+        public async Task DeleteDb(int id)
         {
-            var categories = _categoryRepository.GetAll(func);
-
-            ICollection<CategoryGetDTO> categoryGetDTOs = new List<CategoryGetDTO>();
-
-            foreach (var category in categories)
-            {
-                CategoryGetDTO categoryGetDTO = new CategoryGetDTO()
-                {
-                    Id = category.Id,
-                    CategoryName = category.CategoryName,
-                };
-
-                categoryGetDTOs.Add(categoryGetDTO);
-            }
-
-            return categoryGetDTOs;
+            await _categoryRepository.DeleteDb(id);
+            await _categoryRepository.Commit(); 
         }
 
-        public CategoryGetDTO GetCategory(Func<Category, bool>? func = null)
+        public async Task<IQueryable<Category>> GetAllCategories()
         {
-            var category = _categoryRepository.Get(func);
-
-            CategoryGetDTO categoryGetDTO = _mapper.Map<CategoryGetDTO>(category);
-            return categoryGetDTO;
+            return await _categoryRepository.GetAllAsync();
         }
 
-        public void HardDeleteCatagory(int id)
+        public async Task<Category> GetByIdAsync(int id)
         {
-            var existCategory = _categoryRepository.Get(x => x.Id == id);
+            return await _categoryRepository.GetByIdAsync(id);
+        }
+
+        public async Task HardDeleteCatagory(int id)
+        {
+            await _categoryRepository.HardDelete(id);
+            await _categoryRepository.Commit();
+
+        }
+
+        public async Task SoftDeleteCatagory(int id)
+        {
+            await _categoryRepository.SoftDelete(id);
+            await _categoryRepository.Commit();
+        }
+
+        public async Task UpdateCategory(CategoryUpdateDTO categoryUpdateDTO)
+        {
+            var existCategory = await _categoryRepository.GetByIdAsync(categoryUpdateDTO.Id);
 
             if (existCategory == null)
                 throw new NullCategoryException("Category cannot be null");
 
-            _categoryRepository.HardDelete(existCategory);
-            _categoryRepository.Commit();
-        }
-
-        public void SoftDeleteCatagory(int id)
-        {
-            var existCategory = _categoryRepository.Get(x => x.Id == id);
-
-            if (existCategory == null)
-                throw new NullCategoryException("Category cannot be null");
-
-            _categoryRepository.SoftDelete(existCategory);
-            _categoryRepository.Commit();
-        }
-
-        public void UpdateCategory(CategoryUpdateDTO categoryUpdateDTO)
-        {
-            var existCategory = _categoryRepository.Get(x => x.Id == categoryUpdateDTO.Id);
-
-            if (existCategory == null)
-                throw new NullCategoryException("Category cannot be null");
-
-            existCategory.CategoryName = categoryUpdateDTO.CategoryName;
-            _categoryRepository.Commit();
+            await _categoryRepository.UpdateAsync(existCategory);
+            await _categoryRepository.Commit();
         }
     }
 }

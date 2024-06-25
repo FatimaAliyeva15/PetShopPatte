@@ -12,18 +12,12 @@ namespace PetShopPatte_Core.Entities
 {
     public class Pet: BaseEntity
     {
-        [Required]
-        [MinLength(2)]
-        [MaxLength(100)]
+       
         public string Name { get; set; }
         public byte Age { get; set; }
-        [Required]
-        [MinLength(2)]
-        [MaxLength(100)]
+        
         public string Gender { get; set; }
-        [Required]
-        [MinLength(2)]
-        [MaxLength(100)]
+        
         public string Breed { get; set; }
         public int? TypeId { get; set; }
         public AnimalType? AnimalType { get; set; }

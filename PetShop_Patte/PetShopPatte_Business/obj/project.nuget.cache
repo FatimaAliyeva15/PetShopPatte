@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "k1Fh8TwUL2CQ/c04bGJks2quTlDWACrw9FlmI4oYgId03hNmNzbuq/Uxt6NdyH5kCFI2hd+wLJGQJMQxRQJjXw==",
+  "dgSpecHash": "oQgW2hIYxAOD/VQbCn9EH6AIfDz3Ysreg6R0GQPcvd2iIGeq1821Qm+SJm31qkOUVFpj6/ySEZNG3rZYunJRkQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShopPatte_Business\\PetShopPatte_Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

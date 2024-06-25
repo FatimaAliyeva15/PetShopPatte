@@ -10,9 +10,7 @@ namespace PetShopPatte_Business.DTOs.CategoryDTO
     public class CategoryGetDTO
     {
         public int Id { get; set; }
-        [Required]
-        [MinLength(2)]
-        [MaxLength(100)]
+        
         public string CategoryName { get; set; }
     }
 }

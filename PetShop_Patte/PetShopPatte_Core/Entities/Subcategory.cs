@@ -10,9 +10,7 @@ namespace PetShopPatte_Core.Entities
 {
     public class Subcategory: BaseEntity
     {
-        [Required]
-        [MinLength(2)]
-        [MaxLength(100)]
+       
         public string SubcategoryName { get; set; }
         public int? CategoryId { get; set; }
         public Category? Category { get; set; }

@@ -21,6 +21,8 @@ namespace PetShop_Patte
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
             });
 
+            //builder.Services.AddScoped<ICategoryService, CategoryService>();
+            builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 
 

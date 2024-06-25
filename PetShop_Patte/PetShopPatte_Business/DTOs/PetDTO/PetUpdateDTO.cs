@@ -9,10 +9,7 @@ namespace PetShopPatte_Business.DTOs.PetDTO
 {
     public class PetUpdateDTO
     {
-        public int Id { get; set; }
-        [Required]
-        [MinLength(2)]
-        [MaxLength(100)]
+        public int Id { get; set; }     
         public string Name { get; set; }
     }
 }

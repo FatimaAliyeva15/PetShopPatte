@@ -10,9 +10,7 @@ namespace PetShopPatte_Business.DTOs.ColorDTO
     public class ColorGetDTO
     {
         public int Id { get; set; }
-        [Required]
-        [MinLength(2)]
-        [MaxLength(100)]
+        
         public string ColorName { get; set; }
     }
 }

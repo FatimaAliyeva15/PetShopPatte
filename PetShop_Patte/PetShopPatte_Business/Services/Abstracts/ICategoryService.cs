@@ -10,11 +10,12 @@ namespace PetShopPatte_Business.Services.Abstracts
 {
     public interface ICategoryService
     {
-        void AddCategory(CategoryCreateDTO categoryCreateDTO);
-        void UpdateCategory(CategoryUpdateDTO categoryUpdateDTO);
-        void HardDeleteCatagory(int id);
-        void SoftDeleteCatagory(int id);
-        CategoryGetDTO GetCategory(Func<Category, bool>? func = null);
-        ICollection<CategoryGetDTO> GetAllCategories(Func<Category, bool>? func = null);
+        Task AddCategory(CategoryCreateDTO categoryCreateDTO);
+        Task UpdateCategory(CategoryUpdateDTO categoryUpdateDTO);
+        Task HardDeleteCatagory(int id);
+        Task SoftDeleteCatagory(int id);
+        Task DeleteDb(int id);
+        Task<Category> GetByIdAsync(int id);
+        Task<IQueryable<Category>> GetAllCategories();
     }
 }

@@ -11,9 +11,7 @@ namespace PetShopPatte_Core.Entities
 {
     public class Color: BaseEntity
     {
-        [Required]
-        [MinLength(2)]
-        [MaxLength(100)]
+        
         public string ColorName { get; set; }
         public List<Product>? Products { get; set; }
         public List<Pet> Pets { get; set; }
