@@ -43,7 +43,6 @@ namespace PetShopPatte_Business.Services.Concretes
         public async Task LoginAsync(LoginDTO loginDTO)
         {
             var existUser = await _userManager.FindByEmailAsync(loginDTO.Email);
-
             await _signInManager.SignInAsync(existUser, true);
         }
 

@@ -29,37 +29,43 @@ namespace PetShop_Patte.Controllers
         }
 
 
-        [HttpGet]
-        public IActionResult CheckEmailAddress()
+        public async Task<IActionResult> CreateRoles()
         {
-            return View();
+            await _accountService.CreateRoleAsync();
+            return RedirectToAction("Index", "Home");
         }
 
-        [HttpPost]
-        public async Task<IActionResult> CheckEmailAddress(string emailAddress)
-        {
-            if (string.IsNullOrEmpty(emailAddress))
-            {
-                ModelState.AddModelError(string.Empty, "Email address is required.");
-                return View();
-            }
+        //[HttpGet]
+        //public IActionResult CheckEmailAddress()
+        //{
+        //    return View();
+        //}
 
-            var token = await _sendService.GenerateTokenAsync(emailAddress);
-            if (token != null)
-            {
-                var confirmationUrl = _linkGenerator.GetUriByAction(_httpContextAccessor.HttpContext, action: "ConfirmEmailAddress", controller: "Account",
-                    values: new { email = emailAddress, token });
+        //[HttpPost]
+        //public async Task<IActionResult> CheckEmailAddress(string emailAddress)
+        //{
+        //    if (string.IsNullOrEmpty(emailAddress))
+        //    {
+        //        ModelState.AddModelError(string.Empty, "Email address is required.");
+        //        return View();
+        //    }
 
-                await _sendService.SendMessageAsync(emailAddress, confirmationUrl);
-                ViewBag.Message = "Confirmation email has been sent. Please check your email.";
-            }
-            else
-            {
-                ModelState.AddModelError(string.Empty, "Failed to generate token.");
-            }
+        //    var token = await _sendService.GenerateTokenAsync(emailAddress);
+        //    if (token != null)
+        //    {
+        //        var confirmationUrl = _linkGenerator.GetUriByAction(_httpContextAccessor.HttpContext, action: "ConfirmEmailAddress", controller: "Account",
+        //            values: new { email = emailAddress, token });
 
-            return View();
-        }
+        //        await _sendService.SendMessageAsync(emailAddress, confirmationUrl);
+        //        ViewBag.Message = "Confirmation email has been sent. Please check your email.";
+        //    }
+        //    else
+        //    {
+        //        ModelState.AddModelError(string.Empty, "Failed to generate token.");
+        //    }
+
+        //    return View();
+        //}
 
         [HttpGet]
         public IActionResult Register()
@@ -88,25 +94,26 @@ namespace PetShop_Patte.Controllers
             }
 
             await _accountService.RegisterAsync(registerDTO);
-            var token = await _sendService.GenerateTokenAsync(emailAddress);
+            //var token = await _sendService.GenerateTokenAsync(emailAddress);
 
-            string url = _linkGenerator.GetUriByAction(_httpContextAccessor.HttpContext, action: "ConfirmEmailAddress", controller: "SendMessage",
-            values: new
-            {
-                token,
-                emailAddress
-            });
+            //string url = _linkGenerator.GetUriByAction(_httpContextAccessor.HttpContext, action: "ConfirmEmailAddress", controller: "SendMessage",
+            //values: new
+            //{
+            //    token,
+            //    emailAddress
+            //});
 
-            await _sendService.SendMessageAsync(emailAddress, url);
+            //await _sendService.SendMessageAsync(emailAddress, url);
 
-            Response.Cookies.Append("ConfirmationLinkSent", "true", new CookieOptions
-            {
-                Secure = true,
-                HttpOnly = true,
-                Expires = DateTimeOffset.UtcNow.AddMinutes(15)
-            });
+            //Response.Cookies.Append("ConfirmationLinkSent", "true", new CookieOptions
+            //{
+            //    Secure = true,
+            //    HttpOnly = true,
+            //    Expires = DateTimeOffset.UtcNow.AddMinutes(15)
+            //});
 
-            return RedirectToAction(nameof(CheckEmailAddress));
+            return RedirectToAction("Index", "Home");
+            //return RedirectToAction(nameof(CheckEmailAddress));
         }
 
 
@@ -116,26 +123,26 @@ namespace PetShop_Patte.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        [HttpGet]
-        public async Task<IActionResult> ConfirmEmailAddress(string email, string token)
-        {
-            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(token))
-            {
-                return BadRequest("Email or token is missing.");
-            }
+        //[HttpGet]
+        //public async Task<IActionResult> ConfirmEmailAddress(string email, string token)
+        //{
+        //    if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(token))
+        //    {
+        //        return BadRequest("Email or token is missing.");
+        //    }
 
-            var result = await _sendService.ConfirmEmailAddress(email, token);
-            if (result.Succeeded)
-            {
-                ViewBag.Message = "Email confirmed successfully.";
-            }
-            else
-            {
-                ViewBag.Message = "Failed to confirm email.";
-            }
+        //    var result = await _sendService.ConfirmEmailAddress(email, token);
+        //    if (result.Succeeded)
+        //    {
+        //        ViewBag.Message = "Email confirmed successfully.";
+        //    }
+        //    else
+        //    {
+        //        ViewBag.Message = "Failed to confirm email.";
+        //    }
 
-            return View();
-        }
+        //    return View();
+        //}
 
 
         [HttpGet]
@@ -156,19 +163,69 @@ namespace PetShop_Patte.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginDTO loginDTO)
         {
-            LoginDTOValidation validations = new LoginDTOValidation(_userManager, _signInManager);
-            var validationResult = await validations.ValidateAsync(loginDTO);
+            //LoginDTOValidation validations = new LoginDTOValidation(_userManager, _signInManager);
+            //var validationResult = await validations.ValidateAsync(loginDTO);
 
-            if (validationResult.IsValid)
+            //if (validationResult.IsValid)
+            //{
+            //    ModelState.Clear();
+
+            //    validationResult.Errors.ForEach(x => ModelState.AddModelError(x.PropertyName, x.ErrorMessage));
+
+            //    return View(loginDTO);
+            //}
+            //await _accountService.LoginAsync(loginDTO);
+            //return Redirect("/Admin");
+
+            if (User.Identity.IsAuthenticated)
             {
-                ModelState.Clear();
-
-                validationResult.Errors.ForEach(x => ModelState.AddModelError(x.PropertyName, x.ErrorMessage));
-
-                return View(loginDTO);
+                return RedirectToAction("LogOut");
             }
-            await _accountService.LoginAsync(loginDTO);
-            return Redirect("/Admin");
+
+            if (!ModelState.IsValid)
+                return View();
+
+            AppUser user = await _userManager.FindByEmailAsync(loginDTO.Email);
+
+           
+            
+
+            if (user == null)
+            {
+                ModelState.AddModelError("", "UserNameOrEmail or password is not valid");
+                return View();
+            }
+
+            var result = await _signInManager.CheckPasswordSignInAsync(user, loginDTO.Password, true);
+
+            if (result.IsLockedOut)
+            {
+                ModelState.AddModelError("", "Try again shortly");
+                return View();
+            }
+
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError("", "UserNameOrEmail or password is not correct");
+                return View();
+            }
+
+            await _signInManager.SignInAsync(user, true);
+
+            var role = await _userManager.GetRolesAsync(user);
+
+            if (role.Contains("Admin"))
+            {
+                return RedirectToAction("Index", "Dashboard", new { area = "Admin" });
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
         }
+
+
     }
+
 }

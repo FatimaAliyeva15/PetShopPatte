@@ -1,6 +1,8 @@
+using FluentValidation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using PetShopPatte_Business.DTOs.CategoryDTO;
 using PetShopPatte_Business.Services.Abstracts;
 using PetShopPatte_Business.Services.Concretes;
 using PetShopPatte_Core.Entities.UserModel;
@@ -40,13 +42,14 @@ namespace PetShop_Patte
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
             });
 
+            builder.Services.AddTransient<IValidator<CategoryCreateDTO>, CategoryCreateDTOValidation>();
             builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<ISendMessageService, SendMessageService>();
 
-            builder.Services.AddAutoMapper(typeof(Program));
+            builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 
             var app = builder.Build();

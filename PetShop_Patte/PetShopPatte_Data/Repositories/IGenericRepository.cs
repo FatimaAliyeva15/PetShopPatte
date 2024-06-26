@@ -11,7 +11,7 @@ namespace PetShopPatte_Data.Repositories
     public interface IGenericRepository<T> where T : BaseEntity, new()
     {
         Task<T> AddAsync(T entity);
-        Task<T> UpdateAsync(T entity);
+        void Update(T entity);
         Task HardDelete(int id);
         Task<T> SoftDelete(int id);
         Task<T> Recover(int id);

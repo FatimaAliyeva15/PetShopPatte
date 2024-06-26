@@ -37,7 +37,140 @@ namespace PetShopPatte_Data.Migrations
                     b.ToTable("ColorProduct");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.AnimalType", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.AnimalType", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -64,7 +197,7 @@ namespace PetShopPatte_Data.Migrations
                     b.ToTable("AnimalTypes");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.Category", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -99,7 +232,7 @@ namespace PetShopPatte_Data.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.Color", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Color", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -126,7 +259,7 @@ namespace PetShopPatte_Data.Migrations
                     b.ToTable("Colors");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.Pet", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Pet", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -188,7 +321,7 @@ namespace PetShopPatte_Data.Migrations
                     b.ToTable("Pets");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.Product", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -228,7 +361,7 @@ namespace PetShopPatte_Data.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.ProductDetail", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.ProductDetail", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -271,7 +404,7 @@ namespace PetShopPatte_Data.Migrations
                     b.ToTable("ProductDetails");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.Size", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Size", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -298,7 +431,7 @@ namespace PetShopPatte_Data.Migrations
                     b.ToTable("Sizes");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.Subcategory", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Subcategory", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -330,6 +463,79 @@ namespace PetShopPatte_Data.Migrations
                     b.ToTable("Subcategories");
                 });
 
+            modelBuilder.Entity("PetShopPatte_Core.Entities.UserModel.AppUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers", (string)null);
+                });
+
             modelBuilder.Entity("ProductSize", b =>
                 {
                     b.Property<int>("ProductsId")
@@ -347,39 +553,90 @@ namespace PetShopPatte_Data.Migrations
 
             modelBuilder.Entity("ColorProduct", b =>
                 {
-                    b.HasOne("PetShopPatte_Core.Entities.Color", null)
+                    b.HasOne("PetShopPatte_Core.Entities.PatteDb.Color", null)
                         .WithMany()
                         .HasForeignKey("ColorsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("PetShopPatte_Core.Entities.Product", null)
+                    b.HasOne("PetShopPatte_Core.Entities.PatteDb.Product", null)
                         .WithMany()
                         .HasForeignKey("ProductsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.Category", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
-                    b.HasOne("PetShopPatte_Core.Entities.Category", "ParentCategory")
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.HasOne("PetShopPatte_Core.Entities.UserModel.AppUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.HasOne("PetShopPatte_Core.Entities.UserModel.AppUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PetShopPatte_Core.Entities.UserModel.AppUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.HasOne("PetShopPatte_Core.Entities.UserModel.AppUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Category", b =>
+                {
+                    b.HasOne("PetShopPatte_Core.Entities.PatteDb.Category", "ParentCategory")
                         .WithMany()
                         .HasForeignKey("ParentCategoryId");
 
                     b.Navigation("ParentCategory");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.Pet", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Pet", b =>
                 {
-                    b.HasOne("PetShopPatte_Core.Entities.AnimalType", "AnimalType")
+                    b.HasOne("PetShopPatte_Core.Entities.PatteDb.AnimalType", "AnimalType")
                         .WithMany("Pets")
                         .HasForeignKey("AnimalTypeId");
 
-                    b.HasOne("PetShopPatte_Core.Entities.Color", "Color")
+                    b.HasOne("PetShopPatte_Core.Entities.PatteDb.Color", "Color")
                         .WithMany("Pets")
                         .HasForeignKey("ColorId");
 
-                    b.HasOne("PetShopPatte_Core.Entities.Size", "Size")
+                    b.HasOne("PetShopPatte_Core.Entities.PatteDb.Size", "Size")
                         .WithMany("Pets")
                         .HasForeignKey("SizeId");
 
@@ -390,13 +647,13 @@ namespace PetShopPatte_Data.Migrations
                     b.Navigation("Size");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.Product", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Product", b =>
                 {
-                    b.HasOne("PetShopPatte_Core.Entities.AnimalType", "AnimalType")
+                    b.HasOne("PetShopPatte_Core.Entities.PatteDb.AnimalType", "AnimalType")
                         .WithMany("Products")
                         .HasForeignKey("AnimalTypeId");
 
-                    b.HasOne("PetShopPatte_Core.Entities.Subcategory", "Subcategory")
+                    b.HasOne("PetShopPatte_Core.Entities.PatteDb.Subcategory", "Subcategory")
                         .WithMany("Products")
                         .HasForeignKey("SubcategoryId");
 
@@ -405,18 +662,18 @@ namespace PetShopPatte_Data.Migrations
                     b.Navigation("Subcategory");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.ProductDetail", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.ProductDetail", b =>
                 {
-                    b.HasOne("PetShopPatte_Core.Entities.Product", "Product")
+                    b.HasOne("PetShopPatte_Core.Entities.PatteDb.Product", "Product")
                         .WithMany("ProductDetails")
                         .HasForeignKey("ProductId");
 
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.Subcategory", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Subcategory", b =>
                 {
-                    b.HasOne("PetShopPatte_Core.Entities.Category", "Category")
+                    b.HasOne("PetShopPatte_Core.Entities.PatteDb.Category", "Category")
                         .WithMany("Subcategories")
                         .HasForeignKey("CategoryId");
 
@@ -425,47 +682,47 @@ namespace PetShopPatte_Data.Migrations
 
             modelBuilder.Entity("ProductSize", b =>
                 {
-                    b.HasOne("PetShopPatte_Core.Entities.Product", null)
+                    b.HasOne("PetShopPatte_Core.Entities.PatteDb.Product", null)
                         .WithMany()
                         .HasForeignKey("ProductsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("PetShopPatte_Core.Entities.Size", null)
+                    b.HasOne("PetShopPatte_Core.Entities.PatteDb.Size", null)
                         .WithMany()
                         .HasForeignKey("SizesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.AnimalType", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.AnimalType", b =>
                 {
                     b.Navigation("Pets");
 
                     b.Navigation("Products");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.Category", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Category", b =>
                 {
                     b.Navigation("Subcategories");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.Color", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Color", b =>
                 {
                     b.Navigation("Pets");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.Product", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Product", b =>
                 {
                     b.Navigation("ProductDetails");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.Size", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Size", b =>
                 {
                     b.Navigation("Pets");
                 });
 
-            modelBuilder.Entity("PetShopPatte_Core.Entities.Subcategory", b =>
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Subcategory", b =>
                 {
                     b.Navigation("Products");
                 });

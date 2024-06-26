@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using PetShopPatte_Business.DTOs.CategoryDTO;
 using PetShopPatte_Business.Exceptions.CategoryExceptions;
 using PetShopPatte_Business.Services.Abstracts;
@@ -6,6 +7,7 @@ using PetShopPatte_Core.Entities.PatteDb;
 using PetShopPatte_Data.Repositories.Abstracts;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,16 +18,23 @@ namespace PetShopPatte_Business.Services.Concretes
     {
         private readonly ICategoryRepository _categoryRepository;
         private readonly IMapper _mapper;
+        private readonly IValidator<CategoryUpdateDTO> _updatevalidator;
 
-        public CategoryService(ICategoryRepository categoryRepository, IMapper mapper)
+        public CategoryService(ICategoryRepository categoryRepository, IMapper mapper, IValidator<CategoryUpdateDTO> updatevalidator)
         {
             _categoryRepository = categoryRepository;
             _mapper = mapper;
+            _updatevalidator = updatevalidator;
         }
 
         public async Task AddCategory(CategoryCreateDTO categoryCreateDTO)
         {
-            Category category = _mapper.Map<Category>(categoryCreateDTO);
+            //Category category = _mapper.Map<Category>(categoryCreateDTO);
+            Category category = new Category()
+            {
+                CategoryName = categoryCreateDTO.CategoryName,
+                CategoryIcon = categoryCreateDTO.CategoryIcon,
+            };
 
             if (category == null)
                 throw new NullCategoryException("Category cannot be null");
@@ -72,15 +81,62 @@ namespace PetShopPatte_Business.Services.Concretes
             await _categoryRepository.Commit();
         }
 
-        public async Task UpdateCategory(CategoryUpdateDTO categoryUpdateDTO)
+        public async Task<ValidationResult> UpdateCategory(CategoryUpdateDTO categoryUpdateDTO)
         {
-            var existCategory = await _categoryRepository.GetByIdAsync(categoryUpdateDTO.Id);
+            //var existCategory = await _categoryRepository.GetByIdAsync(categoryUpdateDTO.Id);
 
-            if (existCategory == null)
-                throw new NullCategoryException("Category cannot be null");
+            //if (existCategory == null)
+            //    throw new NullCategoryException("Category cannot be null");
 
-            await _categoryRepository.UpdateAsync(existCategory);
-            await _categoryRepository.Commit();
+            //await _categoryRepository.UpdateAsync(existCategory);
+            //await _categoryRepository.Commit();
+
+            var validationResult = _updatevalidator.Validate(categoryUpdateDTO);
+
+            if (validationResult.IsValid)
+            {
+
+                if (await _categoryRepository.IsExists(categoryUpdateDTO.Id))
+                {
+                    var category = await _categoryRepository.GetByIdAsync(categoryUpdateDTO.Id);
+                    category.CategoryName = categoryUpdateDTO.CategoryName;
+                    category.CategoryIcon = categoryUpdateDTO.CategoryIcon;
+
+                    _categoryRepository.Update(category);
+                    await _categoryRepository.Commit();
+                }
+                else
+                {
+                    throw new EntityNotFoundException("", "Entity not found");
+                }
+            }
+            return validationResult;
+        }
+
+        
+
+        public async Task<CategoryUpdateDTO> UpdateById(int id)
+        {
+            if (id <= 0) 
+                throw new CategoryIdNegativeorZeroException("Category id not negative and zero");
+
+            if (await _categoryRepository.IsExists(id))
+            {
+
+                var category = await _categoryRepository.GetByIdAsync(id);
+
+                CategoryUpdateDTO categoryUpdateDTO = new CategoryUpdateDTO()
+                {
+                    CategoryName = category.CategoryName,
+                    CategoryIcon = category.CategoryIcon,
+                };
+
+                return categoryUpdateDTO;
+            }
+            else
+            {
+                throw new EntityNotFoundException("", "Entity not found");
+            }
         }
     }
 }

@@ -29,10 +29,9 @@ namespace PetShopPatte_Data.Repositories
             return entity;
         }
 
-        public async Task<T> UpdateAsync(T entity)
+        public void Update(T entity)
         {
             _table.Update(entity);
-            return entity;
         }
 
         public async Task<T> Recover(int id)
