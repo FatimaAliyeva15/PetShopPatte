@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PetShopPatte_Core.Entities
+namespace PetShopPatte_Core.Entities.PatteDb
 {
-    public class Category: BaseEntity
+    public class Category : BaseEntity
     {
         [Required]
         [MinLength(2)]

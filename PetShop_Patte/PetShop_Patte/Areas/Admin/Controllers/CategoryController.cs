@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PetShopPatte_Business.DTOs.CategoryDTO;
 using PetShopPatte_Business.Services.Abstracts;
-using PetShopPatte_Core.Entities;
+using PetShopPatte_Core.Entities.PatteDb;
 
 namespace PetShop_Patte.Areas.Admin.Controllers
 {
@@ -31,6 +31,8 @@ namespace PetShop_Patte.Areas.Admin.Controllers
         {
             CategoryCreateDTOValidation validations = new CategoryCreateDTOValidation();
             var validationResult = await validations.ValidateAsync(categoryCreateDTO);
+
+            //var validationResult = await _categoryService.AddCategory(categoryCreateDTO);
             if (!validationResult.IsValid)
             {
                 ModelState.Clear();
@@ -43,9 +45,20 @@ namespace PetShop_Patte.Areas.Admin.Controllers
 
             await _categoryService.AddCategory(categoryCreateDTO);
 
-            return RedirectToAction("Index");
+            return RedirectToAction(nameof(Index));
         }
         
+        public IActionResult Update(int id)
+        {
+            return View();
+        }
+
+        //[HttpPost]
+        //public Task<IActionResult> Update(CategoryUpdateDTO categoryUpdateDTO)
+        //{
+        //    return RedirectToAction(nameof(Index));
+        //}
+
 
     }
 }

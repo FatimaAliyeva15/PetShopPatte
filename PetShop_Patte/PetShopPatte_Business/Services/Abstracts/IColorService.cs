@@ -1,5 +1,5 @@
 ﻿using PetShopPatte_Business.DTOs.ColorDTO;
-using PetShopPatte_Core.Entities;
+using PetShopPatte_Core.Entities.PatteDb;
 using System;
 using System.Collections.Generic;
 using System.Linq;

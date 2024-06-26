@@ -12,9 +12,9 @@ namespace PetShopPatte_Data.Repositories
     {
         Task<T> AddAsync(T entity);
         Task<T> UpdateAsync(T entity);
-        Task<T> HardDelete(int id);
+        Task HardDelete(int id);
         Task<T> SoftDelete(int id);
-        Task DeleteDb(int id);
+        Task<T> Recover(int id);
         Task<T> GetByIdAsync(int id, params string[] entityIncludes);
         Task<T> CheckEntity(int id, params string[] entityIncludes);
 

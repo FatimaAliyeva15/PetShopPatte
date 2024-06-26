@@ -2,7 +2,7 @@
 using PetShopPatte_Business.DTOs.CategoryDTO;
 using PetShopPatte_Business.Exceptions.CategoryExceptions;
 using PetShopPatte_Business.Services.Abstracts;
-using PetShopPatte_Core.Entities;
+using PetShopPatte_Core.Entities.PatteDb;
 using PetShopPatte_Data.Repositories.Abstracts;
 using System;
 using System.Collections.Generic;
@@ -43,9 +43,9 @@ namespace PetShopPatte_Business.Services.Concretes
             }
         }
 
-        public async Task DeleteDb(int id)
+        public async Task Recover(int id)
         {
-            await _categoryRepository.DeleteDb(id);
+            await _categoryRepository.Recover(id);
             await _categoryRepository.Commit(); 
         }
 

@@ -8,16 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PetShopPatte_Core.Entities
+namespace PetShopPatte_Core.Entities.PatteDb
 {
-    public class Pet: BaseEntity
+    public class Pet : BaseEntity
     {
-       
+
         public string Name { get; set; }
         public byte Age { get; set; }
-        
+
         public string Gender { get; set; }
-        
+
         public string Breed { get; set; }
         public int? TypeId { get; set; }
         public AnimalType? AnimalType { get; set; }

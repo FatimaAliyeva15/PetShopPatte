@@ -35,10 +35,14 @@ namespace PetShopPatte_Data.Repositories
             return entity;
         }
 
-        public async Task DeleteDb(int id)
+        public async Task<T> Recover(int id)
         {
-            var entity = await _table.FirstOrDefaultAsync(x => x.Id == id);
-            _table.Remove(entity);
+            var entity = await GetByIdAsync(id);
+
+            entity.IsDeleted = false;
+            await UpdateAsync(entity);
+
+            return entity;
         }
 
         public async Task<T> GetByIdAsync(int id, params string[] entityIncludes)
@@ -97,24 +101,21 @@ namespace PetShopPatte_Data.Repositories
             return entity;
         }
 
-        public async Task<T> HardDelete(int id)
+        public async Task HardDelete(int id)
         {
-            var entity = await GetByIdAsync(id);
-
-            entity.IsDeleted = true;
-            await UpdateAsync(entity);
-
-            return entity;
+            var entity = await _table.FirstOrDefaultAsync(x => x.Id == id);
+            _table.Remove(entity);
         }
 
         public async Task<T> SoftDelete(int id)
         {
             var entity = await GetByIdAsync(id);
 
-            entity.IsDeleted = false;
+            entity.IsDeleted = true;
             await UpdateAsync(entity);
 
-            return entity;
+            return entity; 
+
         }
     }
 }

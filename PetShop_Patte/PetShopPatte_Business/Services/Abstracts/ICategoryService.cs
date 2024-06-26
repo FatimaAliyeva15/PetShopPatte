@@ -1,5 +1,5 @@
 ﻿using PetShopPatte_Business.DTOs.CategoryDTO;
-using PetShopPatte_Core.Entities;
+using PetShopPatte_Core.Entities.PatteDb;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ namespace PetShopPatte_Business.Services.Abstracts
         Task UpdateCategory(CategoryUpdateDTO categoryUpdateDTO);
         Task HardDeleteCatagory(int id);
         Task SoftDeleteCatagory(int id);
-        Task DeleteDb(int id);
+        Task Recover(int id);
         Task<Category> GetByIdAsync(int id);
         Task<IQueryable<Category>> GetAllCategories();
     }

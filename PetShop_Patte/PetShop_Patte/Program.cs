@@ -1,6 +1,9 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using PetShopPatte_Business.Services.Abstracts;
 using PetShopPatte_Business.Services.Concretes;
+using PetShopPatte_Core.Entities.UserModel;
 using PetShopPatte_Data.DAL;
 using PetShopPatte_Data.Repositories.Abstracts;
 using PetShopPatte_Data.Repositories.Concretes;
@@ -15,6 +18,22 @@ namespace PetShop_Patte
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+            {
+                opt.Password.RequireDigit = true;
+                opt.Password.RequireLowercase = true;
+                opt.Password.RequireNonAlphanumeric = false;
+                opt.Password.RequireUppercase = true;
+                opt.Password.RequiredLength = 8;
+                opt.Password.RequiredUniqueChars = 1;
+                opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                opt.Lockout.MaxFailedAccessAttempts = 5;
+                opt.Lockout.AllowedForNewUsers = true;
+                opt.User.AllowedUserNameCharacters =
+                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789._";
+                opt.User.RequireUniqueEmail = true;
+            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 
             builder.Services.AddDbContext<AppDbContext>(opt =>
             {

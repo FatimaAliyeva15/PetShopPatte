@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PetShopPatte_Core.Entities
+namespace PetShopPatte_Core.Entities.PatteDb
 {
-    public class Subcategory: BaseEntity
+    public class Subcategory : BaseEntity
     {
-       
+
         public string SubcategoryName { get; set; }
         public int? CategoryId { get; set; }
         public Category? Category { get; set; }

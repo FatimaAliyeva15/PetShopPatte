@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using PetShopPatte_Core.Entities;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using PetShopPatte_Core.Entities.PatteDb;
+using PetShopPatte_Core.Entities.UserModel;
 using PetShopPatte_Data.Configurations;
 using System;
 using System.Collections.Generic;
@@ -9,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace PetShopPatte_Data.DAL
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {

@@ -6,7 +6,7 @@ using PetShopPatte_Business.DTOs.PetDTO;
 using PetShopPatte_Business.DTOs.ProductDTO;
 using PetShopPatte_Business.DTOs.SizeDTO;
 using PetShopPatte_Business.DTOs.SubcategoryDTO;
-using PetShopPatte_Core.Entities;
+using PetShopPatte_Core.Entities.PatteDb;
 using System;
 using System.Collections.Generic;
 using System.Linq;

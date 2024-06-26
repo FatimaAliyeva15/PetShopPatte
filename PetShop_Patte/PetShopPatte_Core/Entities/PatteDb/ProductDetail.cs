@@ -8,15 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PetShopPatte_Core.Entities
+namespace PetShopPatte_Core.Entities.PatteDb
 {
-    public class ProductDetail: BaseEntity
+    public class ProductDetail : BaseEntity
     {
-       
+
         public string Description { get; set; }
-        
+
         public decimal Price { get; set; }
-        
+
         public int StockQuantity { get; set; }
         public int? ProductId { get; set; }
         public Product Product { get; set; }

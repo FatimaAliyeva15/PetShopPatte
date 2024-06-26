@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PetShopPatte_Core.Entities
+namespace PetShopPatte_Core.Entities.PatteDb
 {
-    public class Color: BaseEntity
+    public class Color : BaseEntity
     {
-        
+
         public string ColorName { get; set; }
         public List<Product>? Products { get; set; }
         public List<Pet> Pets { get; set; }

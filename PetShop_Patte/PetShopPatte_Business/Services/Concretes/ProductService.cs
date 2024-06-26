@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using PetShopPatte_Business.DTOs.ProductDTO;
 using PetShopPatte_Business.Services.Abstracts;
-using PetShopPatte_Core.Entities;
+using PetShopPatte_Core.Entities.PatteDb;
 using PetShopPatte_Data.Repositories.Abstracts;
 using System;
 using System.Collections.Generic;

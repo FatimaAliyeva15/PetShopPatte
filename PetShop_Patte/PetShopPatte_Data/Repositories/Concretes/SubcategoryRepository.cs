@@ -1,4 +1,4 @@
-﻿using PetShopPatte_Core.Entities;
+﻿using PetShopPatte_Core.Entities.PatteDb;
 using PetShopPatte_Data.DAL;
 using PetShopPatte_Data.Repositories.Abstracts;
 using System;
