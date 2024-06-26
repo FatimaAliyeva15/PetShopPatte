@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Confirm Email Address";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success" role="alert">
+        @ViewBag.Message
+    </div>
+}

@@ -2,6 +2,7 @@
 using PetShopPatte_Business.DTOs.AccountDTOs;
 using PetShopPatte_Business.Services.Abstracts;
 using PetShopPatte_Core.Entities.UserModel;
+using PetShopPatte_Core.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,29 +24,45 @@ namespace PetShopPatte_Business.Services.Concretes
             _roleManager = roleManager;
         }
 
-        public Task CreateRoleAsync()
+        public async Task CreateRoleAsync()
         {
-            throw new NotImplementedException();
+            foreach (var item in Enum.GetValues(typeof(Roles)))
+            {
+                if (!await _roleManager.RoleExistsAsync(item.ToString()))
+                {
+                    await _roleManager.CreateAsync(new IdentityRole(item.ToString()));
+                }
+            }
         }
 
-        public Task<AppUser> GetUserByEmailAddress(string emailAddress)
+        public async Task<AppUser> GetUserByEmailAddress(string emailAddress)
         {
-            throw new NotImplementedException();
+            return await _userManager.FindByEmailAsync(emailAddress);
         }
 
-        public Task LoginAsync(LoginDTO loginDTO)
+        public async Task LoginAsync(LoginDTO loginDTO)
         {
-            throw new NotImplementedException();
+            var existUser = await _userManager.FindByEmailAsync(loginDTO.Email);
+
+            await _signInManager.SignInAsync(existUser, true);
         }
 
-        public Task LogoutAsync()
+        public async Task LogoutAsync()
         {
-            throw new NotImplementedException();
+            await _signInManager.SignOutAsync();
         }
 
-        public Task RegisterAsync(RegisterDTO registerDTO)
+        public async Task RegisterAsync(RegisterDTO registerDTO)
         {
-            throw new NotImplementedException();
+            var user = new AppUser()
+            {
+                Email = registerDTO.Email,
+                FirstName = registerDTO.FirstName,
+                LastName = registerDTO.LastName,
+            };
+
+            await _userManager.CreateAsync(user, registerDTO.Password);
+            await _userManager.AddToRoleAsync(user, Roles.Admin.ToString());
         }
     }
 }
