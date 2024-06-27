@@ -58,10 +58,11 @@ namespace PetShopPatte_Business.Services.Concretes
                 Email = registerDTO.Email,
                 FirstName = registerDTO.FirstName,
                 LastName = registerDTO.LastName,
+                UserName = $"{registerDTO.FirstName.ToLower()}",
             };
 
             await _userManager.CreateAsync(user, registerDTO.Password);
-            await _userManager.AddToRoleAsync(user, Roles.Admin.ToString());
+            await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
         }
     }
 }

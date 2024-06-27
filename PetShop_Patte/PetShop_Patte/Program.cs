@@ -20,6 +20,7 @@ namespace PetShop_Patte
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddSession();
 
             builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
             {
@@ -55,6 +56,8 @@ namespace PetShop_Patte
 
 
             var app = builder.Build();
+
+            app.UseSession();
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())

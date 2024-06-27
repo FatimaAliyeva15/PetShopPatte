@@ -72,7 +72,7 @@ namespace PetShop_Patte.Controllers
         {
             if (User.Identity.IsAuthenticated)
             {
-                return RedirectToAction("Home");
+                return RedirectToAction("Index","Home");
             }
 
             return View();
