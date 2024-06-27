@@ -12,7 +12,7 @@ namespace PetShopPatte_Business.Services.Abstracts
     public interface ICategoryService
     {
         Task AddCategory(CategoryCreateDTO categoryCreateDTO);
-        Task<ValidationResult> UpdateCategory(CategoryUpdateDTO categoryUpdateDTO);
+        Task UpdateCategory(CategoryUpdateDTO categoryUpdateDTO);
         Task<CategoryUpdateDTO> UpdateById(int id);
         Task HardDeleteCatagory(int id);
         Task SoftDeleteCatagory(int id);

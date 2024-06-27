@@ -11,9 +11,6 @@ namespace PetShopPatte_Core.Entities.PatteDb
 {
     public class Category : BaseEntity
     {
-        [Required]
-        [MinLength(2)]
-        [MaxLength(100)]
         public string CategoryName { get; set; }
         public string? CategoryIcon { get; set; }
         public int? ParentCategoryId { get; set; }

@@ -1,10 +1,6 @@
 ﻿﻿@using PetShopPatte_Core.Entities.PatteDb
 @model IEnumerable<Category>
 
-@{
-    int count = 0;
-}
-
 <!-- main-content -->
 <div class="main-content">
     <!-- main-content-wrap -->
@@ -70,7 +66,7 @@
                         </li>
                     </ul>
                     <ul class="flex flex-column">
-                                @foreach (var item in Model)
+                        @foreach (var item in Model.Where(c => !c.IsDeleted))
                                 {
                         <li class="product-item gap14">
                             <div class="flex items-center justify-between gap20 flex-grow">
@@ -80,7 +76,9 @@
                                     @Html.Raw(item.CategoryIcon)
                                     <div class="list-icon-function">
                                         <div class="item eye">
+                                            <a asp-action="Detail" asp-controller="Category" asp-route-id="@item.Id">
                                             <i class="icon-eye"></i>
+                                            </a>
                                         </div>
                                         <div class="item edit">
                                             <a asp-action="Update" asp-controller="Category" asp-route-id="@item.Id">
@@ -88,7 +86,9 @@
                                             </a>
                                         </div>
                                         <div class="item trash">
+                                            <a asp-action="SoftDelete" asp-controller="Category" asp-route-id="@item.Id">
                                             <i class="icon-trash-2"></i>
+                                            </a>
                                         </div>
                                     </div>
                             </div>

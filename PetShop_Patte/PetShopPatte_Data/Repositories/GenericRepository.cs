@@ -39,7 +39,7 @@ namespace PetShopPatte_Data.Repositories
             var entity = await GetByIdAsync(id);
 
             entity.IsDeleted = false;
-            await UpdateAsync(entity);
+            Update(entity);
 
             return entity;
         }
@@ -111,7 +111,7 @@ namespace PetShopPatte_Data.Repositories
             var entity = await GetByIdAsync(id);
 
             entity.IsDeleted = true;
-            await UpdateAsync(entity);
+            Update(entity);
 
             return entity; 
 

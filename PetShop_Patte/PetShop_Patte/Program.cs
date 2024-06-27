@@ -43,6 +43,8 @@ namespace PetShop_Patte
             });
 
             builder.Services.AddTransient<IValidator<CategoryCreateDTO>, CategoryCreateDTOValidation>();
+            builder.Services.AddTransient<IValidator<CategoryUpdateDTO>, CategoryUpdateDTOValidation>();
+
             builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
