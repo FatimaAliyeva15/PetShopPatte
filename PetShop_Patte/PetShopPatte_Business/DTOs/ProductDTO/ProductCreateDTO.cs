@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using Microsoft.AspNetCore.Http;
 using PetShopPatte_Business.DTOs.ColorDTO;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,9 @@ namespace PetShopPatte_Business.DTOs.ProductDTO
     public class ProductCreateDTO
     {
         public string Name { get; set; }
+        public int? SubcategoryId { get; set; }
+        public int? AnimalTypeId { get; set; }
+        public IFormFile ImgFile { get; set; }
     }
 
     public class ProductCreateDTOValidation : AbstractValidator<ProductCreateDTO>

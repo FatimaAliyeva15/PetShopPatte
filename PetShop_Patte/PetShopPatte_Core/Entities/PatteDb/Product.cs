@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace PetShopPatte_Core.Entities.PatteDb
 {
-    public class Product : BaseEntity
+    public class Product : BaseAuditableEntity
     {
 
         public string Name { get; set; }
@@ -22,7 +22,6 @@ namespace PetShopPatte_Core.Entities.PatteDb
         public List<Color>? Colors { get; set; }
         public List<ProductDetail> ProductDetails { get; set; }
         public string? ImgUrl { get; set; }
-        [NotMapped]
-        public IFormFile? ImgFile { get; set; }
+        
     }
 }

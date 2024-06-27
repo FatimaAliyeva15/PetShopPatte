@@ -18,4 +18,8 @@
     <ProjectReference Include="..\PetShopPatte_Business\PetShopPatte_Business.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\PetImages\" />
+  </ItemGroup>
+
 </Project>

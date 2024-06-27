@@ -10,9 +10,8 @@ using System.Threading.Tasks;
 
 namespace PetShopPatte_Core.Entities.PatteDb
 {
-    public class ProductDetail : BaseEntity
+    public class ProductDetail : BaseAuditableEntity
     {
-
         public string Description { get; set; }
 
         public decimal Price { get; set; }
@@ -21,7 +20,5 @@ namespace PetShopPatte_Core.Entities.PatteDb
         public int? ProductId { get; set; }
         public Product Product { get; set; }
         public string? ImgUrl { get; set; }
-        [NotMapped]
-        public IFormFile? ImgFile { get; set; }
     }
 }

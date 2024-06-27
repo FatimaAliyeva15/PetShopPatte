@@ -23,7 +23,7 @@ namespace PetShopPatte_Business.Mapping
             CreateMap<AnimalTypeCreateDTO, AnimalType>().ReverseMap();
             CreateMap<AnimalType, AnimalTypeGetDTO>().ReverseMap();
             CreateMap<CategoryCreateDTO, Category>().ReverseMap();
-            //CreateMap<Category, CategoryGetDTO>().ReverseMap();
+            CreateMap<Category, CategoryGetDTO>().ReverseMap();
             CreateMap<ColorCreateDTO, Color>().ReverseMap();
             CreateMap<Color, ColorGetDTO>().ReverseMap();
             CreateMap<PetCreateDTO, Pet>().ReverseMap();

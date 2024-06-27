@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PetShopPatte_Core.Entities.PatteDb
 {
-    public class Color : BaseEntity
+    public class Color : BaseAuditableEntity
     {
 
         public string ColorName { get; set; }

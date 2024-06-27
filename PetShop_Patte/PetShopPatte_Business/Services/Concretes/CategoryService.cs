@@ -102,6 +102,7 @@ namespace PetShopPatte_Business.Services.Concretes
 
             existCategory.CategoryName = categoryUpdateDTO.CategoryName ?? existCategory.CategoryName;
             existCategory.CategoryIcon = categoryUpdateDTO.CategoryIcon ?? existCategory.CategoryIcon;
+            existCategory.ParentCategoryId = categoryUpdateDTO.ParentCategoryId ?? existCategory.ParentCategoryId;
 
              _categoryRepository.Update(existCategory);
             await _categoryRepository.Commit();

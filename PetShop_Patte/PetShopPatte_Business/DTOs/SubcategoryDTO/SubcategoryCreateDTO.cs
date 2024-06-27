@@ -12,6 +12,7 @@ namespace PetShopPatte_Business.DTOs.SubcategoryDTO
     public class SubcategoryCreateDTO
     { 
         public string SubcategoryName { get; set; }
+        public int? CategoryId { get; set; }
     }
 
     public class SubcategoryCreateDTOValidation : AbstractValidator<SubcategoryCreateDTO>
