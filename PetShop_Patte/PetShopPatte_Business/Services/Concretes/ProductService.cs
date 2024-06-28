@@ -32,7 +32,7 @@ namespace PetShopPatte_Business.Services.Concretes
             if (productCreateDTO.ImgFile != null && productCreateDTO.ImgFile.CheckImgFile())
             {
                 string imgPath = productCreateDTO.ImgFile.UpdateImage(_environment, "ProductImages/");
-                Product pet = new Product
+                Product product = new Product
                 {
                     Name = productCreateDTO.Name,
                     Price = productCreateDTO.Price,
@@ -43,7 +43,7 @@ namespace PetShopPatte_Business.Services.Concretes
                     UpdatedDate = DateTime.UtcNow,
                 };
 
-                await _productRepository.AddAsync(pet);
+                await _productRepository.AddAsync(product);
                 await _productRepository.Commit();
             }
 

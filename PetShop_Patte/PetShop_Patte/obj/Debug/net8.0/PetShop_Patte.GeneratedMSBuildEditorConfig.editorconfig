@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Asus\Desktop\PetShop_Patte\PetShop_Patte\PetShop_Patte
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Areas/Admin/Views/AnimalType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQW5pbWFsVHlwZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Areas/Admin/Views/AnimalType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQW5pbWFsVHlwZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Areas/Admin/Views/AnimalType/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQW5pbWFsVHlwZVxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Areas/Admin/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +56,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Areas/Admin/Views/Pet/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGV0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Areas/Admin/Views/ProductDetail/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdERldGFpbFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Areas/Admin/Views/ProductDetail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdERldGFpbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Areas/Admin/Views/ProductDetail/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdERldGFpbFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Asus/Desktop/PetShop_Patte/PetShop_Patte/PetShop_Patte/Areas/Admin/Views/Product/Create.cshtml]

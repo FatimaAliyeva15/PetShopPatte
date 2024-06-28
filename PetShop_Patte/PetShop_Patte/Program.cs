@@ -2,7 +2,10 @@ using FluentValidation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using PetShopPatte_Business.DTOs.AnimalTypeDTO;
 using PetShopPatte_Business.DTOs.CategoryDTO;
+using PetShopPatte_Business.DTOs.ProductDetailDTO;
+using PetShopPatte_Business.DTOs.ProductDTO;
 using PetShopPatte_Business.Services.Abstracts;
 using PetShopPatte_Business.Services.Concretes;
 using PetShopPatte_Core.Entities.UserModel;
@@ -30,7 +33,7 @@ namespace PetShop_Patte
                 opt.Password.RequireUppercase = true;
                 opt.Password.RequiredLength = 8;
                 opt.Password.RequiredUniqueChars = 1;
-                opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
                 opt.Lockout.MaxFailedAccessAttempts = 5;
                 opt.Lockout.AllowedForNewUsers = true;
                 opt.User.AllowedUserNameCharacters =
@@ -52,8 +55,23 @@ namespace PetShop_Patte
             builder.Services.AddScoped<IBasketRepository, BasketRepository>();
             builder.Services.AddScoped<IBasketService, BasketService>();
 
+            builder.Services.AddTransient<IValidator<ProductCreateDTO>, ProductCreateDTOValidation>();
+            builder.Services.AddTransient<IValidator<ProductUpdateDTO>, ProductUpdateDTOValidation>();
+
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
+            builder.Services.AddTransient<IValidator<ProductDetailCreateDTO>, ProductDetailCreateDTOValidation>();
+            builder.Services.AddTransient<IValidator<ProductDetailUpdateDTO>, ProductDetailUpdateDTOValidation>();
+
+            builder.Services.AddScoped<IProductDetailService, ProductDetailService>();
+            builder.Services.AddScoped<IProductDetailRepository, ProductDetailRepository>();
+
+            builder.Services.AddTransient<IValidator<AnimalTypeCreateDTO>, AnimalTypeCreateDTOValidation>();
+            builder.Services.AddTransient<IValidator<AnimalTypeUpdateDTO>, AnimalTypeUpdateDTOValidation>();
+
+            builder.Services.AddScoped<IAnimalTypeService, AnimalTypeService>();
+            builder.Services.AddScoped<IAnimalTypeRepository, AnimalTypeRepository>();
 
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<ISendMessageService, SendMessageService>();

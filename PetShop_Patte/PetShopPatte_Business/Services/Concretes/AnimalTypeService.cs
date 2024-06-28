@@ -1,10 +1,14 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using PetShopPatte_Business.DTOs.AnimalTypeDTO;
+using PetShopPatte_Business.DTOs.CategoryDTO;
 using PetShopPatte_Business.Exceptions.AnimalTypeExceptions;
+using PetShopPatte_Business.Exceptions.CategoryExceptions;
 using PetShopPatte_Business.Services.Abstracts;
 using PetShopPatte_Core.Entities;
 using PetShopPatte_Core.Entities.PatteDb;
 using PetShopPatte_Data.Repositories.Abstracts;
+using PetShopPatte_Data.Repositories.Concretes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,49 +20,106 @@ namespace PetShopPatte_Business.Services.Concretes
     public class AnimalTypeService : IAnimalTypeService
     {
         private readonly IAnimalTypeRepository _animalTypeRepository;
+        private readonly IValidator<AnimalTypeUpdateDTO> _validator;
 
         public AnimalTypeService(IAnimalTypeRepository animalTypeRepository)
         {
             _animalTypeRepository = animalTypeRepository;
         }
-        public Task AddAnimalType(AnimalTypeCreateDTO animalTypeCreateDTO)
+        public async Task AddAnimalType(AnimalTypeCreateDTO animalTypeCreateDTO)
         {
-            throw new NotImplementedException();
+            AnimalType animalType = new AnimalType()
+            {
+                Type = animalTypeCreateDTO.Type,
+            };
+
+            if(animalType == null )
+                throw new NullAnimalTypeException("Animal type cannot be null");
+
+            var animalTypes = await _animalTypeRepository.GetAllAsync();
+
+            if (!animalTypes.Any(x => x.Type == animalType.Type))
+            {
+                await _animalTypeRepository.AddAsync(animalType);
+                await _animalTypeRepository.Commit();
+            }
+            else
+            {
+                throw new DuplicateAnimalTypeException("Type", "Animal type cannot be the same");
+            }
         }
 
-        public Task<IQueryable<AnimalType>> GetAllAnimalTypes()
+        public async Task<IQueryable<AnimalType>> GetAllAnimalTypes()
         {
-            throw new NotImplementedException();
+            return await _animalTypeRepository.GetAllAsync();
         }
 
-        public Task<AnimalType> GetByIdAsync(int id)
+        public async Task<AnimalType> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            if (id <= 0)
+                throw new AnimalTypeIdNegativeorZeroException("Animal type id not negative and zero");
+
+            return await _animalTypeRepository.GetByIdAsync(id);
         }
 
-        public Task HardDeleteAnimalType(int id)
+        public async Task HardDeleteAnimalType(int id)
         {
-            throw new NotImplementedException();
+            if (id <= 0)
+                throw new AnimalTypeIdNegativeorZeroException("Animal type id not negative and zero");
+
+            await _animalTypeRepository.HardDelete(id);
         }
 
-        public Task Recover(int id)
+        public async Task Recover(int id)
         {
-            throw new NotImplementedException();
+            if (id <= 0)
+                throw new AnimalTypeIdNegativeorZeroException("Animal type id not negative and zero");
+
+            await _animalTypeRepository.Recover(id);
         }
 
-        public Task SoftDeleteAnimalType(int id)
+        public async Task SoftDeleteAnimalType(int id)
         {
-            throw new NotImplementedException();
+            if (id <= 0)
+                throw new AnimalTypeIdNegativeorZeroException("Animal type id not negative and zero");
+
+            await _animalTypeRepository.SoftDelete(id);
         }
 
-        public Task UpdateAnimalType(AnimalTypeUpdateDTO animalTypeUpdateDTO)
+        public async Task UpdateAnimalType(AnimalTypeUpdateDTO animalTypeUpdateDTO)
         {
-            throw new NotImplementedException();
+            var existType = await _animalTypeRepository.GetByIdAsync(animalTypeUpdateDTO.Id);
+
+            if (existType == null)
+                throw new NullAnimalTypeException("Animal type cannot be null");
+
+            existType.Type = animalTypeUpdateDTO.Type ?? existType.Type;
+
+            _animalTypeRepository.Update(existType);
+            await _animalTypeRepository.Commit();
         }
 
-        public Task<AnimalTypeUpdateDTO> UpdateById(int id)
+        public async Task<AnimalTypeUpdateDTO> UpdateById(int id)
         {
-            throw new NotImplementedException();
+            if (id <= 0)
+                throw new AnimalTypeIdNegativeorZeroException("Animal type id not negative and zero");
+
+            if (await _animalTypeRepository.IsExists(id))
+            {
+
+                var animalType = await _animalTypeRepository.GetByIdAsync(id);
+
+                AnimalTypeUpdateDTO animalTypeUpdateDTO = new AnimalTypeUpdateDTO()
+                {
+                    Type = animalType.Type,
+                };
+
+                return animalTypeUpdateDTO;
+            }
+            else
+            {
+                throw new Exceptions.AnimalTypeExceptions.EntityNotFoundException("", "Entity not found");
+            }
         }
     }
 }

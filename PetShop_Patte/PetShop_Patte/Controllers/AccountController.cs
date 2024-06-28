@@ -94,26 +94,14 @@ namespace PetShop_Patte.Controllers
             }
 
             await _accountService.RegisterAsync(registerDTO);
-            //var token = await _sendService.GenerateTokenAsync(emailAddress);
-
-            //string url = _linkGenerator.GetUriByAction(_httpContextAccessor.HttpContext, action: "ConfirmEmailAddress", controller: "SendMessage",
-            //values: new
-            //{
-            //    token,
-            //    emailAddress
-            //});
-
-            //await _sendService.SendMessageAsync(emailAddress, url);
-
-            //Response.Cookies.Append("ConfirmationLinkSent", "true", new CookieOptions
-            //{
-            //    Secure = true,
-            //    HttpOnly = true,
-            //    Expires = DateTimeOffset.UtcNow.AddMinutes(15)
-            //});
+            Response.Cookies.Append("ConfirmationLinkSent", "true", new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = true,
+                Expires = DateTimeOffset.UtcNow.AddMinutes(30)
+            });
 
             return RedirectToAction("Index", "Home");
-            //return RedirectToAction(nameof(CheckEmailAddress));
         }
 
 
