@@ -10,11 +10,13 @@ namespace PetShopPatte_Business.Services.Abstracts
 {
     public interface IAnimalTypeService
     {
-        void AddAnimalType(AnimalTypeCreateDTO animalTypeCreateDTO);
-        void UpdateAnimalType(AnimalTypeUpdateDTO animalTypeUpdateDTO);
-        void HardDeleteAnimalType(int id);
-        void SoftDeleteAnimalType(int id);
-        AnimalTypeGetDTO GetAnimalType(Func<AnimalType, bool>? func = null);
-        ICollection<AnimalTypeGetDTO> GetAllAnimalTypes(Func<AnimalType, bool>? func = null);
+        Task AddAnimalType(AnimalTypeCreateDTO animalTypeCreateDTO);
+        Task UpdateAnimalType(AnimalTypeUpdateDTO animalTypeUpdateDTO);
+        Task<AnimalTypeUpdateDTO> UpdateById(int id);
+        Task HardDeleteAnimalType(int id);
+        Task SoftDeleteAnimalType(int id);
+        Task Recover(int id);
+        Task<AnimalType> GetByIdAsync(int id);
+        Task<IQueryable<AnimalType>> GetAllAnimalTypes();
     }
 }

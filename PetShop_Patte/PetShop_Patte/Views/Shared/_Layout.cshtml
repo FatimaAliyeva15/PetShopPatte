@@ -166,44 +166,43 @@
         <ul>
 
           <li class="menu-item-has-children"><a href="JavaScript:void(0)">Home</a>
-            <ul class="sub-menu">
-
-              <li><a href="index.html">home 1</a></li>
-              <li><a href="index-2.html">home 2</a></li>
-              <li><a href="index-3.html">home 3</a></li>
+            <ul class="sub-menu">              
+              <li><a asp-action="Index" asp-controller="Home">home</a></li>
             </ul>
           </li>
-          <li><a href="about.html">about</a></li>
+                <li><a asp-action="Index" asp-controller="About">about</a></li>
 
           
           <li class="menu-item-has-children"><a href="JavaScript:void(0)">Services</a>
 
           <ul class="sub-menu">
 
-            <li><a href="services.html">services</a></li>
-            <li><a href="service-details.html">service details</a></li>
+                        <li><a asp-action="Index" asp-controller="Service">services</a></li>
+                        <li><a asp-action="Index" asp-controller="ServiceDetail">service details</a></li>
 
           </ul>
 
           </li>
           <li class="menu-item-has-children"><a href="JavaScript:void(0)">pages</a>
               <ul class="sub-menu">
-                <li><a href="team-details.html">team details</a></li>
-                <li><a href="how-we-works.html">how we works</a></li>
-                <li><a href="history.html">history</a></li>
-                <li><a href="pricing-packages.html">pricing packages</a></li>
-                <li><a href="photo-gallery.html">photo gallery</a></li>
-                <li><a href="login.html">login</a></li>
+                        <li><a asp-action="Index" asp-controller="TeamDetail">team details</a></li>
+                        <li><a asp-action="Index" asp-controller="HowWeWork">how we works</a></li>
+                        <li><a asp-action="Index" asp-controller="History">history</a></li>
+                        <li><a asp-action="Index" asp-controller="PricingPack">pricing packages</a></li>
+                        <li><a asp-action="Index" asp-controller="PhotoGalary">photo gallery</a></li>
+                        <li><a asp-action="Index" asp-controller="Login">login</a></li>
               </ul>
 
           </li>
           <li class="menu-item-has-children"><a href="JavaScript:void(0)">shop</a>
 
               <ul class="sub-menu">
-                <li><a href="our-products.html">our products</a></li>
-                <li><a href="product-details.html">product details</a></li>
-                <li><a href="shop-cart.html">shop cart</a></li>
-                <li><a href="cart-checkout.html">cart checkout</a></li>
+                        <a asp-action="Index" asp-controller="Pet">our pets</a>
+                        <a asp-action="Index" asp-controller="OurProducts">our products</a>
+                        <a asp-action="Index" asp-controller="PetDetail">pet details</a>
+                        <li><a asp-action="Index" asp-controller="ProductDeteail">product details</a></li>
+                        <li><a asp-action="Index" asp-controller="ShopCart">shop cart</a></li>
+                        <li><a asp-action="Index" asp-controller="CartCheckout">cart checkout</a></li>
               
               </ul>
 
@@ -211,14 +210,14 @@
           <li class="menu-item-has-children"><a href="JavaScript:void(0)">News</a>
 
               <ul class="sub-menu">
-                <li><a href="our-blog.html">our blog</a></li>
-               <li><a href="blog-details.html">blog details</a></li>
+                        <li><a asp-action="Index" asp-controller="OurBlog">our blog</a></li>
+                        <li><a asp-action="Index" asp-controller="BlogDetail">blog details</a></li>
               
               </ul>
 
           </li>
 
-          <li><a href="contact.html">contacts</a></li>
+          <li><a asp-action="Index" asp-controller="Contact">contacts</a></li>
 
           </ul>
 
@@ -361,15 +360,96 @@
 
                 <div class="cart-btns d-flex align-items-center justify-content-between">
 
-                    <a class="font-bold" href="JavaScript:void">View Cart</a>
+                    <a class="font-bold" asp-action="Index" asp-controller="ShopCart">View Cart</a>
 
-                    <a class="font-bold theme-bg-clr text-white checkout" href="JavaScript:void">Checkout</a>
+                    <a class="font-bold theme-bg-clr text-white checkout" asp-action="Index" asp-controller="CartCheckout">Checkout</a>
 
                 </div>
             </div>
         </div>
     </div>
     <!-- cart-popup end -->
+@*     @if (Model == null || !Model.BasketItems.Any())
+    {
+        <p>Your basket is empty.</p>
+    }
+    else
+    {
+        <!-- cart-popup -->
+        <div id="lightbox" class="lightbox clearfix">
+            <div class="white_content">
+                <a asp-controller="Basket" asp-action="Index" class="textright" id="close"><i class="fa-regular fa-circle-xmark"></i></a>
+                @foreach (var item in Model.BasketItems)
+                {
+                    <div class="cart-popup">
+                        <ul>
+
+                            <li class="d-flex align-items-center position-relative">
+
+                                <div class="p-img light-bg">
+
+                                    <img src="~/assets/img/food-1.png" alt="Product Image">
+
+                                </div>
+
+                                <div class="p-data">
+
+                                    <h3 class="font-semi-bold">@item.Product.Name</h3>
+
+                                    <p class="theme-clr font-semi-bold">@item.Quantity x $@item.Product.Price.ToString("C")</p>
+
+                                </div>
+
+                                <a href="JavaScript:void(0)" id="crosss"></a>
+
+                            </li>
+
+                            <li class="d-flex align-items-center position-relative">
+
+                                <div class="p-img light-bg">
+
+                                    <img src="~/assets/img/food-2.png" alt="Product Image">
+
+                                </div>
+
+                                <div class="p-data">
+
+                                    <h3 class="font-semi-bold">Banana Leaves</h3>
+
+                                    <p class="theme-clr font-semi-bold">@item.Quantity x $@item.Product.Price.ToString("C")</p>
+
+                                </div>
+
+                                <a href="JavaScript:void(0)" id="cross"></a>
+
+                            </li>
+
+                        </ul>
+
+                        <div class="cart-total d-flex align-items-center justify-content-between">
+
+                            <span class="font-semi-bold">Total:</span>
+
+                            <span class="font-semi-bold">###$@(item.Quantity * item.Product.Price).ToString("C")</span>
+
+                        </div>
+
+                        <div class="cart-btns d-flex align-items-center justify-content-between">
+
+                            <a class="font-bold" asp-action="Index" asp-controller="ShopCart">View Cart</a>
+
+                            <a class="font-bold theme-bg-clr text-white checkout" asp-action="Index" asp-controller="CartCheckout">Checkout</a>
+
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div>
+            <a asp-controller="Home" asp-action="Index">Continue Shopping</a>
+        </div>
+        <!-- cart-popup end --> *@
+
     <!-- search-popup -->
     <div class="search-popup">
         <button class="close-search style-two"><span class="flaticon-multiply"><i class="far fa-times-circle"></i></span></button>

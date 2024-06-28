@@ -1,105 +1,64 @@
-﻿//using AutoMapper;
-//using PetShopPatte_Business.DTOs.AnimalTypeDTO;
-//using PetShopPatte_Business.Exceptions.AnimalTypeExceptions;
-//using PetShopPatte_Business.Services.Abstracts;
-//using PetShopPatte_Core.Entities;
-//using PetShopPatte_Data.Repositories.Abstracts;
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+﻿using AutoMapper;
+using PetShopPatte_Business.DTOs.AnimalTypeDTO;
+using PetShopPatte_Business.Exceptions.AnimalTypeExceptions;
+using PetShopPatte_Business.Services.Abstracts;
+using PetShopPatte_Core.Entities;
+using PetShopPatte_Core.Entities.PatteDb;
+using PetShopPatte_Data.Repositories.Abstracts;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-//namespace PetShopPatte_Business.Services.Concretes
-//{
-//    public class AnimalTypeService : IAnimalTypeService
-//    {
-//        private readonly IAnimalTypeRepository _animalTypeRepository;
-//        private readonly IMapper _mapper;
+namespace PetShopPatte_Business.Services.Concretes
+{
+    public class AnimalTypeService : IAnimalTypeService
+    {
+        private readonly IAnimalTypeRepository _animalTypeRepository;
 
-//        public AnimalTypeService(IAnimalTypeRepository animalTypeRepository, IMapper mapper)
-//        {
-//            _animalTypeRepository = animalTypeRepository;
-//            _mapper = mapper;
-//        }
+        public AnimalTypeService(IAnimalTypeRepository animalTypeRepository)
+        {
+            _animalTypeRepository = animalTypeRepository;
+        }
+        public Task AddAnimalType(AnimalTypeCreateDTO animalTypeCreateDTO)
+        {
+            throw new NotImplementedException();
+        }
 
-//        public void AddAnimalType(AnimalTypeCreateDTO animalTypeCreateDTO)
-//        {
-//            AnimalType animalType = _mapper.Map<AnimalType>(animalTypeCreateDTO);
+        public Task<IQueryable<AnimalType>> GetAllAnimalTypes()
+        {
+            throw new NotImplementedException();
+        }
 
-//            if (animalType == null)
-//                throw new NullAnimalTypeException("Animal type cannot be null");
+        public Task<AnimalType> GetByIdAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
 
-//            if(!_animalTypeRepository.GetAll().Any(x => x.Type == animalType.Type))
-//            {
-//                _animalTypeRepository.Add(animalType);
-//                _animalTypeRepository.Commit();
-//            }
-//            else
-//            {
-//                throw new DuplicateAnimalTypeException("Type", "Animal type cannot be the same");
-//            }
-//        }
+        public Task HardDeleteAnimalType(int id)
+        {
+            throw new NotImplementedException();
+        }
 
-//        public ICollection<AnimalTypeGetDTO> GetAllAnimalTypes(Func<AnimalType, bool>? func = null)
-//        {
-//            var animalTypes = _animalTypeRepository.GetAll(func);
+        public Task Recover(int id)
+        {
+            throw new NotImplementedException();
+        }
 
-//            ICollection<AnimalTypeGetDTO> animalTypeGetDTOs = new List<AnimalTypeGetDTO>();
+        public Task SoftDeleteAnimalType(int id)
+        {
+            throw new NotImplementedException();
+        }
 
-//            foreach(var animalType in animalTypes)
-//            {
-//                AnimalTypeGetDTO animalTypeGetDTO = new AnimalTypeGetDTO()
-//                {
-//                    Id = animalType.Id,
-//                    Type = animalType.Type,
-//                };
+        public Task UpdateAnimalType(AnimalTypeUpdateDTO animalTypeUpdateDTO)
+        {
+            throw new NotImplementedException();
+        }
 
-//                animalTypeGetDTOs.Add(animalTypeGetDTO);
-//            }
-
-//            return animalTypeGetDTOs;
-//        }
-
-//        public AnimalTypeGetDTO GetAnimalType(Func<AnimalType, bool>? func = null)
-//        {
-//            var animalType = _animalTypeRepository.Get(func);
-
-//            AnimalTypeGetDTO animalTypeGetDTO = _mapper.Map<AnimalTypeGetDTO>(animalType);
-//            return animalTypeGetDTO;
-//        }
-
-//        public void HardDeleteAnimalType(int id)
-//        {
-//            var existType = _animalTypeRepository.Get(x => x.Id == id);
-
-//            if(existType == null)
-//                throw new NullAnimalTypeException("Animal type cannot be null");
-
-//            _animalTypeRepository.HardDelete(existType);
-//            _animalTypeRepository.Commit();
-//        }
-
-//        public void SoftDeleteAnimalType(int id)
-//        {
-//            var existType = _animalTypeRepository.Get(x => x.Id == id);
-
-//            if (existType == null)
-//                throw new NullAnimalTypeException("Animal type cannot be null");
-
-//            _animalTypeRepository.SoftDelete(existType);
-//            _animalTypeRepository.Commit();
-//        }
-
-//        public void UpdateAnimalType(AnimalTypeUpdateDTO animalTypeUpdateDTO)
-//        {
-//            var animalType = _animalTypeRepository.Get(x => x.Id == animalTypeUpdateDTO.Id);
-
-//            if (animalType == null)
-//                throw new NullAnimalTypeException("Animal type cannot be null");
-
-//            animalType.Type = animalTypeUpdateDTO.Type;
-//            _animalTypeRepository.Commit();
-//        }
-//    }
-//}
+        public Task<AnimalTypeUpdateDTO> UpdateById(int id)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

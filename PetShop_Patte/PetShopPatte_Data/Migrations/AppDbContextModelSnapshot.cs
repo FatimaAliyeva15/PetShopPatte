@@ -215,6 +215,9 @@ namespace PetShopPatte_Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
@@ -410,6 +413,10 @@ namespace PetShopPatte_Data.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<decimal>("Price")
+                        .HasMaxLength(18)
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int?>("SubcategoryId")
                         .HasColumnType("int");

@@ -1,4 +1,4 @@
-﻿@* @using PetShopPatte_Core.Entities.Cart
+﻿@using PetShopPatte_Core.Entities.Cart
 @model Basket
 
 <h1>Your Basket</h1>
@@ -9,37 +9,79 @@
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Total</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
+    <!-- cart-popup -->
+    <div id="lightbox" class="lightbox clearfix">
+        <div class="white_content">
+            <a href="javascript:;" class="textright" id="close"><i class="fa-regular fa-circle-xmark"></i></a>
             @foreach (var item in Model.BasketItems)
             {
-                <tr>
-                    <td>@item.Product.Name</td>
-                    <td>@item.Quantity</td>
-                    <td>@item.Product.Pr.ToString("C")</td>
-                    <td>@(item.Quantity * item.Product.Price).ToString("C")</td>
-                    <td>
-                        <form asp-controller="Basket" asp-action="RemoveFromBasket" method="post">
-                            <input type="hidden" name="productId" value="@item.ProductId" />
-                            <button type="submit" class="btn btn-danger">Remove</button>
-                        </form>
-                    </td>
-                </tr>
+                <div class="cart-popup">
+                    <ul>
+
+                        <li class="d-flex align-items-center position-relative">
+
+                            <div class="p-img light-bg">
+
+                                <img src="~/assets/img/food-1.png" alt="Product Image">
+
+                            </div>
+
+                            <div class="p-data">
+
+                                <h3 class="font-semi-bold">@item.Product.Name</h3>
+
+                                <p class="theme-clr font-semi-bold">@item.Quantity x $@item.Product.Price.ToString("C")</p>
+
+                            </div>
+
+                            <a href="JavaScript:void(0)" id="crosss"></a>
+
+                        </li>
+
+                        <li class="d-flex align-items-center position-relative">
+
+                            <div class="p-img light-bg">
+
+                                <img src="~/assets/img/food-2.png" alt="Product Image">
+
+                            </div>
+
+                            <div class="p-data">
+
+                                <h3 class="font-semi-bold">Banana Leaves</h3>
+
+                                <p class="theme-clr font-semi-bold">@item.Quantity x $@item.Product.Price.ToString("C")</p>
+
+                            </div>
+
+                            <a href="JavaScript:void(0)" id="cross"></a>
+
+                        </li>
+
+                    </ul>
+
+                    <div class="cart-total d-flex align-items-center justify-content-between">
+
+                        <span class="font-semi-bold">Total:</span>
+
+                        <span class="font-semi-bold">$@(item.Quantity * item.Product.Price).ToString("C")</span>
+
+                    </div>
+
+                    <div class="cart-btns d-flex align-items-center justify-content-between">
+
+                        <a class="font-bold" asp-action="Index" asp-controller="ShopCart">View Cart</a>
+
+                        <a class="font-bold theme-bg-clr text-white checkout" asp-action="Index" asp-controller="CartCheckout">Checkout</a>
+
+                    </div>
+                </div>
             }
-        </tbody>
-    </table>
+        </div>
+    </div>
+    <!-- cart-popup end -->
 }
 
 <div>
     <a asp-controller="Home" asp-action="Index">Continue Shopping</a>
 </div>
- *@
