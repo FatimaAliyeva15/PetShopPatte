@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PetShopPatte_Core.Entities.PatteDb
 {
-    public class Subcategory : BaseAuditableEntity
+    public class Subcategory : BaseEntity
     {
 
         public string SubcategoryName { get; set; }

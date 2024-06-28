@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace PetShopPatte_Core.Entities.PatteDb
 {
-    public class ProductDetail : BaseAuditableEntity
+    public class ProductDetail : BaseEntity
     {
         public string Description { get; set; }
 

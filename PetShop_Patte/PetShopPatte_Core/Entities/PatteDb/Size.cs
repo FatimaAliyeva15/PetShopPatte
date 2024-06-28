@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PetShopPatte_Core.Entities.PatteDb
 {
-    public class Size : BaseAuditableEntity
+    public class Size : BaseEntity
     {
 
         public string SizeName { get; set; }

@@ -1,0 +1,15 @@
+﻿@* @model PetShopPatte_Core.Entities.PatteDb.Product
+
+<h1>Add to Basket</h1>
+
+<form asp-controller="Basket" asp-action="AddToBasket" method="post">
+    <input type="hidden" name="productId" value="@Model.Id" />
+    <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" max="100" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Add to Basket</button>
+</form>
+
+<a asp-controller="Home" asp-action="Index">Back to Home</a>
+ *@

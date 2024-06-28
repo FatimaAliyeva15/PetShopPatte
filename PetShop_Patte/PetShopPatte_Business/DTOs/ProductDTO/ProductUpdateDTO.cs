@@ -13,6 +13,7 @@ namespace PetShopPatte_Business.DTOs.ProductDTO
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public decimal Price { get; set; }
         public int? SubcategoryId { get; set; }
         public int? AnimalTypeId { get; set; }
         public IFormFile ImgFile { get; set; }
@@ -23,6 +24,7 @@ namespace PetShopPatte_Business.DTOs.ProductDTO
         public ProductUpdateDTOValidation()
         {
             RuleFor(x => x.Name).NotEmpty().WithMessage("Name is required").NotNull().WithMessage("Can not be empty").MaximumLength(100).WithMessage("Name size can be maximum 100");
+            RuleFor(x => x.Price).NotEmpty().WithMessage("Price is required");
         }
     }
 }

@@ -10,10 +10,11 @@ using System.Threading.Tasks;
 
 namespace PetShopPatte_Core.Entities.PatteDb
 {
-    public class Product : BaseAuditableEntity
+    public class Product : BaseEntity
     {
 
         public string Name { get; set; }
+        public decimal Price { get; set; }
         public int? SubcategoryId { get; set; }
         public int? AnimalTypeId { get; set; }
         public Subcategory? Subcategory { get; set; }

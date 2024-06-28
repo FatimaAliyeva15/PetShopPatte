@@ -14,8 +14,8 @@ namespace PetShopPatte_Data.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity, new()
     {
-        private readonly AppDbContext _appDbContext;
-        private readonly DbSet<T> _table;
+        protected readonly AppDbContext _appDbContext;
+        protected readonly DbSet<T> _table;
         public GenericRepository(AppDbContext appDbContext)
         {
             _appDbContext = appDbContext ?? throw new ArgumentException(nameof(appDbContext));

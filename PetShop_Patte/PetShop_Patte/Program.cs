@@ -49,6 +49,9 @@ namespace PetShop_Patte
             builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
+            builder.Services.AddScoped<IBasketRepository, BasketRepository>();
+            builder.Services.AddScoped<IBasketService, BasketService>();
+
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<ISendMessageService, SendMessageService>();
 

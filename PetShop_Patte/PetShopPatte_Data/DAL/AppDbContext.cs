@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using PetShopPatte_Core.Entities.Cart;
 using PetShopPatte_Core.Entities.PatteDb;
 using PetShopPatte_Core.Entities.UserModel;
 using PetShopPatte_Data.Configurations;
@@ -25,6 +26,9 @@ namespace PetShopPatte_Data.DAL
         public DbSet<ProductDetail> ProductDetails { get; set; }
         public DbSet<Size> Sizes { get; set; }
         public DbSet<Subcategory> Subcategories { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
+        public DbSet<BasketItem> BasketItems { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -37,7 +41,8 @@ namespace PetShopPatte_Data.DAL
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ProductDetailConfiguration).Assembly);
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(SizeConfiguration).Assembly);
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(SubcategoryConfiguration).Assembly);
-
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(BasketConfiguration).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(BasketItemConfiguration).Assembly);
 
             base.OnModelCreating(modelBuilder);
         }

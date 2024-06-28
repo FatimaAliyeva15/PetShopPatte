@@ -8,8 +8,8 @@ namespace PetShopPatte_Core.Entities.Common
 {
     public class BaseAuditableEntity: BaseEntity
     {
-        public bool IsDeleted { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        //public bool IsDeleted { get; set; }
+        //public DateTime CreatedDate { get; set; }
+        //public DateTime UpdatedDate { get; set; }
     }
 }

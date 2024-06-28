@@ -1,0 +1,45 @@
+﻿@* @using PetShopPatte_Core.Entities.Cart
+@model Basket
+
+<h1>Your Basket</h1>
+
+@if (Model == null || !Model.BasketItems.Any())
+{
+    <p>Your basket is empty.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.BasketItems)
+            {
+                <tr>
+                    <td>@item.Product.Name</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.Product.Pr.ToString("C")</td>
+                    <td>@(item.Quantity * item.Product.Price).ToString("C")</td>
+                    <td>
+                        <form asp-controller="Basket" asp-action="RemoveFromBasket" method="post">
+                            <input type="hidden" name="productId" value="@item.ProductId" />
+                            <button type="submit" class="btn btn-danger">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<div>
+    <a asp-controller="Home" asp-action="Index">Continue Shopping</a>
+</div>
+ *@

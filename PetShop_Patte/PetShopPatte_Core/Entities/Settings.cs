@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PetShopPatte_Core.Entities
 {
-    public class Settings: BaseAuditableEntity
+    public class Settings: BaseEntity
     {
         public string Description { get; set; }
         public string Facebook { get; set; }
