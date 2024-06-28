@@ -1,4 +1,5 @@
-﻿using PetShopPatte_Business.DTOs.ColorDTO;
+﻿using PetShopPatte_Business.DTOs.CategoryDTO;
+using PetShopPatte_Business.DTOs.ColorDTO;
 using PetShopPatte_Core.Entities.PatteDb;
 using System;
 using System.Collections.Generic;
@@ -10,11 +11,13 @@ namespace PetShopPatte_Business.Services.Abstracts
 {
     public interface IColorService
     {
-        void AddColor(ColorCreateDTO colorCreateDTO);
-        void UpdateColor(ColorUpdateDTO colorUpdateDTO);
-        void HardDeleteColor(int id);
-        void SoftDeleteColor(int id);
-        ColorGetDTO GetColor(Func<Color, bool>? func = null);
-        ICollection<ColorGetDTO> GetAllColors(Func<Color, bool>? func = null);
+        Task AddColor(ColorCreateDTO colorCreateDTO);
+        Task UpdateColor(ColorUpdateDTO colorUpdateDTO);
+        Task<ColorUpdateDTO> UpdateById(int id);
+        Task HardDeleteColor(int id);
+        Task SoftDeleteColor(int id);
+        Task Recover(int id);
+        Task<Color> GetByIdAsync(int id);
+        Task<IQueryable<Color>> GetAllColors();
     }
 }

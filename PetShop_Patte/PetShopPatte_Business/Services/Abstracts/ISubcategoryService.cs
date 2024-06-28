@@ -1,4 +1,5 @@
-﻿using PetShopPatte_Business.DTOs.SubcategoryDTO;
+﻿using PetShopPatte_Business.DTOs.CategoryDTO;
+using PetShopPatte_Business.DTOs.SubcategoryDTO;
 using PetShopPatte_Core.Entities.PatteDb;
 using System;
 using System.Collections.Generic;
@@ -10,11 +11,13 @@ namespace PetShopPatte_Business.Services.Abstracts
 {
     public interface ISubcategoryService
     {
-        void AddSubcategory(SubcategoryCreateDTO subcategoryCreateDTO);
-        void UpdateSubcategory(SubcategoryUpdateDTO subcategoryUpdateDTO);
-        void HardDeleteSubcategory(int id);
-        void SoftDeleteSubcategory(int id);
-        SubcategoryGetDTO GetSubcategory(Func<Subcategory, bool>? func = null);
-        ICollection<SubcategoryGetDTO> GetAllSubcategories(Func<Subcategory, bool>? func = null);
+        Task AddSubcategory(SubcategoryCreateDTO subcategoryCreateDTO);
+        Task UpdateSubcategory(SubcategoryUpdateDTO subcategoryUpdateDTO);
+        Task<SubcategoryUpdateDTO> UpdateById(int id);
+        Task HardDeleteSubcatagory(int id);
+        Task SoftDeleteSubcatagory(int id);
+        Task Recover(int id);
+        Task<Subcategory> GetByIdAsync(int id);
+        Task<IQueryable<Subcategory>> GetAllSubcategories();
     }
 }

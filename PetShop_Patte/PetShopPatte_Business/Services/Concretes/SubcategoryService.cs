@@ -1,104 +1,133 @@
-﻿//using AutoMapper;
-//using PetShopPatte_Business.DTOs.SubcategoryDTO;
-//using PetShopPatte_Business.Exceptions.SubcategoryExceptions;
-//using PetShopPatte_Business.Services.Abstracts;
-//using PetShopPatte_Core.Entities;
-//using PetShopPatte_Data.Repositories.Abstracts;
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+﻿using FluentValidation;
+using PetShopPatte_Business.DTOs.CategoryDTO;
+using PetShopPatte_Business.DTOs.SubcategoryDTO;
+using PetShopPatte_Business.Exceptions.CategoryExceptions;
+using PetShopPatte_Business.Exceptions.SubcategoryExceptions;
+using PetShopPatte_Business.Services.Abstracts;
+using PetShopPatte_Core.Entities.PatteDb;
+using PetShopPatte_Data.Repositories.Abstracts;
+using PetShopPatte_Data.Repositories.Concretes;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using EntityNotFoundException = PetShopPatte_Business.Exceptions.SubcategoryExceptions.EntityNotFoundException;
 
-//namespace PetShopPatte_Business.Services.Concretes
-//{
-//    public class SubcategoryService : ISubcategoryService
-//    {
-//        private readonly ISubcategoryRepository _subcategoryRepository;
-//        private readonly IMapper _mapper;
+namespace PetShopPatte_Business.Services.Concretes
+{
+    public class SubcategoryService : ISubcategoryService
+    {
+        private readonly ISubcategoryRepository _subcategoryRepository;
+        private readonly IValidator<SubcategoryCreateDTO> _validator;
 
-//        public SubcategoryService(ISubcategoryRepository subcategoryRepository, IMapper mapper)
-//        {
-//            _subcategoryRepository = subcategoryRepository;
-//            _mapper = mapper;
-//        }
+        public SubcategoryService(ISubcategoryRepository subcategoryRepository, IValidator<SubcategoryCreateDTO> validator)
+        {
+            _subcategoryRepository = subcategoryRepository;
+            _validator = validator;
+        }
 
-//        public void AddSubcategory(SubcategoryCreateDTO subcategoryCreateDTO)
-//        {
-//            Subcategory subcategory = _mapper.Map<Subcategory>(subcategoryCreateDTO);
+        public async Task AddSubcategory(SubcategoryCreateDTO subcategoryCreateDTO)
+        {
+            Subcategory subcategory = new Subcategory()
+            {
+                SubcategoryName = subcategoryCreateDTO.SubcategoryName,
+                CategoryId = subcategoryCreateDTO.CategoryId,
+            };
 
-//            if (subcategory == null)
-//                throw new NullSubcategoryException("Subcategory cannot be null");
+            if (subcategory == null)
+                throw new NullSubcategoryException("Subcategory cannot be null");
 
-//            if(!_subcategoryRepository.GetAll().Any(x => x.SubcategoryName == subcategory.SubcategoryName))
-//            {
-//                _subcategoryRepository.Add(subcategory);
-//                _subcategoryRepository.Commit();
-//            }
-//            else
-//            {
-//                throw new DuplicateSubcategoryException("SubcategoryName", "Subcategory name cannot be the same");
-//            }
-//        }
+            var subcategories = await _subcategoryRepository.GetAllAsync();
 
-//        public ICollection<SubcategoryGetDTO> GetAllSubcategories(Func<Subcategory, bool>? func = null)
-//        {
-//            var subcategories = _subcategoryRepository.GetAll(func);
+            if (!subcategories.Any(x => x.SubcategoryName == subcategory.SubcategoryName))
+            {
+                await _subcategoryRepository.AddAsync(subcategory);
+                await _subcategoryRepository.Commit();
+            }
+            else
+            {
+                throw new DuplicateSubcategoryException("SubcategoryName", "Subcategory name cannot be the same");
+            }
+        }
 
-//            ICollection<SubcategoryGetDTO> subcategoryGetDTOs = new List<SubcategoryGetDTO>();
+        public async Task<IQueryable<Subcategory>> GetAllSubcategories()
+        {
+            return await _subcategoryRepository.GetAllAsync();
+        }
 
-//            foreach (var subcategory in subcategories)
-//            {
-//                SubcategoryGetDTO subcategoryGetDTO = new SubcategoryGetDTO()
-//                {
-//                    Id = subcategory.Id,
-//                    SubcategoryName = subcategory.SubcategoryName,
-//                };
+        public async Task<Subcategory> GetByIdAsync(int id)
+        {
+            if (id <= 0)
+                throw new SubcategoryIdNegativeorZeroException("Subcategory id not negative and zero");
 
-//                subcategoryGetDTOs.Add(subcategoryGetDTO);
-//            }
-//            return subcategoryGetDTOs;
-//        }
+            return await _subcategoryRepository.GetByIdAsync(id);
+        }
 
-//        public SubcategoryGetDTO GetSubcategory(Func<Subcategory, bool>? func = null)
-//        {
-//            var subcategory = _subcategoryRepository.Get(func);
+        public async Task HardDeleteSubcatagory(int id)
+        {
+            if (id <= 0)
+                throw new SubcategoryIdNegativeorZeroException("Subcategory id not negative and zero");
 
-//            SubcategoryGetDTO subcategoryGetDTO = _mapper.Map<SubcategoryGetDTO>(subcategory);
-//            return subcategoryGetDTO;
-//        }
+            await _subcategoryRepository.HardDelete(id);
+            await _subcategoryRepository.Commit();
+        }
 
-//        public void HardDeleteSubcategory(int id)
-//        {
-//            var existSubcategory = _subcategoryRepository.Get(x => x.Id == id);
+        public async Task Recover(int id)
+        {
+            if (id <= 0)
+                throw new SubcategoryIdNegativeorZeroException("Subcategory id not negative and zero");
 
-//            if (existSubcategory == null)
-//                throw new NullSubcategoryException("Subcategory cannot be null"); 
+            await _subcategoryRepository.Recover(id);
+            await _subcategoryRepository.Commit();
+        }
 
-//            _subcategoryRepository.HardDelete(existSubcategory);
-//            _subcategoryRepository.Commit();
-//        }
+        public async Task SoftDeleteSubcatagory(int id)
+        {
+            if (id <= 0)
+                throw new SubcategoryIdNegativeorZeroException("Subcategory id not negative and zero");
 
-//        public void SoftDeleteSubcategory(int id)
-//        {
-//            var existSubcategory = _subcategoryRepository.Get(x => x.Id == id);
+            await _subcategoryRepository.SoftDelete(id);
+            await _subcategoryRepository.Commit();
+        }
 
-//            if (existSubcategory == null)
-//                throw new NullSubcategoryException("Subcategory cannot be null");
+        public async Task<SubcategoryUpdateDTO> UpdateById(int id)
+        {
+            if (id <= 0)
+                throw new SubcategoryIdNegativeorZeroException("Subcategory id not negative and zero");
 
-//            _subcategoryRepository.SoftDelete(existSubcategory);
-//            _subcategoryRepository.Commit();
-//        }
+            if (await _subcategoryRepository.IsExists(id))
+            {
 
-//        public void UpdateSubcategory(SubcategoryUpdateDTO subcategoryUpdateDTO)
-//        {
-//            var existSubcategory = _subcategoryRepository.Get(x => x.Id == subcategoryUpdateDTO.Id);
+                var subcategory = await _subcategoryRepository.GetByIdAsync(id);
 
-//            if (existSubcategory == null)
-//                throw new NullSubcategoryException("Subcategory cannot be null");
+                SubcategoryUpdateDTO subcategoryUpdateDTO = new SubcategoryUpdateDTO()
+                {
+                    SubcategoryName = subcategory.SubcategoryName,
+                    CategoryId = subcategory.CategoryId,
+                };
 
-//            existSubcategory.SubcategoryName = subcategoryUpdateDTO.SubcategoryName;
-//            _subcategoryRepository.Commit();
-//        }
-//    }
-//}
+                return subcategoryUpdateDTO;
+            }
+            else
+            {
+                throw new EntityNotFoundException("", "Entity not found");
+            }
+
+        }
+
+        public async Task UpdateSubcategory(SubcategoryUpdateDTO subcategoryUpdateDTO)
+        {
+            var existSubcategory = await _subcategoryRepository.GetByIdAsync(subcategoryUpdateDTO.Id);
+
+            if (existSubcategory == null)
+                throw new NullCategoryException("Category cannot be null");
+
+            existSubcategory.SubcategoryName = subcategoryUpdateDTO.SubcategoryName ?? existSubcategory.SubcategoryName;
+            existSubcategory.CategoryId = subcategoryUpdateDTO.CategoryId ?? existSubcategory.CategoryId;
+
+            _subcategoryRepository.Update(existSubcategory);
+            await _subcategoryRepository.Commit();
+        }
+    }
+}

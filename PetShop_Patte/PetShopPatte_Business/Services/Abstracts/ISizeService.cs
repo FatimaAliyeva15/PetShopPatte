@@ -10,11 +10,13 @@ namespace PetShopPatte_Business.Services.Abstracts
 {
     public interface ISizeService
     {
-        void AddSize(SizeCreateDTO sizeCreateDTO);
-        void UpdateSize(SizeUpdateDTO sizeUpdateDTO);
-        void HardDeleteSize(int id);
-        void SoftDeleteSize(int id);
-        SizeGetDTO GetSize(Func<Size, bool>? func = null);
-        ICollection<SizeGetDTO> GetAllSizes(Func<Size, bool>? func = null);
+        Task AddSize(SizeCreateDTO sizeCreateDTO);
+        Task UpdateSize(SizeUpdateDTO sizeUpdateDTO);
+        Task<SizeUpdateDTO> UpdateById(int id);
+        Task HardDeleteSize(int id);
+        Task SoftDeleteSize(int id);
+        Task Recover(int id);
+        Task<Size> GetByIdAsync(int id);
+        Task<IQueryable<Size>> GetAllSizes();
     }
 }

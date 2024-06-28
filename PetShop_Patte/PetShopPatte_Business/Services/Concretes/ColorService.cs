@@ -1,105 +1,136 @@
-﻿//using AutoMapper;
-//using PetShopPatte_Business.DTOs.ColorDTO;
-//using PetShopPatte_Business.Exceptions.ColorExceptions;
-//using PetShopPatte_Business.Services.Abstracts;
-//using PetShopPatte_Core.Entities;
-//using PetShopPatte_Data.Repositories.Abstracts;
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+﻿using AutoMapper;
+using FluentValidation;
+using PetShopPatte_Business.DTOs.CategoryDTO;
+using PetShopPatte_Business.DTOs.ColorDTO;
+using PetShopPatte_Business.Exceptions.CategoryExceptions;
+using PetShopPatte_Business.Exceptions.ColorExceptions;
+using PetShopPatte_Business.Services.Abstracts;
+using PetShopPatte_Core.Entities;
+using PetShopPatte_Core.Entities.PatteDb;
+using PetShopPatte_Data.Repositories.Abstracts;
+using PetShopPatte_Data.Repositories.Concretes;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-//namespace PetShopPatte_Business.Services.Concretes
-//{
-//    public class ColorService : IColorService
-//    {
-//        private readonly IColorRepository _colorRepository;
-//        private readonly IMapper _mapper;
+namespace PetShopPatte_Business.Services.Concretes
+{
+    public class ColorService : IColorService
+    {
+        private readonly IColorRepository _colorRepository;
+        private readonly IMapper _mapper;
+        private readonly IValidator<Color> _validator;
 
-//        public ColorService(IColorRepository colorRepository, IMapper mapper)
-//        {
-//            _colorRepository = colorRepository;
-//            _mapper = mapper;
-//        }
+        public ColorService(IColorRepository colorRepository, IMapper mapper, IValidator<Color> validator)
+        {
+            _colorRepository = colorRepository;
+            _mapper = mapper;
+            _validator = validator;
+        }
 
-//        public void AddColor(ColorCreateDTO colorCreateDTO)
-//        {
-//            Color color = _mapper.Map<Color>(colorCreateDTO);
+        public async Task AddColor(ColorCreateDTO colorCreateDTO)
+        {
+            Color color = new Color()
+            {
+                ColorName = colorCreateDTO.ColorName,
+            };
 
-//            if (color == null)
-//                throw new NullColorException("Color cannot be null");
+            if (color == null)
+                throw new NullColorException("Color cannot be null");
 
-//            if(!_colorRepository.GetAll().Any(x => x.ColorName == color.ColorName))
-//            {
-//                _colorRepository.Add(color);
-//                _colorRepository.Commit();
-//            }
-//            else
-//            {
-//                throw new DuplicateColorException("ColorName", "Color name cannot be the same");
-//            }
-//        }
+            var colors = await _colorRepository.GetAllAsync();
 
-//        public ICollection<ColorGetDTO> GetAllColors(Func<Color, bool>? func = null)
-//        {
-//            var colors = _colorRepository.GetAll(func);
+            if (!colors.Any(x => x.ColorName == color.ColorName))
+            {
+                await _colorRepository.AddAsync(color);
+                await _colorRepository.Commit();
+            }
+            else
+            {
+                throw new DuplicateColorException("ColorName", "Color name cannot be the same");
+            }
+        }
 
-//            ICollection<ColorGetDTO> colorGetDTOs = new List<ColorGetDTO>();
+        public async Task<IQueryable<Color>> GetAllColors()
+        {
+            
+            return await _colorRepository.GetAllAsync();
+        }
 
-//            foreach (var color in colors)
-//            {
-//                ColorGetDTO colorGetDTO = new ColorGetDTO()
-//                {
-//                    Id = color.Id,
-//                    ColorName = color.ColorName,
-//                };
+        public async Task<Color> GetByIdAsync(int id)
+        {
+            if (id <= 0)
+                throw new ColorIdNegativeorZeroException("Color id not negative and zero");
 
-//                colorGetDTOs.Add(colorGetDTO);
-//            }
+            return await _colorRepository.GetByIdAsync(id);
+        }
 
-//            return colorGetDTOs;
-//        }
+        public async Task HardDeleteColor(int id)
+        {
+            if (id <= 0)
+                throw new ColorIdNegativeorZeroException("Color id not negative and zero");
 
-//        public ColorGetDTO GetColor(Func<Color, bool>? func = null)
-//        {
-//            var color = _colorRepository.Get(func);
+            await _colorRepository.HardDelete(id);
+            await _colorRepository.Commit();
+        }
 
-//            ColorGetDTO colorGetDTO = _mapper.Map<ColorGetDTO>(color);
-//            return colorGetDTO;
-//        }
+        public async Task Recover(int id)
+        {
 
-//        public void HardDeleteColor(int id)
-//        {
-//            var existColor = _colorRepository.Get(x => x.Id == id);
+            if (id <= 0)
+                throw new ColorIdNegativeorZeroException("Color id not negative and zero");
 
-//            if (existColor == null)
-//                throw new NullColorException("Color cannot be null");
+            await _colorRepository.Recover(id);
+            await _colorRepository.Commit();
+        }
 
-//            _colorRepository.HardDelete(existColor);
-//            _colorRepository.Commit();
-//        }
+        public async Task SoftDeleteColor(int id)
+        {
 
-//        public void SoftDeleteColor(int id)
-//        {
-//            var existColor = _colorRepository.Get(x => x.Id == id);
+            if (id <= 0)
+                throw new ColorIdNegativeorZeroException("Color id not negative and zero");
 
-//            if (existColor == null)
-//                throw new NullColorException("Color cannot be null");
+            await _colorRepository.SoftDelete(id);
+            await _colorRepository.Commit();
+        }
 
-//            _colorRepository.SoftDelete(existColor);
-//            _colorRepository.Commit();
-//        }
+        public async Task<ColorUpdateDTO> UpdateById(int id)
+        {
 
-//        public void UpdateColor(ColorUpdateDTO colorUpdateDTO)
-//        {
-//            var existColor = _colorRepository.Get(x => x.Id == colorUpdateDTO.Id);
+            if (id <= 0)
+                throw new ColorIdNegativeorZeroException("Color id not negative and zero");
 
-//            if (existColor == null)
-//                throw new NullColorException("Color cannot be null");
+            if (await _colorRepository.IsExists(id))
+            {
 
-//            existColor.ColorName = colorUpdateDTO.ColorName;
-//            _colorRepository.Commit();
-//        }
-//    }
-//}
+                var color = await _colorRepository.GetByIdAsync(id);
+
+                ColorUpdateDTO colorUpdateDTO = new ColorUpdateDTO()
+                {
+                    ColorName = color.ColorName,
+                };
+
+                return colorUpdateDTO;
+            }
+            else
+            {
+                throw new Exceptions.ColorExceptions.EntityNotFoundException("", "Entity not found");
+            }
+        }
+
+        public async Task UpdateColor(ColorUpdateDTO colorUpdateDTO)
+        {
+            var existColor = await _colorRepository.GetByIdAsync(colorUpdateDTO.Id);
+
+            if (existColor == null)
+                throw new NullColorException("Color cannot be null");
+
+            existColor.ColorName = colorUpdateDTO.ColorName ?? existColor.ColorName;
+
+            _colorRepository.Update(existColor);
+            await _colorRepository.Commit();
+        }
+    }
+}

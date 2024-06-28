@@ -1,103 +1,130 @@
-﻿//using AutoMapper;
-//using PetShopPatte_Business.DTOs.SizeDTO;
-//using PetShopPatte_Business.Exceptions.SizeExceptions;
-//using PetShopPatte_Business.Services.Abstracts;
-//using PetShopPatte_Core.Entities;
-//using PetShopPatte_Data.Repositories.Abstracts;
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+﻿using AutoMapper;
+using FluentValidation;
+using PetShopPatte_Business.DTOs.CategoryDTO;
+using PetShopPatte_Business.DTOs.SizeDTO;
+using PetShopPatte_Business.Exceptions.CategoryExceptions;
+using PetShopPatte_Business.Exceptions.SizeExceptions;
+using PetShopPatte_Business.Services.Abstracts;
+using PetShopPatte_Core.Entities;
+using PetShopPatte_Core.Entities.PatteDb;
+using PetShopPatte_Data.Repositories.Abstracts;
+using PetShopPatte_Data.Repositories.Concretes;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-//namespace PetShopPatte_Business.Services.Concretes
-//{
-//    public class SizeService : ISizeService
-//    {
-//        private readonly ISizeRepository _sizeRepository;
-//        private readonly IMapper _mapper;
+namespace PetShopPatte_Business.Services.Concretes
+{
+    public class SizeService : ISizeService
+    {
+        private readonly ISizeRepository _sizeRepository;
+        private readonly IValidator<Size> _validator;
 
-//        public SizeService(ISizeRepository sizeRepository, IMapper mapper)
-//        {
-//            _sizeRepository = sizeRepository;
-//            _mapper = mapper;
-//        }
+        public SizeService(ISizeRepository sizeRepository, IValidator<Size> validator)
+        {
+            _sizeRepository = sizeRepository;
+            _validator = validator;
+        }
 
-//        public void AddSize(SizeCreateDTO sizeCreateDTO)
-//        {
-//            Size size = _mapper.Map<Size>(sizeCreateDTO);
+        public async Task AddSize(SizeCreateDTO sizeCreateDTO)
+        {
+            Size size = new Size()
+            {
+                SizeName = sizeCreateDTO.SizeName,
+            };
 
-//            if (size == null)
-//                throw new NullSizeException("Size cnnot be null");
+            if (size == null)
+                throw new NullSizeException("Size cannot be null");
 
-//            if(!_sizeRepository.GetAll().Any(x => x.SizeName == size.SizeName))
-//            {
-//                _sizeRepository.Add(size);
-//                _sizeRepository.Commit();
-//            }
-//            else
-//            {
-//                throw new DuplicateSizeException("SizeName", "Size name cannot be the same");
-//            }
-//        }
+            var sizes = await _sizeRepository.GetAllAsync();
 
-//        public ICollection<SizeGetDTO> GetAllSizes(Func<Size, bool>? func = null)
-//        {
-//            var sizes = _sizeRepository.GetAll(func);
+            if (!sizes.Any(x => x.SizeName == size.SizeName))
+            {
+                await _sizeRepository.AddAsync(size);
+                await _sizeRepository.Commit();
+            }
+            else
+            {
+                throw new DuplicateSizeException("SizeName", "Size name cannot be the same");
+            }
+        }
 
-//            ICollection<SizeGetDTO> sizeGetDTOs = new List<SizeGetDTO>();
-//            foreach (var size in sizes)
-//            {
-//                SizeGetDTO sizeGetDTO = new SizeGetDTO()
-//                {
-//                    Id = size.Id,
-//                    SizeName = size.SizeName,
-//                };
+        public async Task<IQueryable<Size>> GetAllSizes()
+        {
+            return await _sizeRepository.GetAllAsync();
+        }
 
-//                sizeGetDTOs.Add(sizeGetDTO);
-//            }
-//            return sizeGetDTOs;
-//        }
+        public async Task<Size> GetByIdAsync(int id)
+        {
+            if (id <= 0)
+                throw new SizeIdNegativeorZeroException("Size id not negative and zero");
 
-//        public SizeGetDTO GetSize(Func<Size, bool>? func = null)
-//        {
-//            var size = _sizeRepository.Get(func);
+            return await _sizeRepository.GetByIdAsync(id);
+        }
 
-//            SizeGetDTO sizeGetDTO = _mapper.Map<SizeGetDTO>(size);
-//            return sizeGetDTO;
-//        }
+        public async Task HardDeleteSize(int id)
+        {
+            if (id <= 0)
+                throw new SizeIdNegativeorZeroException("Size id not negative and zero");
 
-//        public void HardDeleteSize(int id)
-//        {
-//            var existSize = _sizeRepository.Get(x => x.Id == id);
+            await _sizeRepository.HardDelete(id);
+            await _sizeRepository.Commit();
+        }
 
-//            if (existSize == null)
-//                throw new NullSizeException("Size cannot be null");
+        public async Task Recover(int id)
+        {
+            if (id <= 0)
+                throw new SizeIdNegativeorZeroException("Size id not negative and zero");
 
-//            _sizeRepository.HardDelete(existSize);
-//            _sizeRepository.Commit();
-//        }
+            await _sizeRepository.Recover(id);
+            await _sizeRepository.Commit();
+        }
 
-//        public void SoftDeleteSize(int id)
-//        {
-//            var existSize = _sizeRepository.Get(x => x.Id == id);
+        public async Task SoftDeleteSize(int id)
+        {
+            if (id <= 0)
+                throw new SizeIdNegativeorZeroException("Size id not negative and zero");
 
-//            if (existSize == null)
-//                throw new NullSizeException("Size cannot be null");
+            await _sizeRepository.SoftDelete(id);
+            await _sizeRepository.Commit();
+        }
 
-//            _sizeRepository.SoftDelete(existSize);
-//            _sizeRepository.Commit();
-//        }
+        public async Task<SizeUpdateDTO> UpdateById(int id)
+        {
+            if (id <= 0)
+                throw new SizeIdNegativeorZeroException("Size id not negative and zero");
 
-//        public void UpdateSize(SizeUpdateDTO sizeUpdateDTO)
-//        {
-//            var existSize = _sizeRepository.Get(x => x.Id == sizeUpdateDTO.Id);
+            if (await _sizeRepository.IsExists(id))
+            {
 
-//            if (existSize == null)
-//                throw new NullSizeException("Size cannot be null");
+                var size = await _sizeRepository.GetByIdAsync(id);
 
-//            existSize.SizeName = sizeUpdateDTO.SizeName;
-//            _sizeRepository.Commit();
-//        }
-//    }
-//}
+                SizeUpdateDTO sizeUpdateDTO = new SizeUpdateDTO()
+                {
+                    SizeName = size.SizeName,
+                };
+
+                return sizeUpdateDTO;
+            }
+            else
+            {
+                throw new Exceptions.SizeExceptions.EntityNotFoundException("", "Entity not found");
+            }
+        }
+
+        public async Task UpdateSize(SizeUpdateDTO sizeUpdateDTO)
+        {
+            var existSize = await _sizeRepository.GetByIdAsync(sizeUpdateDTO.Id);
+
+            if (existSize == null)
+                throw new NullSizeException("Size cannot be null");
+
+            existSize.SizeName = sizeUpdateDTO.SizeName ?? existSize.SizeName;
+
+            _sizeRepository.Update(existSize);
+            await _sizeRepository.Commit();
+        }
+    }
+}
