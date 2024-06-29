@@ -35,9 +35,16 @@
                         <input asp-for="SubcategoryName" class="form-control" class="flex-grow" placeholder="Subcategory name" tabindex="0" aria-required="true" required="">
                         <span asp-validation-for="SubcategoryName" style="color:red"></span>
                     </fieldset>
+                    <fieldset class="category">
+                        <div class="body-title mb-10">Category<span class="tf-color-1">*</span></div>
+                        <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="mb-10" required></select>
+                        <span asp-validation-for="CategoryId" style="color:red"></span>
+                    </fieldset>
                     <div class="bot">
                         <div></div>
-                        <button class="tf-button w208" type="submit">Save</button>
+                        <div class="cols gap10">
+                            <button class="tf-button w-full" type="submit">Save</button>
+                        </div>
                     </div>
                 </form>
             </div>

@@ -59,6 +59,9 @@
                             <div class="body-title">Subcategory</div>
                         </li>
                         <li>
+                            <div class="body-title">Category</div>
+                        </li>
+                        <li>
                             <div class="body-title">Action</div>
                         </li>
                     </ul>
@@ -68,7 +71,7 @@
                             <li class="product-item gap14">
                                 <div class="flex items-center justify-between gap20 flex-grow">
                                     <div class="name">
-                                        <a href="product-list.html" class="body-title-2">@item.SubcategoryName</a>
+                                        <a asp-action="Index" asp-controller="Subcategory" class="body-title-2">@item.SubcategoryName</a>
                                     </div>
                                     <div class="list-icon-function">
                                         <div class="item eye">
@@ -76,6 +79,7 @@
                                                 <i class="icon-eye"></i>
                                             </a>
                                         </div>
+                                        <div class="body-text">@item.Category?.CategoryName</div>
                                         <div class="item edit">
                                             <a asp-action="Update" asp-controller="Subcategory" asp-route-id="@item.Id">
                                                 <i class="icon-edit-3"></i>

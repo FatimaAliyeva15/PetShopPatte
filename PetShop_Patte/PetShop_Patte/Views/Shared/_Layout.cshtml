@@ -372,7 +372,7 @@
         <div id="lightbox" class="lightbox clearfix">
             <div class="white_content">
                 <a asp-controller="Basket" asp-action="Index" class="textright" id="close"><i class="fa-regular fa-circle-xmark"></i></a>
-     @if (Model == null || !Model.BasketItems.Any())
+     @if (!Model.BasketItems.Count() == 0)
     {
         <p>Your basket is empty.</p>
     }

@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A424CAB-23DA-4918-9303-F02A8921F85C}|PetShop_Patte\\PetShop_Patte.csproj|c:\\users\\asus\\desktop\\petshop_patte\\petshop_patte\\petshop_patte\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7A424CAB-23DA-4918-9303-F02A8921F85C}|PetShop_Patte\\PetShop_Patte.csproj|solutionrelative:petshop_patte\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A424CAB-23DA-4918-9303-F02A8921F85C}|PetShop_Patte\\PetShop_Patte.csproj|c:\\users\\asus\\desktop\\petshop_patte\\petshop_patte\\petshop_patte\\areas\\admin\\views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7A424CAB-23DA-4918-9303-F02A8921F85C}|PetShop_Patte\\PetShop_Patte.csproj|solutionrelative:petshop_patte\\areas\\admin\\views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A424CAB-23DA-4918-9303-F02A8921F85C}|PetShop_Patte\\PetShop_Patte.csproj|c:\\users\\asus\\desktop\\petshop_patte\\petshop_patte\\petshop_patte\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A424CAB-23DA-4918-9303-F02A8921F85C}|PetShop_Patte\\PetShop_Patte.csproj|solutionrelative:petshop_patte\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A424CAB-23DA-4918-9303-F02A8921F85C}|PetShop_Patte\\PetShop_Patte.csproj|c:\\users\\asus\\desktop\\petshop_patte\\petshop_patte\\petshop_patte\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A424CAB-23DA-4918-9303-F02A8921F85C}|PetShop_Patte\\PetShop_Patte.csproj|solutionrelative:petshop_patte\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,34 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\Areas\\Admin\\Views\\Product\\Update.cshtml",
-              "RelativeDocumentMoniker": "PetShop_Patte\\Areas\\Admin\\Views\\Product\\Update.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\Areas\\Admin\\Views\\Product\\Update.cshtml",
-              "RelativeToolTip": "PetShop_Patte\\Areas\\Admin\\Views\\Product\\Update.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACgAAABZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-29T19:16:33.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeDocumentMoniker": "PetShop_Patte\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeToolTip": "PetShop_Patte\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-29T19:15:58.704Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -68,15 +34,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "PetShop_Patte\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "PetShop_Patte\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAQwCwAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T18:39:48.714Z",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PetShop_Patte\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PetShop_Patte\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAG0BAAAAAAAAAAAkwHYBAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-29T20:38:21.265Z",
               "EditorCaption": ""
             }
           ]

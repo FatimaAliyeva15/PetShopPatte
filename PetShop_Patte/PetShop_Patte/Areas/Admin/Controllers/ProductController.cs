@@ -42,10 +42,10 @@ namespace PetShop_Patte.Areas.Admin.Controllers
         public async Task<IActionResult> Create()
         {
             var animalTypes = await _animalTypeService.GetAllAnimalTypes();
-            ViewBag.AnimalTypes = new SelectList(animalTypes, "Id", "AnimalType");
+            ViewBag.AnimalTypes = new SelectList(animalTypes, "Id", "Type");
 
-            var subcategory = await _subcategoryService.GetAllSubcategories();
-            ViewBag.Subcategories = new SelectList(subcategory, "Id", "SubcategoryName");
+            var subcategories = await _subcategoryService.GetAllSubcategories();
+            ViewBag.Subcategories = new SelectList(subcategories, "Id", "SubcategoryName");
 
             return View();
         }
@@ -81,7 +81,7 @@ namespace PetShop_Patte.Areas.Admin.Controllers
             }
 
             var animalTypes = await _animalTypeService.GetAllAnimalTypes();
-            ViewBag.AnimalTypes = new SelectList(animalTypes, "Id", "AnimalType");
+            ViewBag.AnimalTypes = new SelectList(animalTypes, "Id", "Type");
 
             var subcategory = await _subcategoryService.GetAllSubcategories();
             ViewBag.Subcategories = new SelectList(subcategory, "Id", "SubcategoryName");
@@ -96,7 +96,7 @@ namespace PetShop_Patte.Areas.Admin.Controllers
                 var productUpdateDTO = await _productService.UpdateById(id);
 
                 var animalTypes = await _animalTypeService.GetAllAnimalTypes();
-                ViewBag.AnimalTypes = new SelectList(animalTypes, "Id", "AnimalType");
+                ViewBag.AnimalTypes = new SelectList(animalTypes, "Id", "Type");
 
                 var subcategory = await _subcategoryService.GetAllSubcategories();
                 ViewBag.Subcategories = new SelectList(subcategory, "Id", "SubcategoryName");

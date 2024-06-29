@@ -1,12 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PetShopPatte_Business.Services.Abstracts;
 
 namespace PetShop_Patte.Controllers
 {
     public class PetController : Controller
     {
-        public IActionResult Index()
+        private readonly IPetService _petService;
+
+        public PetController(IPetService petService)
         {
-            return View();
+            _petService = petService;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var pets = await _petService.GetAllPets();
+            return View(pets);
         }
     }
 }

@@ -2,6 +2,7 @@
 using FluentValidation;
 using Microsoft.Extensions.Configuration;
 using PetShopPatte_Business.DTOs.CategoryDTO;
+using PetShopPatte_Business.DTOs.PetDetailDTO;
 using PetShopPatte_Business.DTOs.PetDTO;
 using PetShopPatte_Business.Exceptions.CategoryExceptions;
 using PetShopPatte_Business.Exceptions.PetExceptions;
@@ -203,9 +204,21 @@ namespace PetShopPatte_Business.Services.Concretes
             return await _petRepository.GetAllAsync(x => !x.IsDeleted);
         }
 
-        public async Task<PetDetail> GetPetDetailById(int id)
+        public async Task<PetDetailGetDTO>  GetPetDetailById(int id)
         {
-            return await _petRepository.GetPetDetailByIdAsync(id);
+            var pet = await _petRepository.GetByIdAsync(id);
+            PetDetailGetDTO petDetailGetDTO = new PetDetailGetDTO()
+            {
+                Age = pet.Age,
+                Breed = pet.Breed,
+                Gender = pet.Gender,
+                ImgUrl = pet.ImgUrl,
+                Price = pet.Price,
+                Name = pet.Name,
+            };
+
+            return petDetailGetDTO;
         }
+
     }
 }

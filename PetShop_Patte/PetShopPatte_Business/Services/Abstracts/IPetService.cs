@@ -1,4 +1,5 @@
 ﻿using PetShopPatte_Business.DTOs.CategoryDTO;
+using PetShopPatte_Business.DTOs.PetDetailDTO;
 using PetShopPatte_Business.DTOs.PetDTO;
 using PetShopPatte_Core.Entities.PatteDb;
 using System;
@@ -19,6 +20,6 @@ namespace PetShopPatte_Business.Services.Abstracts
         Task Recover(int id, string environment);
         Task<Pet> GetByIdAsync(int id);
         Task<IQueryable<Pet>> GetAllPets();
-        Task<PetDetail> GetPetDetailById(int id);
+        Task<PetDetailGetDTO> GetPetDetailById(int id);
     }
 }

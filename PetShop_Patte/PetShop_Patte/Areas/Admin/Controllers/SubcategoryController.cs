@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using PetShopPatte_Business.DTOs.CategoryDTO;
 using PetShopPatte_Business.DTOs.SubcategoryDTO;
 using PetShopPatte_Business.Exceptions.CategoryExceptions;
@@ -17,14 +18,16 @@ namespace PetShop_Patte.Areas.Admin.Controllers
     public class SubcategoryController : Controller
     {
         private readonly ISubcategoryService _subcategoryService;
+        private readonly ICategoryService _categoryService;
         private readonly IValidator<SubcategoryCreateDTO> _validator;
         private readonly IValidator<SubcategoryUpdateDTO> _updateValidator;
 
-        public SubcategoryController(ISubcategoryService subcategoryService, IValidator<SubcategoryCreateDTO> validator, IValidator<SubcategoryUpdateDTO> updateValidator)
+        public SubcategoryController(ISubcategoryService subcategoryService, IValidator<SubcategoryCreateDTO> validator, IValidator<SubcategoryUpdateDTO> updateValidator, ICategoryService categoryService)
         {
             _subcategoryService = subcategoryService;
             _validator = validator;
             _updateValidator = updateValidator;
+            _categoryService = categoryService;
         }
 
         public async Task<IActionResult> Index()
@@ -33,10 +36,15 @@ namespace PetShop_Patte.Areas.Admin.Controllers
             return View(subcategories);
         }
 
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            var categories = await _categoryService.GetAllCategories();
+            ViewBag.Categories = new SelectList(categories, "Id", "CategoryName");
+
             return View();
         }
+
+
         [HttpPost]
         public async Task<IActionResult> Create(SubcategoryCreateDTO subcategoryCreateDTO)
         {
@@ -54,7 +62,11 @@ namespace PetShop_Patte.Areas.Admin.Controllers
                 }
             }
 
+
             await _subcategoryService.AddSubcategory(subcategoryCreateDTO);
+
+            var categories = await _categoryService.GetAllCategories();
+            ViewBag.Categories = new SelectList(categories, "Id", "CategoryName");
 
             return RedirectToAction(nameof(Index));
         }

@@ -1,5 +1,5 @@
 ﻿@using PetShopPatte_Business.DTOs.SubcategoryDTO
-@model SubcategoryCreateDTO
+@model SubcategoryUpdateDTO
 
 <!-- main-content -->
 <div class="main-content">
@@ -34,6 +34,11 @@
                         <div class="body-title">Subcategory name <span class="tf-color-1">*</span></div>
                         <input asp-for="SubcategoryName" class="form-control" class="flex-grow" placeholder="Subcategory name" tabindex="0" aria-required="true" required="">
                         <span asp-validation-for="SubcategoryName" style="color:red"></span>
+                    </fieldset>
+                    <fieldset class="category">
+                        <div class="body-title mb-10">Category<span class="tf-color-1">*</span></div>
+                        <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="mb-10" required></select>
+                        <span asp-validation-for="CategoryId" style="color:red"></span>
                     </fieldset>
                     <div class="bot">
                         <div></div>
