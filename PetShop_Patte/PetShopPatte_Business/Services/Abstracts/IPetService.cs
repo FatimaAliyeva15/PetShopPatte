@@ -11,8 +11,8 @@ namespace PetShopPatte_Business.Services.Abstracts
 {
     public interface IPetService
     {
-        Task AddPet(PetCreateDTO petCreateDTO);
-        Task UpdatePet(PetUpdateDTO petUpdateDTO);
+        Task AddPet(string environmet, PetCreateDTO petCreateDTO);
+        Task UpdatePet(string environmet, PetUpdateDTO petUpdateDTO);
         Task<PetUpdateDTO> UpdateById(int id);
         Task HardDeletePet(int id);
         Task SoftDeletePet(int id);

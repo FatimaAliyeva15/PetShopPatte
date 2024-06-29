@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using PetShopPatte_Business.DTOs.PetDTO;
 using PetShopPatte_Business.DTOs.ProductDTO;
 using PetShopPatte_Business.Exceptions.ProductExceptions;
 using PetShopPatte_Business.Services.Abstracts;
-using PetShopPatte_Business.Services.Concretes;
+using System.Threading.Tasks;
 
 namespace PetShop_Patte.Areas.Admin.Controllers
 {

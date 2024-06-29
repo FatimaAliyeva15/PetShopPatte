@@ -87,17 +87,17 @@
                                 <li class="menu-item has-children">
                                     <a href="javascript:void(0);" class="menu-item-button">
                                         <div class="icon"><i class="icon-shopping-cart"></i></div>
-                                        <div class="text">Ecommerce</div>
+                                        <div class="text">Pet</div>
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="sub-menu-item">
-                                            <a href="add-product.html" class="">
-                                                <div class="text">Add Product</div>
+                                            <a asp-action="Create" asp-controller="Pet" class="">
+                                                <div class="text">Add Pet</div>
                                             </a>
                                         </li>
                                         <li class="sub-menu-item">
                                             <a asp-action="Index" asp-controller="Pet" class="">
-                                                <div class="text">Product List</div>
+                                                <div class="text">Pet List</div>
                                             </a>
                                         </li>
                                     </ul>
@@ -131,7 +131,65 @@
                                                 <div class="text">Subcategory list</div>
                                             </a>
                                         </li>
-                                        
+                                        <li class="sub-menu-item">
+                                            <a asp-action="Create" asp-controller="Subcategory" class="">
+                                                <div class="text">New subcategory</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item has-children">
+                                    <a href="javascript:void(0);" class="menu-item-button">
+                                        <div class="icon"><i class="icon-layers"></i></div>
+                                        <div class="text">Animal Type</div>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a asp-action="Index" asp-controller="AnimalType" class="">
+                                                <div class="text">Animal Type</div>
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a asp-action="Create" asp-controller="AnimalType" class="">
+                                                <div class="text">New animal type</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item has-children">
+                                    <a href="javascript:void(0);" class="menu-item-button">
+                                        <div class="icon"><i class="icon-layers"></i></div>
+                                        <div class="text">Size</div>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a asp-action="Index" asp-controller="Size" class="">
+                                                <div class="text">Size</div>
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a asp-action="Create" asp-controller="Size" class="">
+                                                <div class="text">New size</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item has-children">
+                                    <a href="javascript:void(0);" class="menu-item-button">
+                                        <div class="icon"><i class="icon-layers"></i></div>
+                                        <div class="text">Color</div>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a asp-action="Index" asp-controller="Color" class="">
+                                                <div class="text">Color</div>
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a asp-action="Create" asp-controller="Color" class="">
+                                                <div class="text">New color</div>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="menu-item has-children">

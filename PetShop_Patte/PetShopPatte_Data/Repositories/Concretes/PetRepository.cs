@@ -14,5 +14,7 @@ namespace PetShopPatte_Data.Repositories.Concretes
         public PetRepository(AppDbContext appDbContext) : base(appDbContext)
         {
         }
+
+
     }
 }

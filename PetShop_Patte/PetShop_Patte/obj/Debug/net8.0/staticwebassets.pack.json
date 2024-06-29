@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets\\PetShop_Patte.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\PetImages\\0249c69f-5910-4ddc-b18d-f68f8ed98edb.jpg",
+      "PackagePath": "staticwebassets\\PetImages\\0249c69f-5910-4ddc-b18d-f68f8ed98edb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\PetImages\\206a57e9-c66f-4510-9663-db939103f3f1.jpg",
+      "PackagePath": "staticwebassets\\PetImages\\206a57e9-c66f-4510-9663-db939103f3f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\PetImages\\3963b274-42c8-402f-bbcc-da3d9d380e47.jpg",
+      "PackagePath": "staticwebassets\\PetImages\\3963b274-42c8-402f-bbcc-da3d9d380e47.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\PetImages\\5b6d946c-b781-4632-9453-a2c317189143.jpg",
+      "PackagePath": "staticwebassets\\PetImages\\5b6d946c-b781-4632-9453-a2c317189143.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\PetImages\\5f237f2b-c8f3-4869-8fe0-be161bb5ef02.jpg",
+      "PackagePath": "staticwebassets\\PetImages\\5f237f2b-c8f3-4869-8fe0-be161bb5ef02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\PetImages\\fe3c3934-5d7a-4887-b907-b692143c3369.jpg",
+      "PackagePath": "staticwebassets\\PetImages\\fe3c3934-5d7a-4887-b907-b692143c3369.jpg"
+    },
+    {
       "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\admin\\css\\animate.min.css",
       "PackagePath": "staticwebassets\\admin\\css\\animate.min.css"
     },

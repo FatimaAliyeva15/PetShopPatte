@@ -9,20 +9,46 @@ namespace PetShopPatte_Business.Helpers
 {
     public static class FileManager
     {
-        public static string UpdateImage(this IFormFile formFile, string environment, string folder)
+        public static string AddImage(this IFormFile formFile, string environment, string folder)
         {
-            string fileName = Guid.NewGuid().ToString() + formFile.FileName.Replace(" ", "");
+            string folderPath = Path.Combine(environment, folder);
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
 
-            string path = environment + folder + fileName;
-            using(FileStream fileStream = new FileStream(path, FileMode.Create))
+            string fileName = Guid.NewGuid().ToString() + Path.GetExtension(formFile.FileName);
+            string fullPath = Path.Combine(folderPath, fileName);
+
+            using (FileStream fileStream = new FileStream(fullPath, FileMode.Create))
             {
                 formFile.CopyTo(fileStream);
             }
 
             return fileName;
-
         }
 
+        public static string UpdateImage(this IFormFile formFile, string environment, string folder)
+        {
+            // Ensure the folder exists
+            string folderPath = Path.Combine(environment, folder);
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            // Generate a unique file name
+            string fileName = Guid.NewGuid().ToString() + Path.GetExtension(formFile.FileName).Replace(" ", "");
+            string fullPath = Path.Combine(folderPath, fileName);
+
+            // Save the file
+            using (FileStream fileStream = new FileStream(fullPath, FileMode.Create))
+            {
+                formFile.CopyTo(fileStream);
+            }
+
+            return fileName;
+        }
 
         public static bool CheckImgFile(this IFormFile formFile)
         {

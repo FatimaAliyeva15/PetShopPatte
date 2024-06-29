@@ -19,9 +19,9 @@ namespace PetShopPatte_Business.Services.Concretes
     public class SubcategoryService : ISubcategoryService
     {
         private readonly ISubcategoryRepository _subcategoryRepository;
-        private readonly IValidator<SubcategoryCreateDTO> _validator;
+        private readonly IValidator<SubcategoryUpdateDTO> _validator;
 
-        public SubcategoryService(ISubcategoryRepository subcategoryRepository, IValidator<SubcategoryCreateDTO> validator)
+        public SubcategoryService(ISubcategoryRepository subcategoryRepository, IValidator<SubcategoryUpdateDTO> validator)
         {
             _subcategoryRepository = subcategoryRepository;
             _validator = validator;

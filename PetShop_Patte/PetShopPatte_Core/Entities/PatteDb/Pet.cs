@@ -15,6 +15,7 @@ namespace PetShopPatte_Core.Entities.PatteDb
 
         public string Name { get; set; }
         public byte Age { get; set; }
+        public decimal Price { get; set; }
 
         public string Gender { get; set; }
 
@@ -25,6 +26,7 @@ namespace PetShopPatte_Core.Entities.PatteDb
         public Color? Color { get; set; }
         public int? SizeId { get; set; }
         public Size? Size { get; set; }
+        public List<PetDetail> PetDetails { get; set; }
         public string? ImgUrl { get; set; }
         
 

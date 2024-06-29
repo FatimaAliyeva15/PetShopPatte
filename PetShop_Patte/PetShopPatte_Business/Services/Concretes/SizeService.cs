@@ -20,9 +20,9 @@ namespace PetShopPatte_Business.Services.Concretes
     public class SizeService : ISizeService
     {
         private readonly ISizeRepository _sizeRepository;
-        private readonly IValidator<Size> _validator;
+        private readonly IValidator<SizeUpdateDTO> _validator;
 
-        public SizeService(ISizeRepository sizeRepository, IValidator<Size> validator)
+        public SizeService(ISizeRepository sizeRepository, IValidator<SizeUpdateDTO> validator)
         {
             _sizeRepository = sizeRepository;
             _validator = validator;

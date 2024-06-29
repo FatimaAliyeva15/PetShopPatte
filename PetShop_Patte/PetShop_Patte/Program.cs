@@ -4,8 +4,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using PetShopPatte_Business.DTOs.AnimalTypeDTO;
 using PetShopPatte_Business.DTOs.CategoryDTO;
+using PetShopPatte_Business.DTOs.ColorDTO;
+using PetShopPatte_Business.DTOs.PetDTO;
 using PetShopPatte_Business.DTOs.ProductDetailDTO;
 using PetShopPatte_Business.DTOs.ProductDTO;
+using PetShopPatte_Business.DTOs.SizeDTO;
+using PetShopPatte_Business.DTOs.SubcategoryDTO;
 using PetShopPatte_Business.Services.Abstracts;
 using PetShopPatte_Business.Services.Concretes;
 using PetShopPatte_Core.Entities.UserModel;
@@ -52,19 +56,31 @@ namespace PetShop_Patte
             builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
+            builder.Services.AddTransient<IValidator<ColorCreateDTO>, ColorCreateDTOValidation>();
+            builder.Services.AddTransient<IValidator<ColorUpdateDTO>, ColorUpdateDTOValidation>();
+
+            builder.Services.AddScoped<IColorService, ColorService>();
+            builder.Services.AddScoped<IColorRepository, ColorRepository>();
+
             builder.Services.AddScoped<IBasketRepository, BasketRepository>();
             builder.Services.AddScoped<IBasketService, BasketService>();
 
-            builder.Services.AddTransient<IValidator<ProductCreateDTO>, ProductCreateDTOValidation>();
+            builder.Services.AddTransient<IValidator<PetCreateDTO>, PetCreateDTOValidation>();
+            builder.Services.AddTransient<IValidator<PetUpdateDTO>, PetUpdateDTOValidation>();
+
+            builder.Services.AddScoped<IPetService, PetService>();
+            builder.Services.AddScoped<IPetRepository, PetRepository>();
+
+            //builder.Services.AddTransient<IValidator<ProductCreateDTO>, ProductCreateDTOValidation>();
             builder.Services.AddTransient<IValidator<ProductUpdateDTO>, ProductUpdateDTOValidation>();
 
-            builder.Services.AddScoped<IProductService, ProductService>();
+            //builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
-            builder.Services.AddTransient<IValidator<ProductDetailCreateDTO>, ProductDetailCreateDTOValidation>();
+            //builder.Services.AddTransient<IValidator<ProductDetailCreateDTO>, ProductDetailCreateDTOValidation>();
             builder.Services.AddTransient<IValidator<ProductDetailUpdateDTO>, ProductDetailUpdateDTOValidation>();
 
-            builder.Services.AddScoped<IProductDetailService, ProductDetailService>();
+            //builder.Services.AddScoped<IProductDetailService, ProductDetailService>();
             builder.Services.AddScoped<IProductDetailRepository, ProductDetailRepository>();
 
             builder.Services.AddTransient<IValidator<AnimalTypeCreateDTO>, AnimalTypeCreateDTOValidation>();
@@ -72,6 +88,18 @@ namespace PetShop_Patte
 
             builder.Services.AddScoped<IAnimalTypeService, AnimalTypeService>();
             builder.Services.AddScoped<IAnimalTypeRepository, AnimalTypeRepository>();
+
+            builder.Services.AddTransient<IValidator<SubcategoryCreateDTO>, SubcategoryCreateDTOValidation>();
+            builder.Services.AddTransient<IValidator<SubcategoryUpdateDTO>, SubcategoryUpdateDTOValidation>();
+
+            builder.Services.AddScoped<ISubcategoryService, SubcategoryService>();
+            builder.Services.AddScoped<ISubcategoryRepository, SubcategoryRepository>();
+
+            builder.Services.AddTransient<IValidator<SizeCreateDTO>, SizeCreateDTOValidation>();
+            builder.Services.AddTransient<IValidator<SizeUpdateDTO>, SizeUpdateDTOValidation>();
+
+            builder.Services.AddScoped<ISizeService, SizeService>();
+            builder.Services.AddScoped<ISizeRepository, SizeRepository>();
 
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<ISendMessageService, SendMessageService>();

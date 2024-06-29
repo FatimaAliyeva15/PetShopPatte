@@ -16,7 +16,8 @@ namespace PetShopPatte_Data.Configurations
             builder.Property(x => x.Name).IsRequired().HasMaxLength(100);
             builder.Property(x => x.Breed).IsRequired().HasMaxLength(100);
             builder.Property(x => x.Gender).IsRequired().HasMaxLength(100);
-            builder.Property(x =>x.Age).IsRequired().HasMaxLength(5);
+            builder.Property(x => x.Age).IsRequired().HasMaxLength(5);
+            builder.Property(x => x.Price).IsRequired().HasMaxLength(18);
         }
     }
 }

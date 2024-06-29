@@ -21,19 +21,24 @@ namespace PetShopPatte_Business.Services.Concretes
     public class PetService : IPetService
     {
         private readonly IPetRepository _petRepository;
-        private readonly string _environment;
+        //private readonly string _enviroment;
 
-        public PetService(IPetRepository petRepository, string environment)
+        public PetService(IPetRepository petRepository)
         {
             _petRepository = petRepository;
-            _environment = environment;
+            //_environment = enviroment;
         }
 
-        public async Task AddPet(PetCreateDTO petCreateDTO)
+        public async Task AddPet(string environment, PetCreateDTO petCreateDTO)
         {
             if (petCreateDTO.ImgFile != null && petCreateDTO.ImgFile.CheckImgFile())
             {
-                string imgPath = petCreateDTO.ImgFile.UpdateImage(_environment, "PetImages/");
+                // Ensure the environment path is correct and ends with a directory separator
+                string webRootPath = Path.Combine(environment, "PetImages");
+
+                // Save image to the specified folder
+                string imgPath = petCreateDTO.ImgFile.AddImage(webRootPath, "");
+
                 Pet pet = new Pet
                 {
                     Name = petCreateDTO.Name,
@@ -51,14 +56,14 @@ namespace PetShopPatte_Business.Services.Concretes
                 await _petRepository.AddAsync(pet);
                 await _petRepository.Commit();
             }
-
             else
             {
                 throw new PetImageRequiredException("ImgFile", "Image is required");
             }
         }
 
-        public async Task UpdatePet(PetUpdateDTO petUpdateDTO)
+
+        public async Task UpdatePet(string environment, PetUpdateDTO petUpdateDTO)
         {
             var existPet = await _petRepository.GetByIdAsync(petUpdateDTO.Id);
 
@@ -75,10 +80,10 @@ namespace PetShopPatte_Business.Services.Concretes
 
                 if (petUpdateDTO.ImgFile != null && petUpdateDTO.ImgFile.CheckImgFile())
                 {
-                    string imgPath = petUpdateDTO.ImgFile.UpdateImage(_environment, "PetImages/");
+                    string imgPath = petUpdateDTO.ImgFile.UpdateImage(environment, "PetImages/");
                     if (!string.IsNullOrEmpty(existPet.ImgUrl))
                     {
-                        existPet.ImgUrl.DeleteImage(_environment, "PetImages/");
+                        existPet.ImgUrl.DeleteImage(environment, "PetImages/");
                     }
                     existPet.ImgUrl = imgPath;
                 }
@@ -90,7 +95,7 @@ namespace PetShopPatte_Business.Services.Concretes
                 _petRepository.Update(existPet);
                 await _petRepository.Commit();
             }
-            
+
         }
 
         public async Task<PetUpdateDTO> UpdateById(int id)

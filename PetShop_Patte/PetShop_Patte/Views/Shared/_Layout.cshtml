@@ -27,7 +27,7 @@
    <script src="~/assets/js/jquery-3.6.0.min.js"></script>
    <script src="~/assets/js/preloader.js"></script>
  </head>
-<body>
+<body> 
 <!-- loader -->
 <div class="preloader"> 
     <div class="container">
@@ -302,7 +302,7 @@
         </div>
     </footer>
     <!-- cart-popup -->
-    <div id="lightbox" class="lightbox clearfix">
+@*     <div id="lightbox" class="lightbox clearfix">
         <div class="white_content">
             <a href="javascript:;" class="textright" id="close"><i class="fa-regular fa-circle-xmark"></i></a>
             <div class="cart-popup">
@@ -367,18 +367,18 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> *@
     <!-- cart-popup end -->
-@*     @if (Model == null || !Model.BasketItems.Any())
+        <div id="lightbox" class="lightbox clearfix">
+            <div class="white_content">
+                <a asp-controller="Basket" asp-action="Index" class="textright" id="close"><i class="fa-regular fa-circle-xmark"></i></a>
+     @if (Model == null || !Model.BasketItems.Any())
     {
         <p>Your basket is empty.</p>
     }
     else
     {
         <!-- cart-popup -->
-        <div id="lightbox" class="lightbox clearfix">
-            <div class="white_content">
-                <a asp-controller="Basket" asp-action="Index" class="textright" id="close"><i class="fa-regular fa-circle-xmark"></i></a>
                 @foreach (var item in Model.BasketItems)
                 {
                     <div class="cart-popup">
@@ -443,12 +443,13 @@
                         </div>
                     </div>
                 }
+        }
             </div>
         </div>
         <div>
             <a asp-controller="Home" asp-action="Index">Continue Shopping</a>
         </div>
-        <!-- cart-popup end --> *@
+        <!-- cart-popup end --> 
 
     <!-- search-popup -->
     <div class="search-popup">

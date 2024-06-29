@@ -13,6 +13,7 @@ namespace PetShopPatte_Data.Configurations
     {
         public void Configure(EntityTypeBuilder<ProductDetail> builder)
         {
+            builder.Property(x => x.Name).IsRequired().HasMaxLength(100);
             builder.Property(x => x.Description).IsRequired().HasMaxLength(500);
             builder.Property(x => x.StockQuantity).IsRequired().HasMaxLength(5);
             builder.Property(x => x.Price).IsRequired().HasMaxLength(18);

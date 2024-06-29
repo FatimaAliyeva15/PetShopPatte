@@ -21,9 +21,9 @@ namespace PetShopPatte_Business.Services.Concretes
     {
         private readonly IColorRepository _colorRepository;
         private readonly IMapper _mapper;
-        private readonly IValidator<Color> _validator;
+        private readonly IValidator<ColorUpdateDTO> _validator;
 
-        public ColorService(IColorRepository colorRepository, IMapper mapper, IValidator<Color> validator)
+        public ColorService(IColorRepository colorRepository, IMapper mapper, IValidator<ColorUpdateDTO> validator)
         {
             _colorRepository = colorRepository;
             _mapper = mapper;

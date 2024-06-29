@@ -22,6 +22,7 @@ namespace PetShopPatte_Data.DAL
         public DbSet<Category> Categories { get; set; }
         public DbSet<Color> Colors { get; set; }
         public DbSet<Pet> Pets { get; set; }
+        public DbSet<PetDetail> PetDetails { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductDetail> ProductDetails { get; set; }
         public DbSet<Size> Sizes { get; set; }
@@ -37,6 +38,7 @@ namespace PetShopPatte_Data.DAL
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CategoryConfiguration).Assembly);
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ColorConfiguration).Assembly);
             modelBuilder.ApplyConfigurationsFromAssembly(typeof (PetConfiguration).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(PetDetailConfiguration).Assembly);
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ProductConfiguration).Assembly);
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ProductDetailConfiguration).Assembly);
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(SizeConfiguration).Assembly);

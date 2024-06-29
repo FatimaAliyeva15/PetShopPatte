@@ -369,6 +369,10 @@ namespace PetShopPatte_Data.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<decimal>("Price")
+                        .HasMaxLength(18)
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<int?>("SizeId")
                         .HasColumnType("int");
 
@@ -387,6 +391,64 @@ namespace PetShopPatte_Data.Migrations
                     b.HasIndex("SizeId");
 
                     b.ToTable("Pets");
+                });
+
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.PetDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<byte>("Age")
+                        .HasMaxLength(5)
+                        .HasColumnType("tinyint");
+
+                    b.Property<string>("Breed")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Gender")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("ImgUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int?>("PetId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasMaxLength(18)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PetId");
+
+                    b.ToTable("PetDetails");
                 });
 
             modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Product", b =>
@@ -454,6 +516,11 @@ namespace PetShopPatte_Data.Migrations
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<decimal>("Price")
                         .HasMaxLength(18)
@@ -749,6 +816,15 @@ namespace PetShopPatte_Data.Migrations
                     b.Navigation("Size");
                 });
 
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.PetDetail", b =>
+                {
+                    b.HasOne("PetShopPatte_Core.Entities.PatteDb.Pet", "Pet")
+                        .WithMany("PetDetails")
+                        .HasForeignKey("PetId");
+
+                    b.Navigation("Pet");
+                });
+
             modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Product", b =>
                 {
                     b.HasOne("PetShopPatte_Core.Entities.PatteDb.AnimalType", "AnimalType")
@@ -817,6 +893,11 @@ namespace PetShopPatte_Data.Migrations
             modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Color", b =>
                 {
                     b.Navigation("Pets");
+                });
+
+            modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Pet", b =>
+                {
+                    b.Navigation("PetDetails");
                 });
 
             modelBuilder.Entity("PetShopPatte_Core.Entities.PatteDb.Product", b =>
