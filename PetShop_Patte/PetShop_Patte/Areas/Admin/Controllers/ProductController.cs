@@ -45,7 +45,7 @@ namespace PetShop_Patte.Areas.Admin.Controllers
             {
                 try
                 {
-                    await _productService.AddProduct(productCreateDTO);
+                    //await _productService.AddProduct(productCreateDTO);
                     return RedirectToAction(nameof(Index));
                 }
                 catch (ProductImageRequiredException ex)
@@ -76,7 +76,7 @@ namespace PetShop_Patte.Areas.Admin.Controllers
             {
                 try
                 {
-                    await _productService.UpdateProduct(productUpdateDTO);
+                    //await _productService.UpdateProduct(productUpdateDTO);
                     return RedirectToAction(nameof(Index));
                 }
                 catch (ProductImageRequiredException ex)
@@ -102,7 +102,7 @@ namespace PetShop_Patte.Areas.Admin.Controllers
         {
             try
             {
-                await _productService.SoftDeleteProduct(id);
+               // await _productService.SoftDeleteProduct(id);
                 return RedirectToAction(nameof(Index));
             }
             catch (ProductIdNegativeorZeroException ex)
@@ -126,7 +126,7 @@ namespace PetShop_Patte.Areas.Admin.Controllers
         {
             try
             {
-                await _productService.Recover(id);
+               // await _productService.Recover(id);
                 return RedirectToAction(nameof(Index));
             }
             catch (ProductIdNegativeorZeroException ex)
