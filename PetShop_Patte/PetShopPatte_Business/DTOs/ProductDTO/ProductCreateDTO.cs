@@ -24,7 +24,15 @@ namespace PetShopPatte_Business.DTOs.ProductDTO
         public ProductCreateDTOValidation()
         {
             RuleFor(x => x.Name).NotEmpty().WithMessage("Name is required").NotNull().WithMessage("Can not be empty").MaximumLength(100).WithMessage("Name size can be maximum 100");
-            RuleFor(x => x.Price).NotEmpty().WithMessage("Price is required");
+            RuleFor(x => x.Price).NotEmpty().WithMessage("Price is required").WithMessage("Price is required");
+            RuleFor(x => x.ImgFile).NotEmpty().WithMessage("Image is required").Must(BeAValidImage).WithMessage("Invalid image format or size.");
+        }
+        private bool BeAValidImage(IFormFile imgFile)
+        {
+            if (imgFile == null)
+                return false;
+
+            return imgFile.ContentType.Contains("image/") && imgFile.Length / 1024 / 1024 <= 3; // Validate image type and size
         }
     }
 

@@ -10,13 +10,14 @@ namespace PetShopPatte_Business.Services.Abstracts
 {
     public interface IProductService
     {
-        Task AddProduct(ProductCreateDTO productCreateDTO);
-        Task UpdateProduct(ProductUpdateDTO productUpdateDTO);
+        Task AddProduct(string environmet, ProductCreateDTO productCreateDTO);
+        Task UpdateProduct(string environmet, ProductUpdateDTO productUpdateDTO);
         Task<ProductUpdateDTO> UpdateById(int id);
-        Task HardDeleteProduct(int id);
-        Task SoftDeleteProduct(int id);
-        Task Recover(int id);
+        Task HardDeleteProduct(int id, string environmet);
+        Task SoftDeleteProduct(int id, string environmet);
+        Task Recover(int id, string environmet);
         Task<Product> GetByIdAsync(int id);
         Task<IQueryable<Product>> GetAllProducts();
+        Task<ProductDetail> GetProductDetailById(int id);
     }
 }

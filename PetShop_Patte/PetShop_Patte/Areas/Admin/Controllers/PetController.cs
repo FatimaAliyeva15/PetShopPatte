@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -92,6 +93,13 @@ namespace PetShop_Patte.Areas.Admin.Controllers
             try
             {
                 var petUpdateDTO = await _petService.UpdateById(id);
+
+                var animalTypes = await _animalTypeService.GetAllAnimalTypes();
+                ViewBag.AnimalTypes = new SelectList(animalTypes, "Id", "Type");
+
+                var colors = await _colorService.GetAllColors();
+                ViewBag.Colors = new SelectList(colors, "Id", "ColorName");
+
                 return View(petUpdateDTO);
             }
             catch (NullPetException ex)
@@ -118,52 +126,74 @@ namespace PetShop_Patte.Areas.Admin.Controllers
             return View(petUpdateDTO);
         }
 
-        public async Task<IActionResult> Delete(int id)
-        {
-            var pet = await _petService.GetByIdAsync(id);
-            if (pet == null)
-            {
-                return NotFound();
-            }
-            return View(pet);
-        }
-
-        [HttpPost, ActionName("Delete")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> SoftDelete(int id)
         {
             try
             {
-                await _petService.SoftDeletePet(id);
-                return RedirectToAction(nameof(Index));
+                string environmentPath = _environment.WebRootPath;
+                await _petService.SoftDeletePet(id, environmentPath);
             }
             catch (PetIdNegativeorZeroException ex)
             {
                 return BadRequest(ex.Message);
             }
+            catch (NullPetException ex)
+            {
+                return NotFound(ex.Message);
+            }
+
+            return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> Recover(int id)
         {
-            var pet = await _petService.GetByIdAsync(id);
-            if (pet == null)
-            {
-                return NotFound();
-            }
-            return View(pet);
-        }
-
-        [HttpPost, ActionName("Recover")]
-        public async Task<IActionResult> RecoverConfirmed(int id)
-        {
             try
             {
-                await _petService.Recover(id);
-                return RedirectToAction(nameof(Index));
+                string environmentPath = _environment.WebRootPath;
+                await _petService.Recover(id, environmentPath);
             }
             catch (PetIdNegativeorZeroException ex)
             {
                 return BadRequest(ex.Message);
             }
+            catch (NullPetException ex)
+            {
+                return NotFound(ex.Message);
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                string environmentPath = _environment.WebRootPath;
+                await _petService.HardDeletePet(id, environmentPath);
+            }
+            catch (PetIdNegativeorZeroException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (NullPetException ex)
+            {
+                return NotFound(ex.Message);
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        
+        public async Task<IActionResult> Detail(int id)
+        {
+            var petDetail = await _petService.GetPetDetailById(id);
+
+            if (petDetail == null)
+            {
+                return NotFound();
+            }
+
+            return View(petDetail);
         }
     }
 }

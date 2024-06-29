@@ -14,10 +14,11 @@ namespace PetShopPatte_Business.Services.Abstracts
         Task AddPet(string environmet, PetCreateDTO petCreateDTO);
         Task UpdatePet(string environmet, PetUpdateDTO petUpdateDTO);
         Task<PetUpdateDTO> UpdateById(int id);
-        Task HardDeletePet(int id);
-        Task SoftDeletePet(int id);
-        Task Recover(int id);
+        Task HardDeletePet(int id, string environment);
+        Task SoftDeletePet(int id, string environment);
+        Task Recover(int id, string environment);
         Task<Pet> GetByIdAsync(int id);
         Task<IQueryable<Pet>> GetAllPets();
+        Task<PetDetail> GetPetDetailById(int id);
     }
 }

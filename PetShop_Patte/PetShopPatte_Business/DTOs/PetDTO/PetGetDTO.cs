@@ -9,8 +9,7 @@ namespace PetShopPatte_Business.DTOs.PetDTO
 {
     public class PetGetDTO
     {
-        public int Id { get; set; }
-       
+        public int Id { get; set; }       
         public string Name { get; set; }
     }
 }

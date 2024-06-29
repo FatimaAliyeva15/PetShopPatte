@@ -123,28 +123,68 @@ namespace PetShopPatte_Business.Services.Concretes
             }
         }
 
-        public async Task HardDeletePet(int id)
+        public async Task HardDeletePet(int id, string environment)
         {
             if (id <= 0)
                 throw new PetIdNegativeorZeroException("Pet id not negative and zero");
+
+            var pet = await _petRepository.GetByIdAsync(id);
+
+            if (pet == null || pet.IsDeleted)
+            {
+                throw new NullPetException("Pet cannot be null or already deleted.");
+            }
+
+            // Delete the image
+            if (!string.IsNullOrEmpty(pet.ImgUrl))
+            {
+                pet.ImgUrl.DeleteImage(environment, "PetImages/");
+            }
 
             await _petRepository.HardDelete(id);
             await _petRepository.Commit();
         }
 
-        public async Task SoftDeletePet(int id)
+        public async Task SoftDeletePet(int id, string environment)
         {
             if (id <= 0)
                 throw new PetIdNegativeorZeroException("Pet id not negative and zero");
+
+            var pet = await _petRepository.GetByIdAsync(id);
+
+            if (pet == null || pet.IsDeleted)
+            {
+                throw new NullPetException("Pet cannot be null or already deleted.");
+            }
+
+            // Delete the image
+            if (!string.IsNullOrEmpty(pet.ImgUrl))
+            {
+                pet.ImgUrl.DeleteImage(environment, "PetImages/");
+            }
 
             await _petRepository.SoftDelete(id);
             await _petRepository.Commit();
         }
 
-        public async Task Recover(int id)
+        public async Task Recover(int id, string environment)
         {
             if (id <= 0)
                 throw new PetIdNegativeorZeroException("Pet id not negative and zero");
+
+            var pet = await _petRepository.GetByIdAsync(id);
+
+            if (pet == null || pet.IsDeleted)
+            {
+                throw new NullPetException("Pet cannot be null or already deleted.");
+            }
+
+            // Delete the image
+            if (!string.IsNullOrEmpty(pet.ImgUrl))
+            {
+                pet.ImgUrl.DeleteImage(environment, "PetImages/");
+            }
+
 
             await _petRepository.Recover(id);
             await _petRepository.Commit();
@@ -161,6 +201,11 @@ namespace PetShopPatte_Business.Services.Concretes
         public async Task<IQueryable<Pet>> GetAllPets()
         {
             return await _petRepository.GetAllAsync(x => !x.IsDeleted);
+        }
+
+        public async Task<PetDetail> GetPetDetailById(int id)
+        {
+            return await _petRepository.GetPetDetailByIdAsync(id);
         }
     }
 }

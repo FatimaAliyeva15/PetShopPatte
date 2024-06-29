@@ -14,7 +14,7 @@ namespace PetShopPatte_Data.Configurations
         public void Configure(EntityTypeBuilder<Product> builder)
         {
             builder.Property(x => x.Name).IsRequired().HasMaxLength(100);
-            builder.Property(x => x.Price).IsRequired().HasMaxLength(18);
+            builder.Property(x => x.Price).IsRequired().HasColumnType("decimal(18,2)");
         }
     }
 }

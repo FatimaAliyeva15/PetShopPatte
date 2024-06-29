@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using PetShopPatte_Business.DTOs.PetDTO;
 using PetShopPatte_Business.DTOs.ProductDTO;
 using PetShopPatte_Business.Exceptions.ProductExceptions;
 using PetShopPatte_Business.Services.Abstracts;
@@ -12,10 +14,16 @@ namespace PetShop_Patte.Areas.Admin.Controllers
     public class ProductController : Controller
     {
         private readonly IProductService _productService;
+        private readonly IValidator<ProductCreateDTO> _validator;
+        private readonly IValidator<ProductUpdateDTO> _updateValidator;
+        private readonly IWebHostEnvironment _environment;
 
-        public ProductController(IProductService productService)
+        public ProductController(IProductService productService, IValidator<ProductCreateDTO> validator, IValidator<ProductUpdateDTO> updateValidator, IWebHostEnvironment environment)
         {
             _productService = productService;
+            _validator = validator;
+            _updateValidator = updateValidator;
+            _environment = environment;
         }
 
         public async Task<IActionResult> Index()
@@ -27,6 +35,7 @@ namespace PetShop_Patte.Areas.Admin.Controllers
         public IActionResult Create()
         {
             return View();
+
         }
 
         [HttpPost]

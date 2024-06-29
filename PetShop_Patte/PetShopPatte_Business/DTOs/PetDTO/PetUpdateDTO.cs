@@ -31,10 +31,17 @@ namespace PetShopPatte_Business.DTOs.PetDTO
         {
             RuleFor(x => x.Name).NotEmpty().WithMessage("Name is required").NotNull().WithMessage("Can not be empty").MaximumLength(100).WithMessage("Name size can be maximum 100");
             RuleFor(x => x.Age).NotEmpty().WithMessage("Age is required");
-            RuleFor(x => x.Price).NotEmpty().WithMessage("Price is required")
-                                 .GreaterThan(0).WithMessage("Price must be greater than zero");
+            RuleFor(x => x.Price).NotEmpty().WithMessage("Price is required").GreaterThan(0).WithMessage("Price must be greater than zero");
             RuleFor(x => x.Gender).NotEmpty().WithMessage("Gender is required").NotNull().WithMessage("Can not be empty").MaximumLength(100).WithMessage("Gender size can be maximum 100");
             RuleFor(x => x.Breed).NotEmpty().WithMessage("Breed is required").NotNull().WithMessage("Can not be empty").MaximumLength(100).WithMessage("Breed size can be maximum 100");
+        }
+
+        private bool BeAValidImage(IFormFile imgFile)
+        {
+            if (imgFile == null)
+                return false;
+
+            return imgFile.ContentType.Contains("image/") && imgFile.Length / 1024 / 1024 <= 3; // Validate image type and size
         }
     }
 }

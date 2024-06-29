@@ -18,7 +18,7 @@ namespace PetShopPatte_Business.DTOs.ProductDetailDTO
 
         public int StockQuantity { get; set; }
         public int? ProductId { get; set; }
-        public IFormFile? ImgFile { get; set; }
+        public IFormFile ImgFile { get; set; }
     }
 
     public class ProductDetailUpdateDTOValidation : AbstractValidator<ProductDetailUpdateDTO>

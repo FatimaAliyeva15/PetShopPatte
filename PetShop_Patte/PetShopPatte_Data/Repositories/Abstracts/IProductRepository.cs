@@ -9,5 +9,6 @@ namespace PetShopPatte_Data.Repositories.Abstracts
 {
     public interface IProductRepository: IGenericRepository<Product>
     {
+        Task<ProductDetail> GetPetDetailByIdAsync(int id);
     }
 }

@@ -19,54 +19,182 @@ namespace PetShopPatte_Business.Services.Concretes
     public class ProductService : IProductService
     {
         private readonly IProductRepository _productRepository;
-        private readonly string _environment;
+        //private readonly string _environment;
 
 
-        public ProductService(IProductRepository productRepository, string environment)
+        public ProductService(IProductRepository productRepository)
         {
             _productRepository = productRepository;
-            _environment = environment;
+           // _environment = environment;
         }
 
-        public Task AddProduct(ProductCreateDTO productCreateDTO)
+        public async Task AddProduct(string environment, ProductCreateDTO productCreateDTO)
         {
-            throw new NotImplementedException();
+            if (productCreateDTO.ImgFile != null && productCreateDTO.ImgFile.CheckImgFile())
+            {
+                // Ensure the environment path is correct and ends with a directory separator
+                string webRootPath = Path.Combine(environment, "ProductImages");
+
+                // Save image to the specified folder
+                string imgPath = productCreateDTO.ImgFile.AddImage(webRootPath, "");
+
+                Product pet = new Product
+                {
+                    Name = productCreateDTO.Name,
+                    Price = productCreateDTO.Price,
+                    SubcategoryId = productCreateDTO.SubcategoryId,
+                    AnimalTypeId = productCreateDTO.AnimalTypeId,
+                    ImgUrl = imgPath,
+                    CreatedDate = DateTime.UtcNow,
+                    UpdatedDate = DateTime.UtcNow,
+                };
+
+                await _productRepository.AddAsync(pet);
+                await _productRepository.Commit();
+            }
+            else
+            {
+                throw new ProductImageRequiredException("ImgFile", "Image is required");
+            }
         }
 
-        public Task<IQueryable<Product>> GetAllProducts()
+        public async Task<IQueryable<Product>> GetAllProducts()
         {
-            throw new NotImplementedException();
+            return await _productRepository.GetAllAsync(x => !x.IsDeleted);
         }
 
-        public Task<Product> GetByIdAsync(int id)
+        public async Task<Product> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _productRepository.GetByIdAsync(id);
         }
 
-        public Task HardDeleteProduct(int id)
+        public async Task<ProductDetail> GetProductDetailById(int id)
         {
-            throw new NotImplementedException();
+            return await _productRepository.GetPetDetailByIdAsync(id);
         }
 
-        public Task Recover(int id)
+        public async Task HardDeleteProduct(int id, string environment)
         {
-            throw new NotImplementedException();
+            if (id <= 0)
+                throw new ProductIdNegativeorZeroException("Product id not negative and zero");
+
+            var product = await _productRepository.GetByIdAsync(id);
+
+            if (product == null || product.IsDeleted)
+            {
+                throw new NullProductException("Pet cannot be null or already deleted.");
+            }
+
+            // Delete the image
+            if (!string.IsNullOrEmpty(product.ImgUrl))
+            {
+                product.ImgUrl.DeleteImage(environment, "ProductImages/");
+            }
+
+            await _productRepository.HardDelete(id);
+            await _productRepository.Commit();
         }
 
-        public Task SoftDeleteProduct(int id)
+        public async Task Recover(int id, string environment)
         {
-            throw new NotImplementedException();
+
+            if (id <= 0)
+                throw new ProductIdNegativeorZeroException("Product id not negative and zero");
+
+            var product = await _productRepository.GetByIdAsync(id);
+
+            if (product == null || product.IsDeleted)
+            {
+                throw new NullProductException("Pet cannot be null or already deleted.");
+            }
+
+            // Delete the image
+            if (!string.IsNullOrEmpty(product.ImgUrl))
+            {
+                product.ImgUrl.DeleteImage(environment, "ProductImages/");
+            }
+
+            await _productRepository.Recover(id);
+            await _productRepository.Commit();
         }
 
-        public Task<ProductUpdateDTO> UpdateById(int id)
+        public async Task SoftDeleteProduct(int id, string environment)
         {
-            throw new NotImplementedException();
+
+            if (id <= 0)
+                throw new ProductIdNegativeorZeroException("Product id not negative and zero");
+
+            var product = await _productRepository.GetByIdAsync(id);
+
+            if (product == null || product.IsDeleted)
+            {
+                throw new NullProductException("Pet cannot be null or already deleted.");
+            }
+
+            // Delete the image
+            if (!string.IsNullOrEmpty(product.ImgUrl))
+            {
+                product.ImgUrl.DeleteImage(environment, "ProductImages/");
+            }
+
+            await _productRepository.SoftDelete(id);
+            await _productRepository.Commit();
         }
 
-        public Task UpdateProduct(ProductUpdateDTO productUpdateDTO)
+        public async Task<ProductUpdateDTO> UpdateById(int id)
         {
-            throw new NotImplementedException();
+
+            var existProduct = await _productRepository.GetByIdAsync(id);
+
+            if (existProduct != null && !existProduct.IsDeleted)
+            {
+                return new ProductUpdateDTO
+                {
+                    Id = existProduct.Id,
+                    Name = existProduct.Name,
+                    Price = existProduct.Price,
+                    AnimalTypeId = existProduct.AnimalTypeId,
+                    SubcategoryId = existProduct.SubcategoryId,
+                    ImgFile = null // ImgFile cannot be assigned directly, typically set via a view form
+                };
+            }
+            else
+            {
+                throw new NullProductException("Product cannot be null");
+            }
         }
+
+        public async Task UpdateProduct(string environment, ProductUpdateDTO productUpdateDTO)
+        {
+            var existProduct = await _productRepository.GetByIdAsync(productUpdateDTO.Id);
+
+            if (existProduct != null && !existProduct.IsDeleted)
+            {
+                existProduct.Name = productUpdateDTO.Name;
+                existProduct.Price = productUpdateDTO.Price;
+                existProduct.SubcategoryId = productUpdateDTO.SubcategoryId;
+                existProduct.AnimalTypeId = productUpdateDTO.AnimalTypeId;
+
+
+                if (productUpdateDTO.ImgFile != null && productUpdateDTO.ImgFile.CheckImgFile())
+                {
+                    string imgPath = productUpdateDTO.ImgFile.UpdateImage(environment, "ProdutImages/");
+                    if (!string.IsNullOrEmpty(existProduct.ImgUrl))
+                    {
+                        existProduct.ImgUrl.DeleteImage(environment, "ProductImages/");
+                    }
+                    existProduct.ImgUrl = imgPath;
+                }
+                else
+                {
+                    throw new ProductImageRequiredException("ImgFile", "Image is required");
+                }
+
+                _productRepository.Update(existProduct);
+                await _productRepository.Commit();
+            }
+        }
+
 
         //public async Task AddProduct(ProductCreateDTO productCreateDTO)
         //{
