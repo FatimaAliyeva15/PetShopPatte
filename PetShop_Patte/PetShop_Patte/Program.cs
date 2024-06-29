@@ -71,10 +71,10 @@ namespace PetShop_Patte
             builder.Services.AddScoped<IPetService, PetService>();
             builder.Services.AddScoped<IPetRepository, PetRepository>();
 
-            //builder.Services.AddTransient<IValidator<ProductCreateDTO>, ProductCreateDTOValidation>();
+            builder.Services.AddTransient<IValidator<ProductCreateDTO>, ProductCreateDTOValidation>();
             builder.Services.AddTransient<IValidator<ProductUpdateDTO>, ProductUpdateDTOValidation>();
 
-            //builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
             //builder.Services.AddTransient<IValidator<ProductDetailCreateDTO>, ProductDetailCreateDTOValidation>();

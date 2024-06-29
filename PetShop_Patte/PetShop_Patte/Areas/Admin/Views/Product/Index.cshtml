@@ -1,4 +1,4 @@
-﻿@* ﻿@using PetShopPatte_Core.Entities.PatteDb
+﻿﻿@using PetShopPatte_Core.Entities.PatteDb
 @model IEnumerable<Product>
 
 <!-- main-content -->
@@ -96,24 +96,21 @@
                                         <a asp-action="Index" asp-controller="Pet" class="body-title-2">@item.Name</a>
                                     </div>
                                     <div class="body-text">@item.AnimalType?.Type</div>
-                                    <div class="body-text">@item.Breed</div>
-                                    <div class="body-text">@item.Gender</div>
-                                    <div class="body-text">@item.Color?.ColorName</div>
-                                    <div class="body-text">@item.Age</div>
+                                    <div class="body-text">@item.Subcategory?.SubcategoryName</div>
                                     <div class="body-text">$@item.Price</div>
                                     <div class="list-icon-function">
                                         <div class="item eye">
-                                            <a asp-action="Detail" asp-controller="Pet" asp-route-id="@item.Id">
+                                            <a asp-action="Detail" asp-controller="Product" asp-route-id="@item.Id">
                                                 <i class="icon-eye"></i>
                                             </a>
                                         </div>
                                         <div class="item edit">
-                                            <a asp-action="Update" asp-controller="Pet" asp-route-id="@item.Id">
+                                            <a asp-action="Update" asp-controller="Product" asp-route-id="@item.Id">
                                                 <i class="icon-edit-3"></i>
                                             </a>
                                         </div>
                                         <div class="item trash">
-                                            <a asp-action="Delete" asp-controller="Pet" asp-route-id="@item.Id">
+                                            <a asp-action="Delete" asp-controller="Product" asp-route-id="@item.Id">
                                                 <i class="icon-trash-2"></i>
                                             </a>
                                         </div>
@@ -150,4 +147,3 @@
         <!-- /main-content-wrap -->
     </div>
     <!-- /main-content-wrap -->
- *@
