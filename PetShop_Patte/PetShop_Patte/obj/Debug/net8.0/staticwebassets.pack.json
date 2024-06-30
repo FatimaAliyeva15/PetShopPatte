@@ -41,6 +41,18 @@
       "PackagePath": "staticwebassets\\PetImages\\fe3c3934-5d7a-4887-b907-b692143c3369.jpg"
     },
     {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\ProductImages\\e0257761-3ea5-4105-9020-d24d54d6796a.png",
+      "PackagePath": "staticwebassets\\ProductImages\\e0257761-3ea5-4105-9020-d24d54d6796a.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\ProductImages\\f9445729-e873-4d2a-9c14-aea5f4c4ef8a.png",
+      "PackagePath": "staticwebassets\\ProductImages\\f9445729-e873-4d2a-9c14-aea5f4c4ef8a.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\ProdutImages\\2223e4be-375e-4a63-bee3-f0101652305f.png",
+      "PackagePath": "staticwebassets\\ProdutImages\\2223e4be-375e-4a63-bee3-f0101652305f.png"
+    },
+    {
       "Id": "C:\\Users\\Asus\\Desktop\\PetShop_Patte\\PetShop_Patte\\PetShop_Patte\\wwwroot\\admin\\css\\animate.min.css",
       "PackagePath": "staticwebassets\\admin\\css\\animate.min.css"
     },

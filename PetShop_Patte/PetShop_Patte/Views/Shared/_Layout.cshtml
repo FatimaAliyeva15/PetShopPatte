@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using PetShopPatte_Core.Entities.Cart
+@model Basket
+
+<!DOCTYPE html>
 <html lang="zxx">
 <head>
   <meta charset="utf-8">
@@ -369,10 +372,10 @@
         </div>
     </div> *@
     <!-- cart-popup end -->
-        <div id="lightbox" class="lightbox clearfix">
+       <div id="lightbox" class="lightbox clearfix">
             <div class="white_content">
                 <a asp-controller="Basket" asp-action="Index" class="textright" id="close"><i class="fa-regular fa-circle-xmark"></i></a>
-     @if (!Model.BasketItems.Count() == 0)
+            @if (Model.BasketItems == null || Model.BasketItems.Count() == 0)
     {
         <p>Your basket is empty.</p>
     }
@@ -388,7 +391,7 @@
 
                                 <div class="p-img light-bg">
 
-                                    <img src="~/assets/img/food-1.png" alt="Product Image">
+                                    <img src="~/ProductImages/@item.Product.ImgUrl" alt="Product Image">
 
                                 </div>
 
@@ -401,26 +404,6 @@
                                 </div>
 
                                 <a href="JavaScript:void(0)" id="crosss"></a>
-
-                            </li>
-
-                            <li class="d-flex align-items-center position-relative">
-
-                                <div class="p-img light-bg">
-
-                                    <img src="~/assets/img/food-2.png" alt="Product Image">
-
-                                </div>
-
-                                <div class="p-data">
-
-                                    <h3 class="font-semi-bold">Banana Leaves</h3>
-
-                                    <p class="theme-clr font-semi-bold">@item.Quantity x $@item.Product.Price.ToString("C")</p>
-
-                                </div>
-
-                                <a href="JavaScript:void(0)" id="cross"></a>
 
                             </li>
 

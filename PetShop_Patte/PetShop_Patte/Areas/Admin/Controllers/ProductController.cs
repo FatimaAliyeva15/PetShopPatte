@@ -18,22 +18,24 @@ namespace PetShop_Patte.Areas.Admin.Controllers
     {
         private readonly IProductService _productService;
         private readonly IAnimalTypeService _animalTypeService;
+        private readonly ISizeService _sizeService;
         private readonly ISubcategoryService _subcategoryService;
         private readonly IValidator<ProductCreateDTO> _validator;
         private readonly IValidator<ProductUpdateDTO> _updateValidator;
         private readonly IWebHostEnvironment _environment;
 
-        public ProductController(IProductService productService, IValidator<ProductCreateDTO> validator, IValidator<ProductUpdateDTO> updateValidator, IWebHostEnvironment environment, IAnimalTypeService animalTypeService, ISubcategoryService subcategoryService)
-        {
-            _productService = productService;
-            _validator = validator;
-            _updateValidator = updateValidator;
-            _environment = environment;
-            _animalTypeService = animalTypeService;
-            _subcategoryService = subcategoryService;
-        }
+		public ProductController(IProductService productService, IValidator<ProductCreateDTO> validator, IValidator<ProductUpdateDTO> updateValidator, IWebHostEnvironment environment, IAnimalTypeService animalTypeService, ISubcategoryService subcategoryService, ISizeService sizeService)
+		{
+			_productService = productService;
+			_validator = validator;
+			_updateValidator = updateValidator;
+			_environment = environment;
+			_animalTypeService = animalTypeService;
+			_subcategoryService = subcategoryService;
+			_sizeService = sizeService;
+		}
 
-        public async Task<IActionResult> Index()
+		public async Task<IActionResult> Index()
         {
             var products = await _productService.GetAllProducts();
             return View(products.ToList());
@@ -47,7 +49,7 @@ namespace PetShop_Patte.Areas.Admin.Controllers
             var subcategories = await _subcategoryService.GetAllSubcategories();
             ViewBag.Subcategories = new SelectList(subcategories, "Id", "SubcategoryName");
 
-            return View();
+			return View();
         }
 
         [HttpPost]
@@ -86,7 +88,8 @@ namespace PetShop_Patte.Areas.Admin.Controllers
             var subcategory = await _subcategoryService.GetAllSubcategories();
             ViewBag.Subcategories = new SelectList(subcategory, "Id", "SubcategoryName");
 
-            return View(productCreateDTO);
+
+			return View(productCreateDTO);
         }
 
         public async Task<IActionResult> Update(int id)
@@ -101,7 +104,8 @@ namespace PetShop_Patte.Areas.Admin.Controllers
                 var subcategory = await _subcategoryService.GetAllSubcategories();
                 ViewBag.Subcategories = new SelectList(subcategory, "Id", "SubcategoryName");
 
-                return View(productUpdateDTO);
+
+				return View(productUpdateDTO);
             }
             catch (NullProductException ex)
             {
